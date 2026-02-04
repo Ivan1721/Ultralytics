@@ -105,4 +105,65 @@ def main():
         ("test",  cfg.get("test")),
     ]
 
-    kept_total = dropped_total = scanned_total =_
+    kept_total = dropped_total = scanned_total = 0
+
+    for split_name, rel_img in splits:
+        if not rel_img:
+            continue
+
+        img_dir = (external_root / rel_img).resolve()
+        # labels típicamente: ../train/labels o ../train/labels dependiendo export
+        # Intentamos dos opciones comunes:
+        lbl_dir1 = img_dir.parent / "labels"
+        lbl_dir2 = img_dir.parent / "labels"  # mismo; queda por claridad
+        lbl_dir = lbl_dir1 if lbl_dir1.exists() else lbl_dir2
+
+        if not img_dir.exists():
+            print(f"[WARN] No existe split {split_name}: {img_dir}")
+            continue
+        if not lbl_dir.exists():
+            print(f"[WARN] No existe labels en {split_name}: {lbl_dir} (se omitirá el split)")
+            continue
+
+        out_img_dir = out_root / "images" / split_name
+        out_lbl_dir = out_root / "labels" / split_name
+
+        images = list_images(img_dir)
+        print(f"[{split_name}] imgs={len(images)} img_dir={img_dir}")
+
+        for img in images:
+            scanned_total += 1
+            lbl = lbl_dir / f"{img.stem}.txt"
+            filtered = filter_and_remap_label(lbl, src_to_tgt)
+
+            if filtered is None:
+                dropped_total += 1
+                continue
+
+            if args.drop_empty and len(filtered) == 0:
+                dropped_total += 1
+                continue
+
+            new_stem = f"{args.tag}__{img.stem}"
+            copy_pair(img, out_img_dir, out_lbl_dir, new_stem, filtered)
+            kept_total += 1
+
+    # escribir YAML final (solo tus 2 clases)
+    final_yaml = {
+        "path": str(out_root).replace("\\", "/"),
+        "train": "images/train",
+        "val": "images/val",
+        "names": {0: "apple_green", 1: "apple_red"},
+    }
+    write_yaml(out_root / "data.yaml", final_yaml)
+
+    print("==== RESUMEN ====")
+    print(f"Imágenes revisadas: {scanned_total}")
+    print(f"Imágenes copiadas:  {kept_total}")
+    print(f"Imágenes descart.:  {dropped_total}")
+    print(f"Dataset final:      {out_root}")
+    print(f"YAML final:         {out_root / 'data.yaml'}")
+
+
+if __name__ == "__main__":
+    main()
