@@ -18,3 +18,9 @@ yolo26s-seg.pt
 yolo26m-seg.pt
 yolo26l-seg.pt
 yolo26x-seg.pt
+
+# referencias/ = papers de terceros y PDFs compilados del template Springer.
+# No se versionan: se respaldan en Google Drive junto al resto de lo ignorado.
+/referencias
+__pycache__/
+*.pyc

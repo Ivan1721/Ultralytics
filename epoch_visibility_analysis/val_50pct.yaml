@@ -1,0 +1,11 @@
+path: C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\1.Universidad\PhdDISA\Tesis\vision\Ultralytics\Manzana\yolo_reduced
+train: images/train
+val: images/val/50%
+nc: 6
+names:
+  0: apple_green
+  1: apple_red
+  2: peach
+  3: avocado
+  4: pear
+  5: orange
