@@ -1,0 +1,536 @@
+@INPROCEEDINGS{10972542,
+  author={Bengtson, Stefan Hein and Lehotský, Daniel and Ismiroglou, Vasiliki and Madsen, Niels and Moeslund, Thomas B. and Pedersen, Malte},
+  booktitle={2025 IEEE/CVF Winter Conference on Applications of Computer Vision Workshops (WACVW)}, 
+  title={AutoFish: Dataset and Benchmark for Fine-Grained Analysis of Fish}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1513-1522},
+  abstract={Automated fish documentation processes are in the near future expected to play an essential role in sustainable fisheries management and for addressing challenges of overfishing. In this paper, we present a novel and publicly available dataset named AutoFish designed for fine-grained fish analysis. The dataset comprises 1,500 images of 454 specimens of visually similar fish placed in various constellations on a white conveyor belt and annotated with instance segmentation masks, IDs, and length measurements. The data was collected in a controlled environment using an RGB camera. The annotation procedure involved manual point annotations, initial segmentation masks proposed by the Segment Anything Model (SAM), and subsequent manual correction of the masks. We establish baseline instance segmentation results using two variations of the Mask2Former architecture, with the best performing model reaching an mAP of 89.15%. Additionally, we present two baseline length estimation methods, the best performing being a custom MobileNetV2-based regression model reaching an MAE of 0.62cm in images with no occlusion and 1.38cm in images with occlusion. Link to project page: https://vap.aau.dk/autofish/},
+  keywords={Instance segmentation;Computer vision;Annotations;Conferences;Estimation;Manuals;Documentation;Computer architecture;Length measurement;Fisheries},
+  doi={10.1109/WACVW65960.2025.00174},
+  ISSN={2690-621X},
+  month={Feb},}@INPROCEEDINGS{10350532,
+  author={Sun, Fengyuan and Karaoglu, Sezer and Gevers, Theo},
+  booktitle={2023 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)}, 
+  title={Temporally Consistent Semantic Segmentation using Spatially Aware Multi-view Semantic Fusion for Indoor RGB-D videos}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={4250-4259},
+  abstract={The task of performing image semantic segmentation faces challenges in achieving consistent and robust results across a sequence of video frames. This problem becomes more prominent for indoor scenes where small camera movement can lead to drastic appearance changes, occlusions, and loss of global context information.To overcome these challenges, this paper proposes a novel approach that combines multi-view semantic fusion with spatial reasoning to produce view-invariant semantic features for temporally consistent semantic segmentation for indoor RGB-D videos.The experiments are conducted on the ScanNet dataset, showing that the proposed spatially aware multi-view fusion mechanism significantly improves the state-of-the-art image semantic segmentation methods Mask2Former and ViT-Adapter. In particular, the proposed pipeline offers improvements of 5%, 9.9%, and 14.4% in 2D mIoU, cross-view consistency, and temporal consistency, respectively, when compared to Mask2Former. Similarly, when compared to ViT-Adapter, the proposed mechanism offers enhancements of 4.8%, 8.9%, and 10.9% in the same metrics.},
+  keywords={Measurement;Computer vision;Semantic segmentation;Conferences;Semantics;Pipelines;Cameras},
+  doi={10.1109/ICCVW60793.2023.00459},
+  ISSN={2473-9944},
+  month={Oct},}@INPROCEEDINGS{10491166,
+  author={Ebrahimzadeh, Mohammad and Manzuri, Mohammad Taghi},
+  booktitle={2024 13th Iranian/3rd International Machine Vision and Image Processing Conference (MVIP)}, 
+  title={MaskChanger: A Transformer-Based Model Tailoring Change Detection with Mask Classification}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={Change detection in multi-temporal remote sensing data enables crucial urban analysis and environmental monitoring applications. However, complex factors like illumination variance and occlusion make robust automated change interpretation challenging. We propose MaskChanger - a novel deep learning paradigm tailored for satellite image change detection. Our method adapts the segmentation-specialized Mask2Former architecture by incorporating Siamese networks to extract features separately from bi-temporal images, while retaining the original mask transformer decoder. To our knowledge, this is the first study in which change detection is converted from the existing per-pixel classification approach into a mask classification approach. Evaluated on the LEVIR-CD benchmark of over 600 very high-resolution image pairs exhibiting real-world rural and urban changes, MaskChanger achieves Fl-Score of 91.96%, outperforming prior transformer-based change detection approaches.},
+  keywords={Representation learning;Image segmentation;Object segmentation;Transformers;Feature extraction;Decoding;Sensors;Change Detection;Remote Sensing Image;Transformer},
+  doi={10.1109/MVIP62238.2024.10491166},
+  ISSN={2166-6784},
+  month={March},}@INPROCEEDINGS{11407412,
+  author={Shu, Zixuan and Wang, Junxiang and Xu, Xi and Wang, HongFei and Li, Ye},
+  booktitle={2025 2nd International Conference on Image Processing, Multimedia Technology and Machine Learning (IPMML)}, 
+  title={Dynamic Refinement-Based Video Object Segmentation for Mouse Videos}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={129-133},
+  abstract={Video Object Segmentation (VOS) is essential for the automated quantitative analysis of complex mouse behaviors. However, multi-mouse segmentation remains challenging, as highly similar visual features, rapid motion patterns, and frequent inter-object occlusions often cause tracking drift and identity (ID) switching in existing VOS methods, particularly over long video sequences. To address these challenges, we propose Refinement-based Multi-Mouse Realtime Video Segmentation (RMMRVS), a closed-loop framework that improves temporal stability and spatial accuracy in long-term multi-object tracking. RMMRVS extends the CUTIE architecture by introducing a feature-aware confidence prediction module that continuously assesses tracking reliability and detects potential drift online. When confidence degradation is detected, an adaptive refinement mechanism is activated, employing Mask2Former to perform high-precision spatial resegmentation. The refined masks are then reinjected into the VOS memory, restoring a stable and reliable reference for subsequent tracking. This “pre-dict-evaluate-correct” strategy effectively suppresses error accumulation and ID switching over extended sequences. Extensive experiments on challenging multi-mouse datasets demonstrate that RMMRVS consistently outperforms baselines in segmentation accuracy and temporal consistency, highlighting its effectiveness and scalability for reliable quantitative behavioral analysis.},
+  keywords={Visualization;Accuracy;Tracking;Motion segmentation;Video sequences;Object segmentation;Switches;Streaming media;Reliability;Videos;Video Object Segmentation (VOS);Multi-Object Tracking;Adaptive Correction},
+  doi={10.1109/IPMML68499.2025.11407412},
+  ISSN={},
+  month={Dec},}@INPROCEEDINGS{11100168,
+  author={Hu, Xiao-Min and Wang, Bing-Hai and Yang, Zhuo},
+  booktitle={2025 12th International Conference on Machine Intelligence Theory and Applications (MiTA)}, 
+  title={Area Ratio-Based Box Counting Algorithm for Intelligent Inventory in Stacked Goods Environments}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-9},
+  abstract={Inventory management plays a critical role in modern warehouses, but traditional manual counting methods are inefficient and error-prone, especially for large quantities of goods. With advancements in AI, IoT, and computer vision, automated systems have emerged to improve accuracy and efficiency. This paper proposes a novel Area Ratio-Based Box Counting Algorithm (ARBCA) for intelligent inventory in three-dimensional warehouse environments. The algorithm leverages instance segmentation to generate masks for stacked goods and uses area ratios for precise counting. We introduce a customized dataset, the Tobacco Cargo Stacking Dataset (TCSD), and demonstrate the algorithm's effectiveness, achieving an overall inventory accuracy of 93.90% on the TCSD dataset with the Mask2former model. The method addresses challenges such as occlusion and stacking in dark warehouse conditions, showing promise for real-world applications.},
+  keywords={Instance segmentation;Computer vision;Accuracy;Error analysis;Stacking;Noise;Manuals;Inventory management;Robustness;Machine intelligence;Inventory management;Warehouse automation;Object counting;Area Ratio-Based Box Counting Algorithm},
+  doi={10.1109/MiTA66017.2025.11100168},
+  ISSN={},
+  month={May},}@INPROCEEDINGS{11196230,
+  author={Jia, Chen and Khan, Navid Ali and Mohamad, Abdul Hadi and Wei, Goh Wei and Narputro, Panji},
+  booktitle={2025 International Conference on Metaverse and Current Trends in Computing (ICMCTC)}, 
+  title={Knife Detection with MDDR Net: An Improved for Small and Indiscernible Object Detection}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-10},
+  abstract={From the viewpoint of the public security and the counter terrorism measures, knife detection is quite important. However, knife detection in real-world settings remains very challenging, particularly in dense environments under occlusion. Additionally, such an environment is very complex, which makes it hard for the knives to be distinguished from background, especially with the knives being small or indiscernible. Traditional techniques for object detection, like YOLO and DETR, hard to detect small or indiscernible objects. Inspired by Deformable DETR, IOC, and Mask2Former, this paper proposes a novel intelligent detection algorithm named MDDR Net (Mask and Deformable Dense Regression Network) to solve the issue of detection for small and indiscernible objects. Mask Attention and Deformable Attention are then integrated to a density regression prediction module (MDDR Net) that can help the model to enhance accuracy in detection and separation of detection from complex backgrounds. To demonstrate, we carry out extensive experiments on the Kaggle Knife Dataset (9,189 images) and show that our method yields an overall mAP of 0.621 (0.903 mAP@0.5 and 0.789 mAP@0.75), being trained with just 6.09 hours for 100 epochs. These results further illustrate the robust performance of MDDR Net in detecting small and unnoticeable knife objects in cluttered geometries.},
+  keywords={Training;YOLO;Deformable models;Adaptation models;Accuracy;Weapons;Zero shot learning;Real-time systems;Data models;Tuning;Knife Detection;YOLO;Regression Network;Mask Attention;Deformable Attention},
+  doi={10.1109/ICMCTC62214.2025.11196230},
+  ISSN={},
+  month={April},}
+
+@article{rtdetr_2024,
+  author    = {Zhao, Yian and Lv, Wenyu and Xu, Shangliang and Wei, Jinman and Wang, Guanzhong and Dang, Qingqing and Liu, Yi and Chen, Jie},
+  title     = {DETRs Beat YOLOs on Real-time Object Detection},
+  journal   = {arXiv preprint arXiv:2304.08069},
+  year      = {2024}
+}
+
+@article{yolo26_evolution_2026,
+  author    = {Sapkota, Ranjan and Karkee, Manoj},
+  title     = {Ultralytics YOLO Evolution: An Overview of YOLO26, YOLO11, YOLOv8, and YOLOv5},
+  journal   = {arXiv preprint arXiv:2510.09653},
+  year      = {2026}
+}
+
+@article{yolo26_architecture_2026,
+  author    = {Hidayatullah, Priyanto and Tubagus, Refdinal},
+  title     = {YOLO26: A Comprehensive Architecture Overview and Key Improvements},
+  journal   = {arXiv preprint arXiv:2602.14582},
+  year      = {2026}
+}
+
+@inproceedings{garcia2024human,
+  title={Human-Robot Interaction Based on Hand Gesture Detection Using YOLO Algorithm},
+  author={Garc{\'\i}a, Ivan and Moya, Viviana and Pilco, Andrea and Vilcapoma, Piero and Guevara, Leonardo and Guam{\'a}n-Rivera, Robert and Men{\'e}ndez, Oswaldo and V{\'a}sconez, Juan Pablo},
+  booktitle={International Conference on Advanced Research in Technologies, Information, Innovation and Sustainability},
+  pages={351--365},
+  year={2024},
+  organization={Springer}
+}
+
+@article{vasconez2020fuzzy,
+  title={A fuzzy-based driver assistance system using human cognitive parameters and driving style information},
+  author={Vasconez, Juan Pablo and Viscaino, Michelle and Guevara, Leonardo and Cheein, Fernando Auat},
+  journal={Cognitive Systems Research},
+  volume={64},
+  pages={174--190},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@article{vasconez2019design,
+  title={On the design of a human--robot interaction strategy for commercial vehicle driving based on human cognitive parameters},
+  author={Vasconez, Juan Pablo and Carvajal, Diego and Cheein, Fernando Auat},
+  journal={Advances in Mechanical Engineering},
+  volume={11},
+  number={7},
+  pages={1687814019862715},
+  year={2019},
+  publisher={SAGE Publications Sage UK: London, England}
+}
+
+@article{vasconez2022workload,
+  title={Workload and production assessment in the avocado harvesting process using human-robot collaborative strategies},
+  author={V{\'a}sconez, Juan P and Cheein, Fernando A Auat},
+  journal={Biosystems Engineering},
+  volume={223},
+  pages={56--77},
+  year={2022},
+  publisher={Elsevier}
+}
+
+@inproceedings{vasconez2019social,
+  title={Social robot navigation based on HRI non-verbal communication: A case study on avocado harvesting},
+  author={Vasconez, Juan Pablo and Guevara, Leonardo and Cheein, Fernando Auat},
+  booktitle={Proceedings of the 34th ACM/SIGAPP symposium on applied computing},
+  pages={957--960},
+  year={2019}
+}
+
+@article{vasconez2019human,
+  title={Human--robot interaction in agriculture: A survey and current challenges},
+  author={Vasconez, Juan P and Kantor, George A and Cheein, Fernando A Auat},
+  journal={Biosystems engineering},
+  volume={179},
+  pages={35--48},
+  year={2019},
+  publisher={Elsevier}
+}
+
+@inproceedings{reference1,
+  author={Kaur, Gurpreet and Banerjee, Sean and Banerjee, Natasha Kholgade},
+  booktitle={2023 9th International Conference on Automation, Robotics and Applications (ICARA)}, 
+  title={Studying Worker Perceptions on Safety, Autonomy, and Job Security in Human-Robot Collaboration}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={187-191},
+  keywords={Surveys;Warehousing;Employment;Collaboration;Transportation;Safety;Manufacturing;Robot acceptance;human-robot interaction;human-robot collaboration;corobots},
+  doi={10.1109/ICARA56516.2023.10125842}
+}
+
+@inproceedings{vasconez2019social,
+  title={Social robot navigation based on HRI non-verbal communication: A case study on avocado harvesting},
+  author={Vasconez, Juan Pablo and Guevara, Leonardo and Cheein, Fernando Auat},
+  booktitle={Proceedings of the 34th ACM/SIGAPP symposium on applied computing},
+  pages={957--960},
+  year={2019}
+}
+
+@article{hong2012application,
+  title={Application of fuzzy logic in mobile robot navigation},
+  author={Hong, Tang Sai and Nakhaeinia, Danial and Karasfi, Babak},
+  journal={Fuzzy Logic-Controls, Concepts, Theories and Applications},
+  pages={21--36},
+  year={2012},
+  publisher={InTech}
+}
+
+@inproceedings{lei2007fuzzy,
+  title={A fuzzy behaviours fusion algorithm for mobile robot real-time path planning in unknown environment},
+  author={Lei, Bin and Li, Wenfeng},
+  booktitle={2007 IEEE International Conference on Integration Technology},
+  pages={173--178},
+  year={2007},
+  organization={IEEE}
+}
+
+@article{pfluger1996fuzzy,
+  title={A Fuzzy Logic Based Extension to Payton and Rosenblatt's Command Fusion Method for Mobile Robot Navigation},
+  author={Pfluger, Nathan},
+  year={1996},
+  publisher={Citeseer}
+}
+
+@inproceedings{bao2009fuzzy,
+  title={A fuzzy behavior-based architecture for mobile robot navigation in unknown environments},
+  author={Bao, Qing-yong and Li, Shun-ming and Shang, Wei-yan and An, Mu-jin},
+  booktitle={2009 International Conference on Artificial Intelligence and Computational Intelligence},
+  volume={2},
+  pages={257--261},
+  year={2009},
+  organization={IEEE}
+}
+
+@inproceedings{dongshu2011behavior,
+  title={Behavior-based hierarchical fuzzy control for mobile robot navigation in dynamic environment},
+  author={Dongshu, Wang and Yusheng, Zhang and Wenjie, Si},
+  booktitle={2011 Chinese control and decision conference (CCDC)},
+  pages={2419--2424},
+  year={2011},
+  organization={IEEE}
+}
+
+@article{vasconez2023comparison,
+  title={Comparison of path planning methods for robot navigation in simulated agricultural environments},
+  author={V{\'a}sconez, Juan P and Basoalto, Fernando and Brice{\~n}o, Inesmar C and Pantoja, Jenny M and Larenas, Roberto A and Rios, Jhon H and Castro, Felipe A},
+  journal={Procedia Computer Science},
+  volume={220},
+  pages={898--903},
+  year={2023},
+  publisher={Elsevier}
+}
+
+@article{brooks2013robot,
+  title={A robot that walks: Emergent behaviors from a carefully evolved network},
+  author={Brooks, Rodney A},
+  year={2013}
+}
+
+@article{mo2013behavior,
+  title={Behavior-based fuzzy control for mobile robot navigation},
+  author={Mo, Hongwei and Tang, Qirong and Meng, Longlong},
+  journal={Mathematical problems in engineering},
+  volume={2013},
+  year={2013},
+  publisher={Hindawi}
+}
+
+@article{li2021behavior,
+  title={A behavior-based mobile robot navigation method with deep reinforcement learning},
+  author={Li, Juncheng and Ran, Maopeng and Wang, Han and Xie, Lihua},
+  journal={Unmanned Systems},
+  volume={9},
+  number={03},
+  pages={201--209},
+  year={2021},
+  publisher={World Scientific}
+}
+
+@article{seraji2002behavior,
+  title={Behavior-based robot navigation on challenging terrain: A fuzzy logic approach},
+  author={Seraji, Homayoun and Howard, Ayanna},
+  journal={IEEE transactions on robotics and automation},
+  volume={18},
+  number={3},
+  pages={308--321},
+  year={2002},
+  publisher={IEEE}
+}
+
+@article{fatmi2008fuzzy,
+  title={A fuzzy logic based navigation of a mobile robot},
+  author={Fatmi, Anis and Al Yahmadi, Amur and Khriji, Lazhar and Masmoudi, Nouri},
+  journal={World Academy of Science, Engineering and Technology},
+  volume={2},
+  year={2008},
+  publisher={Citeseer}
+}
+
+@article{vasconez2019design,
+  title={On the design of a human--robot interaction strategy for commercial vehicle driving based on human cognitive parameters},
+  author={Vasconez, Juan Pablo and Carvajal, Diego and Cheein, Fernando Auat},
+  journal={Advances in Mechanical Engineering},
+  volume={11},
+  number={7},
+  pages={1687814019862715},
+  year={2019},
+  publisher={SAGE Publications Sage UK: London, England}
+}
+
+@book{siegwart2011introduction,
+  title={Introduction to autonomous mobile robots},
+  author={Siegwart, Roland and Nourbakhsh, Illah Reza and Scaramuzza, Davide},
+  year={2011},
+  publisher={MIT press}
+}
+
+@inproceedings{novotny2022autonomous,
+  title={Autonomous Vehicle Calibration via Linear Optimization},
+  author={Novotny, Georg and Liu, Yuzhou and W{\"o}ber, Wilfried and Olaverri-Monreal, Cristina},
+  booktitle={2022 IEEE Intelligent Vehicles Symposium (IV)},
+  pages={527--532},
+  year={2022},
+  organization={IEEE}
+}
+
+@incollection{corke2023mobile,
+  title={Mobile robot vehicles},
+  author={Corke, Peter and Jachimczyk, Witold and Pillat, Remo},
+  booktitle={Robotics, Vision and Control: Fundamental Algorithms in MATLAB{\textregistered}},
+  pages={127--160},
+  year={2023},
+  publisher={Springer}
+}
+
+@article{vasconez2020fuzzy,
+  title={A fuzzy-based driver assistance system using human cognitive parameters and driving style information},
+  author={Vasconez, Juan Pablo and Viscaino, Michelle and Guevara, Leonardo and Cheein, Fernando Auat},
+  journal={Cognitive Systems Research},
+  volume={64},
+  pages={174--190},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@article{VASCONEZ201935,
+title = "Human-–robot interaction in agriculture: A survey and current challenges",
+journal = "Biosystems Engineering",
+volume = "179",
+pages = "35 - 48",
+year = "2019",
+issn = "1537-5110",
+doi = "https://doi.org/10.1016/j.biosystemseng.2018.12.005",
+url = "http://www.sciencedirect.com/science/article/pii/S1537511017309625",
+author = "Juan P. Vasconez and George A. Kantor and Fernando A. Auat Cheein",
+keywords = "Human–robot interaction, Agriculture robotics, Collaborative robotics, Precision agriculture",
+abstract = "Human–robot interaction (HRI) is an extensive and diverse research topic that has been gaining importance in last years. Different fields of study have used HRI approaches for solving complicated problems, where humans and robots interact in some way to obtain advantages from their collaboration. Many industrial areas benefit by applying HRI strategies in their applications, and agriculture is one of the most challenging of them. Currently, field crops can reach highly autonomous levels whereas speciality crops do not. In particular, crops such as fruits and vegetables are still harvested manually, and also some tasks such as pruning and thinning have long been considered to be too complex to automate completely. In addition, several countries face the problem of farm labour shortages. As a consequence, the production process is affected. In this context, we survey HRI approaches and ap-plications focused on improving the working conditions, agility, efficiency, safety, productivity and profitability of agricultural processes, in cases where manual labour cannot be replaced by but can be complemented with robots."
+}
+
+@inproceedings{choudhary2021evaluation,
+  title={Evaluation of mapping and path planning for non-holonomic mobile robot navigation in narrow pathway for agricultural application},
+  author={Choudhary, Anupam and Kobayashi, Yuichi and Arjonilla, Francisco J and Nagasaka, Satoshi and Koike, Megumu},
+  booktitle={2021 IEEE/SICE International Symposium on System Integration (SII)},
+  pages={17--22},
+  year={2021},
+  organization={IEEE}
+}
+
+@article{pak2022field,
+  title={Field Evaluation of Path-Planning Algorithms for Autonomous Mobile Robot in Smart Farms},
+  author={Pak, Jeonghyeon and Kim, Jeongeun and Park, Yonghyun and Son, Hyoung Il},
+  journal={IEEE Access},
+  year={2022},
+  publisher={IEEE}
+}
+
+@inproceedings{santos2020path,
+  title={Path planning for ground robots in agriculture: A short review},
+  author={Santos, Lu{\'\i}s C and Santos, Filipe N and Pires, EJ Solteiro and Valente, Ant{\'o}nio and Costa, Pedro and Magalh{\~a}es, Sandro},
+  booktitle={2020 IEEE International Conference on Autonomous Robot Systems and Competitions (ICARSC)},
+  pages={61--66},
+  year={2020},
+  organization={IEEE}
+}
+
+@inproceedings{khoshkangini2014efficient,
+  title={Efficient routing protocol via ant colony optimization (ACO) and breadth first search (BFS)},
+  author={Khoshkangini, Reza and Zaboli, Syroos and Conti, Mauro},
+  booktitle={Proceedings of the IEEE International Conference on Cyber, Physical and Social Computing (IEEE CPSCom 2014)},
+  year={2014}
+}
+
+@inproceedings{everitt2015analytical,
+  title={Analytical results on the BFS vs. DFS algorithm selection problem: Part II: Graph search},
+  author={Everitt, Tom and Hutter, Marcus},
+  booktitle={Australasian Joint Conference on Artificial Intelligence},
+  pages={166--178},
+  year={2015},
+  organization={Springer}
+}
+
+@inproceedings{asano2014depth,
+  title={Depth-first search using $$ O (n) $$ bits},
+  author={Asano, Tetsuo and Izumi, Taisuke and Kiyomi, Masashi and Konagaya, Matsuo and Ono, Hirotaka and Otachi, Yota and Schweitzer, Pascal and Tarui, Jun and Uehara, Ryuhei},
+  booktitle={International Symposium on Algorithms and Computation},
+  pages={553--564},
+  year={2014},
+  organization={Springer}
+}
+
+@article{gasparetto2015path,
+  title={Path planning and trajectory planning algorithms: A general overview},
+  author={Gasparetto, Alessandro and Boscariol, Paolo and Lanzutti, Albano and Vidoni, Renato},
+  journal={Motion and operation planning of robotic systems},
+  pages={3--27},
+  year={2015},
+  publisher={Springer}
+}
+
+@article{vasconez2022workload,
+  title={Workload and production assessment in the avocado harvesting process using human-robot collaborative strategies},
+  author={V{\'a}sconez, Juan P and Cheein, Fernando A Auat},
+  journal={Biosystems Engineering},
+  volume={223},
+  pages={56--77},
+  year={2022},
+  publisher={Elsevier}
+}
+
+@article{nguyen2016path,
+  title={Path planning and obstacle avoidance approaches for mobile robot},
+  author={Nguyen, Hoc Thai and Le, Hai Xuan},
+  journal={arXiv preprint arXiv:1609.01935},
+  year={2016}
+}
+
+@article{duckett2018agricultural,
+  title={Agricultural robotics: the future of robotic agriculture},
+  author={Duckett, Tom and Pearson, Simon and Blackmore, Simon and Grieve, Bruce and Chen, Wen-Hua and Cielniak, Grzegorz and Cleaversmith, Jason and Dai, Jian and Davis, Steve and Fox, Charles and others},
+  journal={arXiv preprint arXiv:1806.06762},
+  year={2018}
+}
+
+@article{demir2019industry,
+  title={Industry 5.0 and human-robot co-working},
+  author={Demir, Kadir Alpaslan and D{\"o}ven, G{\"o}zde and Sezen, B{\"u}lent},
+  journal={Procedia computer science},
+  volume={158},
+  pages={688--695},
+  year={2019},
+  publisher={Elsevier}
+}
+
+@article{benos2020safety,
+  title={Safety and ergonomics in human-robot interactive agricultural operations},
+  author={Benos, Lefteris and Bechar, Avital and Bochtis, Dionysis},
+  journal={Biosystems Engineering},
+  volume={200},
+  pages={55--72},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@article{heard2018survey,
+  title={A survey of workload assessment algorithms},
+  author={Heard, Jamison and Harriott, Caroline E and Adams, Julie A},
+  journal={IEEE Transactions on Human-Machine Systems},
+  volume={48},
+  number={5},
+  pages={434--451},
+  year={2018},
+  publisher={IEEE}
+}
+
+@article{heard2019diagnostic,
+  title={A diagnostic human workload assessment algorithm for collaborative and supervisory human--robot teams},
+  author={Heard, Jamison and Heald, Rachel and Harriott, Caroline E and Adams, Julie A},
+  journal={ACM Transactions on Human-Robot Interaction (THRI)},
+  volume={8},
+  number={2},
+  pages={1--30},
+  year={2019},
+  publisher={ACM New York, NY, USA}
+}
+
+@incollection{eggemeier2020workload,
+  title={Workload assessment in multi-task environments},
+  author={Eggemeier, F Thomas and Wilson, Glenn F and Kramer, Arthur F and Damos, Diane L},
+  booktitle={Multiple-task performance},
+  pages={207--216},
+  year={2020},
+  publisher={CRC Press}
+}
+
+@article{stavros2012object,
+  title={An object-oriented model for simulating agricultural in-field machinery activities},
+  author={Hameed, IA and Bochtis, DD and S{\o}rensen, CG and Vougioukas, S},
+  journal={Computers and electronics in agriculture},
+  volume={81},
+  pages={24--32},
+  year={2012},
+  publisher={Elsevier}
+}
+
+@article{vasconez2021SemanticAction,
+  title={A methodology for semantic action recognition based on pose and human-object interaction in avocado harvesting processes},
+  author={Vasconez, JP and Admoni, H and Cheein, F Auat},
+  journal={Computers and Electronics in Agriculture},
+  volume={184},
+  pages={106057},
+  year={2021},
+  publisher={Elsevier}
+}
+
+@article{vasconez2020CNN,
+  title={Comparison of convolutional neural networks in fruit detection and counting: A comprehensive evaluation},
+  author={Vasconez, Juan Pablo and Delpiano, J and Vougioukas, S and Cheein, F Auat},
+  journal={Computers and Electronics in Agriculture},
+  volume={173},
+  pages={105348},
+  year={2020},
+  publisher={Elsevier}
+
+}
+
+
+@inproceedings{boor1999gaussian,
+  title={The Gaussian sampling strategy for probabilistic roadmap planners},
+  author={Boor, Val{\'e}rie and Overmars, Mark H and Van Der Stappen, A Frank},
+  booktitle={Proceedings 1999 IEEE International Conference on Robotics and Automation (Cat. No. 99CH36288C)},
+  volume={2},
+  pages={1018--1023},
+  year={1999},
+  organization={IEEE}
+}
+
+@article{samuel2016review,
+  title={A review of some pure-pursuit based path tracking techniques for control of autonomous vehicle},
+  author={Samuel, Moveh and Hussein, Mohamed and Mohamad, Maziah Binti},
+  journal={International Journal of Computer Applications},
+  volume={135},
+  number={1},
+  pages={35--38},
+  year={2016},
+  publisher={Foundation of Computer Science}
+}
+
+@incollection{geraerts2004comparative,
+  title={A comparative study of probabilistic roadmap planners},
+  author={Geraerts, Roland and Overmars, Mark H},
+  booktitle={Algorithmic Foundations of Robotics V},
+  pages={43--57},
+  year={2004},
+  publisher={Springer}
+}
+
+@article{Vasconez2020,
+author = {Vasconez, Juan Pablo and {Auat Cheein}, Fernando Alfredo},
+journal = {Precision Agriculture},
+title = {{Workload and production assessment in avocado harvesting processes using HRI strategies based on action recognition}},
+year = {2020}
+}

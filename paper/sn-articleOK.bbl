@@ -1,0 +1,121 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{10972542}
+Bengtson, S.H., Lehotský, D., Ismiroglou, V., Madsen, N., Moeslund, T.B.,
+  Pedersen, M.: Autofish: Dataset and benchmark for fine-grained analysis of
+  fish. In: 2025 IEEE/CVF Winter Conference on Applications of Computer Vision
+  Workshops (WACVW). pp. 1513--1522 (Feb 2025).
+  \doi{10.1109/WACVW65960.2025.00174}
+
+\bibitem{10424305}
+Cardellicchio, A., Renò, V., Devanna, R.P., Marani, R., Milella, A.: Tomato
+  detection in challenging scenarios using yolo-based single stage detectors.
+  In: 2023 IEEE International Workshop on Metrology for Agriculture and
+  Forestry (MetroAgriFor). pp. 54--59 (Nov 2023).
+  \doi{10.1109/MetroAgriFor58484.2023.10424305}
+
+\bibitem{cheng2021mask2former}
+Cheng, B., Schwing, A., Kirillov, A.: Masked-attention mask transformer for
+  universal image segmentation. arXiv preprint arXiv:2112.01527  (2021)
+
+\bibitem{duckett2018agricultural}
+Duckett, T., Pearson, S., Blackmore, S., Grieve, B., Chen, W.H., Cielniak, G.,
+  Cleaversmith, J., Dai, J., Davis, S., Fox, C., et~al.: Agricultural robotics:
+  the future of robotic agriculture. arXiv preprint arXiv:1806.06762  (2018)
+
+\bibitem{10491166}
+Ebrahimzadeh, M., Manzuri, M.T.: Maskchanger: A transformer-based model
+  tailoring change detection with mask classification. In: 2024 13th
+  Iranian/3rd International Machine Vision and Image Processing Conference
+  (MVIP). pp.~1--6 (March 2024). \doi{10.1109/MVIP62238.2024.10491166}
+
+\bibitem{10559970}
+Gai, R., Liu, Y., Xu, G.: Tl-yolov8: A blueberry fruit detection algorithm
+  based on improved yolov8 and transfer learning. IEEE Access  \textbf{12},
+  86378--86390 (2024). \doi{10.1109/ACCESS.2024.3416332}
+
+\bibitem{han2012strawberry}
+Han, K.S., Kim, S.C., Lee, Y.B., Kim, S.C., Im, D.H., Choi, H.K., Hwang, H.:
+  Strawberry harvesting robot for bench-type cultivation. Journal of Biosystems
+  Engineering  \textbf{37}(1),  65--74 (2012)
+
+\bibitem{yolo26_architecture_2026}
+Hidayatullah, P., Tubagus, R.: Yolo26: A comprehensive architecture overview
+  and key improvements. arXiv preprint arXiv:2602.14582  (2026)
+
+\bibitem{11100168}
+Hu, X.M., Wang, B.H., Yang, Z.: Area ratio-based box counting algorithm for
+  intelligent inventory in stacked goods environments. In: 2025 12th
+  International Conference on Machine Intelligence Theory and Applications
+  (MiTA). pp.~1--9 (May 2025). \doi{10.1109/MiTA66017.2025.11100168}
+
+\bibitem{11347840}
+Jing, H., Fan, R., Hong, L., Li, Z.: Yolo-ess: Improved citrus recognition
+  under natural orchard conditions. In: 2025 IEEE International Conference on
+  Sensing, Diagnostics, Prognostics, and Control. pp. 338--341 (Nov 2025).
+  \doi{10.1109/SDPC68151.2025.11347840}
+
+\bibitem{10956721}
+Kiran, J.S., V, D.G., Singh, N., Abbas, H.M., Saravanan, R., K, A.S.: Automated
+  fruit counting with yolov5 model for harvest management in orchards. In: 2025
+  International Conference on Automation and Computation (AUTOCOM). pp.
+  235--240 (March 2025). \doi{10.1109/AUTOCOM64127.2025.10956721}
+
+\bibitem{10839762}
+Lu, J., Lin, X., Li, C., Zeng, S., Luo, X., Li, J.: Methods for mango and
+  ripeness detection using improved yolov8. In: 2024 IEEE International
+  Conference on Unmanned Systems (ICUS). pp. 1569--1573 (Oct 2024).
+  \doi{10.1109/ICUS61736.2024.10839762}
+
+\bibitem{10348779}
+Melnychenko, O., Savenko, O., Radiuk, P.: Apple detection with occlusions using
+  modified yolov5-v1. In: 2023 IEEE 12th International Conference on
+  Intelligent Data Acquisition and Advanced Computing Systems: Technology and
+  Applications (IDAACS). vol.~1, pp. 107--112 (Sep 2023).
+  \doi{10.1109/IDAACS58523.2023.10348779}
+
+\bibitem{11365044}
+Minh, P.Q., Tan, L.N., Tu, N.H., Anh, N.T.: Fruit ripeness detection: A
+  comparative analysis of state-of-the-art yolo models. In: 2025 RIVF
+  International Conference on Computing and Communication Technologies (RIVF).
+  pp. 699--704 (Dec 2025). \doi{10.1109/RIVF68649.2025.11365044}
+
+\bibitem{11100674}
+Rosada, R., Hussein, Z.M., Novamizanti, L.: Evaluating yolo variants for
+  real-time multi-object detection of strawberry quality and ripeness. In: 2025
+  IEEE International Conference on Industry 4.0, Artificial Intelligence, and
+  Communications Technology (IAICT). pp. 483--490 (July 2025).
+  \doi{10.1109/IAICT65714.2025.11100674}
+
+\bibitem{yolo26_evolution_2026}
+Sapkota, R., Karkee, M.: Ultralytics yolo evolution: An overview of yolo26,
+  yolo11, yolov8, and yolov5. arXiv preprint arXiv:2510.09653  (2026)
+
+\bibitem{11407412}
+Shu, Z., Wang, J., Xu, X., Wang, H., Li, Y.: Dynamic refinement-based video
+  object segmentation for mouse videos. In: 2025 2nd International Conference
+  on Image Processing, Multimedia Technology and Machine Learning (IPMML). pp.
+  129--133 (Dec 2025). \doi{10.1109/IPMML68499.2025.11407412}
+
+\bibitem{11016889}
+Valdez, D.B.: Optimized fruit detection in complex environments using yolov11n
+  for smart agricultural applications. In: 2025 IEEE Open Conference of
+  Electrical, Electronic and Information Sciences (eStream). pp.~1--5 (April
+  2025). \doi{10.1109/eStream66938.2025.11016889}
+
+\bibitem{vasconez2022workload}
+V{\'a}sconez, J.P., Cheein, F.A.A.: Workload and production assessment in the
+  avocado harvesting process using human-robot collaborative strategies.
+  Biosystems Engineering  \textbf{223},  56--77 (2022)
+
+\bibitem{VASCONEZ201935}
+Vasconez, J.P., Kantor, G.A., Cheein, F.A.A.: Human-–robot interaction in
+  agriculture: A survey and current challenges. Biosystems Engineering
+  \textbf{179},  35 -- 48 (2019).
+  \doi{https://doi.org/10.1016/j.biosystemseng.2018.12.005},
+  \url{http://www.sciencedirect.com/science/article/pii/S1537511017309625}
+
+\end{thebibliography}

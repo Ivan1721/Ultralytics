@@ -1,0 +1,1405 @@
+@article{cheng2021mask2former,
+  title={Masked-attention Mask Transformer for Universal Image Segmentation},
+  author={Cheng, Bowen and Schwing, Alexander and Kirillov, Alexander},
+  journal={arXiv preprint arXiv:2112.01527},
+  year={2021}
+}
+@INPROCEEDINGS{10972542,
+  author={Bengtson, Stefan Hein and Lehotský, Daniel and Ismiroglou, Vasiliki and Madsen, Niels and Moeslund, Thomas B. and Pedersen, Malte},
+  booktitle={2025 IEEE/CVF Winter Conference on Applications of Computer Vision Workshops (WACVW)}, 
+  title={AutoFish: Dataset and Benchmark for Fine-Grained Analysis of Fish}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1513-1522},
+  abstract={Automated fish documentation processes are in the near future expected to play an essential role in sustainable fisheries management and for addressing challenges of overfishing. In this paper, we present a novel and publicly available dataset named AutoFish designed for fine-grained fish analysis. The dataset comprises 1,500 images of 454 specimens of visually similar fish placed in various constellations on a white conveyor belt and annotated with instance segmentation masks, IDs, and length measurements. The data was collected in a controlled environment using an RGB camera. The annotation procedure involved manual point annotations, initial segmentation masks proposed by the Segment Anything Model (SAM), and subsequent manual correction of the masks. We establish baseline instance segmentation results using two variations of the Mask2Former architecture, with the best performing model reaching an mAP of 89.15%. Additionally, we present two baseline length estimation methods, the best performing being a custom MobileNetV2-based regression model reaching an MAE of 0.62cm in images with no occlusion and 1.38cm in images with occlusion. Link to project page: https://vap.aau.dk/autofish/},
+  keywords={Instance segmentation;Computer vision;Annotations;Conferences;Estimation;Manuals;Documentation;Computer architecture;Length measurement;Fisheries},
+  doi={10.1109/WACVW65960.2025.00174},
+  ISSN={2690-621X},
+  month={Feb},}@INPROCEEDINGS{10350532,
+  author={Sun, Fengyuan and Karaoglu, Sezer and Gevers, Theo},
+  booktitle={2023 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)}, 
+  title={Temporally Consistent Semantic Segmentation using Spatially Aware Multi-view Semantic Fusion for Indoor RGB-D videos}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={4250-4259},
+  abstract={The task of performing image semantic segmentation faces challenges in achieving consistent and robust results across a sequence of video frames. This problem becomes more prominent for indoor scenes where small camera movement can lead to drastic appearance changes, occlusions, and loss of global context information.To overcome these challenges, this paper proposes a novel approach that combines multi-view semantic fusion with spatial reasoning to produce view-invariant semantic features for temporally consistent semantic segmentation for indoor RGB-D videos.The experiments are conducted on the ScanNet dataset, showing that the proposed spatially aware multi-view fusion mechanism significantly improves the state-of-the-art image semantic segmentation methods Mask2Former and ViT-Adapter. In particular, the proposed pipeline offers improvements of 5%, 9.9%, and 14.4% in 2D mIoU, cross-view consistency, and temporal consistency, respectively, when compared to Mask2Former. Similarly, when compared to ViT-Adapter, the proposed mechanism offers enhancements of 4.8%, 8.9%, and 10.9% in the same metrics.},
+  keywords={Measurement;Computer vision;Semantic segmentation;Conferences;Semantics;Pipelines;Cameras},
+  doi={10.1109/ICCVW60793.2023.00459},
+  ISSN={2473-9944},
+  month={Oct},}@INPROCEEDINGS{10491166,
+  author={Ebrahimzadeh, Mohammad and Manzuri, Mohammad Taghi},
+  booktitle={2024 13th Iranian/3rd International Machine Vision and Image Processing Conference (MVIP)}, 
+  title={MaskChanger: A Transformer-Based Model Tailoring Change Detection with Mask Classification}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={Change detection in multi-temporal remote sensing data enables crucial urban analysis and environmental monitoring applications. However, complex factors like illumination variance and occlusion make robust automated change interpretation challenging. We propose MaskChanger - a novel deep learning paradigm tailored for satellite image change detection. Our method adapts the segmentation-specialized Mask2Former architecture by incorporating Siamese networks to extract features separately from bi-temporal images, while retaining the original mask transformer decoder. To our knowledge, this is the first study in which change detection is converted from the existing per-pixel classification approach into a mask classification approach. Evaluated on the LEVIR-CD benchmark of over 600 very high-resolution image pairs exhibiting real-world rural and urban changes, MaskChanger achieves Fl-Score of 91.96%, outperforming prior transformer-based change detection approaches.},
+  keywords={Representation learning;Image segmentation;Object segmentation;Transformers;Feature extraction;Decoding;Sensors;Change Detection;Remote Sensing Image;Transformer},
+  doi={10.1109/MVIP62238.2024.10491166},
+  ISSN={2166-6784},
+  month={March},}@INPROCEEDINGS{11407412,
+  author={Shu, Zixuan and Wang, Junxiang and Xu, Xi and Wang, HongFei and Li, Ye},
+  booktitle={2025 2nd International Conference on Image Processing, Multimedia Technology and Machine Learning (IPMML)}, 
+  title={Dynamic Refinement-Based Video Object Segmentation for Mouse Videos}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={129-133},
+  abstract={Video Object Segmentation (VOS) is essential for the automated quantitative analysis of complex mouse behaviors. However, multi-mouse segmentation remains challenging, as highly similar visual features, rapid motion patterns, and frequent inter-object occlusions often cause tracking drift and identity (ID) switching in existing VOS methods, particularly over long video sequences. To address these challenges, we propose Refinement-based Multi-Mouse Realtime Video Segmentation (RMMRVS), a closed-loop framework that improves temporal stability and spatial accuracy in long-term multi-object tracking. RMMRVS extends the CUTIE architecture by introducing a feature-aware confidence prediction module that continuously assesses tracking reliability and detects potential drift online. When confidence degradation is detected, an adaptive refinement mechanism is activated, employing Mask2Former to perform high-precision spatial resegmentation. The refined masks are then reinjected into the VOS memory, restoring a stable and reliable reference for subsequent tracking. This “pre-dict-evaluate-correct” strategy effectively suppresses error accumulation and ID switching over extended sequences. Extensive experiments on challenging multi-mouse datasets demonstrate that RMMRVS consistently outperforms baselines in segmentation accuracy and temporal consistency, highlighting its effectiveness and scalability for reliable quantitative behavioral analysis.},
+  keywords={Visualization;Accuracy;Tracking;Motion segmentation;Video sequences;Object segmentation;Switches;Streaming media;Reliability;Videos;Video Object Segmentation (VOS);Multi-Object Tracking;Adaptive Correction},
+  doi={10.1109/IPMML68499.2025.11407412},
+  ISSN={},
+  month={Dec},}@INPROCEEDINGS{11100168,
+  author={Hu, Xiao-Min and Wang, Bing-Hai and Yang, Zhuo},
+  booktitle={2025 12th International Conference on Machine Intelligence Theory and Applications (MiTA)}, 
+  title={Area Ratio-Based Box Counting Algorithm for Intelligent Inventory in Stacked Goods Environments}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-9},
+  abstract={Inventory management plays a critical role in modern warehouses, but traditional manual counting methods are inefficient and error-prone, especially for large quantities of goods. With advancements in AI, IoT, and computer vision, automated systems have emerged to improve accuracy and efficiency. This paper proposes a novel Area Ratio-Based Box Counting Algorithm (ARBCA) for intelligent inventory in three-dimensional warehouse environments. The algorithm leverages instance segmentation to generate masks for stacked goods and uses area ratios for precise counting. We introduce a customized dataset, the Tobacco Cargo Stacking Dataset (TCSD), and demonstrate the algorithm's effectiveness, achieving an overall inventory accuracy of 93.90% on the TCSD dataset with the Mask2former model. The method addresses challenges such as occlusion and stacking in dark warehouse conditions, showing promise for real-world applications.},
+  keywords={Instance segmentation;Computer vision;Accuracy;Error analysis;Stacking;Noise;Manuals;Inventory management;Robustness;Machine intelligence;Inventory management;Warehouse automation;Object counting;Area Ratio-Based Box Counting Algorithm},
+  doi={10.1109/MiTA66017.2025.11100168},
+  ISSN={},
+  month={May},}@INPROCEEDINGS{11196230,
+  author={Jia, Chen and Khan, Navid Ali and Mohamad, Abdul Hadi and Wei, Goh Wei and Narputro, Panji},
+  booktitle={2025 International Conference on Metaverse and Current Trends in Computing (ICMCTC)}, 
+  title={Knife Detection with MDDR Net: An Improved for Small and Indiscernible Object Detection}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-10},
+  abstract={From the viewpoint of the public security and the counter terrorism measures, knife detection is quite important. However, knife detection in real-world settings remains very challenging, particularly in dense environments under occlusion. Additionally, such an environment is very complex, which makes it hard for the knives to be distinguished from background, especially with the knives being small or indiscernible. Traditional techniques for object detection, like YOLO and DETR, hard to detect small or indiscernible objects. Inspired by Deformable DETR, IOC, and Mask2Former, this paper proposes a novel intelligent detection algorithm named MDDR Net (Mask and Deformable Dense Regression Network) to solve the issue of detection for small and indiscernible objects. Mask Attention and Deformable Attention are then integrated to a density regression prediction module (MDDR Net) that can help the model to enhance accuracy in detection and separation of detection from complex backgrounds. To demonstrate, we carry out extensive experiments on the Kaggle Knife Dataset (9,189 images) and show that our method yields an overall mAP of 0.621 (0.903 mAP@0.5 and 0.789 mAP@0.75), being trained with just 6.09 hours for 100 epochs. These results further illustrate the robust performance of MDDR Net in detecting small and unnoticeable knife objects in cluttered geometries.},
+  keywords={Training;YOLO;Deformable models;Adaptation models;Accuracy;Weapons;Zero shot learning;Real-time systems;Data models;Tuning;Knife Detection;YOLO;Regression Network;Mask Attention;Deformable Attention},
+  doi={10.1109/ICMCTC62214.2025.11196230},
+  ISSN={},
+  month={April},}
+
+@article{rtdetr_2024,
+  author    = {Zhao, Yian and Lv, Wenyu and Xu, Shangliang and Wei, Jinman and Wang, Guanzhong and Dang, Qingqing and Liu, Yi and Chen, Jie},
+  title     = {DETRs Beat YOLOs on Real-time Object Detection},
+  journal   = {arXiv preprint arXiv:2304.08069},
+  year      = {2024}
+}
+
+@article{yolo26_evolution_2026,
+  author    = {Sapkota, Ranjan and Karkee, Manoj},
+  title     = {Ultralytics YOLO Evolution: An Overview of YOLO26, YOLO11, YOLOv8, and YOLOv5},
+  journal   = {arXiv preprint arXiv:2510.09653},
+  year      = {2026}
+}
+
+@article{yolo26_architecture_2026,
+  author    = {Hidayatullah, Priyanto and Tubagus, Refdinal},
+  title     = {YOLO26: A Comprehensive Architecture Overview and Key Improvements},
+  journal   = {arXiv preprint arXiv:2602.14582},
+  year      = {2026}
+}
+
+@inproceedings{garcia2024human,
+  title={Human-Robot Interaction Based on Hand Gesture Detection Using YOLO Algorithm},
+  author={Garc{\'\i}a, Ivan and Moya, Viviana and Pilco, Andrea and Vilcapoma, Piero and Guevara, Leonardo and Guam{\'a}n-Rivera, Robert and Men{\'e}ndez, Oswaldo and V{\'a}sconez, Juan Pablo},
+  booktitle={International Conference on Advanced Research in Technologies, Information, Innovation and Sustainability},
+  pages={351--365},
+  year={2024},
+  organization={Springer}
+}
+
+@article{vasconez2020fuzzy,
+  title={A fuzzy-based driver assistance system using human cognitive parameters and driving style information},
+  author={Vasconez, Juan Pablo and Viscaino, Michelle and Guevara, Leonardo and Cheein, Fernando Auat},
+  journal={Cognitive Systems Research},
+  volume={64},
+  pages={174--190},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@article{vasconez2019design,
+  title={On the design of a human--robot interaction strategy for commercial vehicle driving based on human cognitive parameters},
+  author={Vasconez, Juan Pablo and Carvajal, Diego and Cheein, Fernando Auat},
+  journal={Advances in Mechanical Engineering},
+  volume={11},
+  number={7},
+  pages={1687814019862715},
+  year={2019},
+  publisher={SAGE Publications Sage UK: London, England}
+}
+
+@article{vasconez2022workload,
+  title={Workload and production assessment in the avocado harvesting process using human-robot collaborative strategies},
+  author={V{\'a}sconez, Juan P and Cheein, Fernando A Auat},
+  journal={Biosystems Engineering},
+  volume={223},
+  pages={56--77},
+  year={2022},
+  publisher={Elsevier}
+}
+
+@inproceedings{vasconez2019social,
+  title={Social robot navigation based on HRI non-verbal communication: A case study on avocado harvesting},
+  author={Vasconez, Juan Pablo and Guevara, Leonardo and Cheein, Fernando Auat},
+  booktitle={Proceedings of the 34th ACM/SIGAPP symposium on applied computing},
+  pages={957--960},
+  year={2019}
+}
+
+@article{vasconez2019human,
+  title={Human--robot interaction in agriculture: A survey and current challenges},
+  author={Vasconez, Juan P and Kantor, George A and Cheein, Fernando A Auat},
+  journal={Biosystems engineering},
+  volume={179},
+  pages={35--48},
+  year={2019},
+  publisher={Elsevier}
+}
+
+@inproceedings{reference1,
+  author={Kaur, Gurpreet and Banerjee, Sean and Banerjee, Natasha Kholgade},
+  booktitle={2023 9th International Conference on Automation, Robotics and Applications (ICARA)}, 
+  title={Studying Worker Perceptions on Safety, Autonomy, and Job Security in Human-Robot Collaboration}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={187-191},
+  keywords={Surveys;Warehousing;Employment;Collaboration;Transportation;Safety;Manufacturing;Robot acceptance;human-robot interaction;human-robot collaboration;corobots},
+  doi={10.1109/ICARA56516.2023.10125842}
+}
+
+@inproceedings{vasconez2019social,
+  title={Social robot navigation based on HRI non-verbal communication: A case study on avocado harvesting},
+  author={Vasconez, Juan Pablo and Guevara, Leonardo and Cheein, Fernando Auat},
+  booktitle={Proceedings of the 34th ACM/SIGAPP symposium on applied computing},
+  pages={957--960},
+  year={2019}
+}
+
+@article{hong2012application,
+  title={Application of fuzzy logic in mobile robot navigation},
+  author={Hong, Tang Sai and Nakhaeinia, Danial and Karasfi, Babak},
+  journal={Fuzzy Logic-Controls, Concepts, Theories and Applications},
+  pages={21--36},
+  year={2012},
+  publisher={InTech}
+}
+
+@inproceedings{lei2007fuzzy,
+  title={A fuzzy behaviours fusion algorithm for mobile robot real-time path planning in unknown environment},
+  author={Lei, Bin and Li, Wenfeng},
+  booktitle={2007 IEEE International Conference on Integration Technology},
+  pages={173--178},
+  year={2007},
+  organization={IEEE}
+}
+
+@article{pfluger1996fuzzy,
+  title={A Fuzzy Logic Based Extension to Payton and Rosenblatt's Command Fusion Method for Mobile Robot Navigation},
+  author={Pfluger, Nathan},
+  year={1996},
+  publisher={Citeseer}
+}
+
+@inproceedings{bao2009fuzzy,
+  title={A fuzzy behavior-based architecture for mobile robot navigation in unknown environments},
+  author={Bao, Qing-yong and Li, Shun-ming and Shang, Wei-yan and An, Mu-jin},
+  booktitle={2009 International Conference on Artificial Intelligence and Computational Intelligence},
+  volume={2},
+  pages={257--261},
+  year={2009},
+  organization={IEEE}
+}
+
+@inproceedings{dongshu2011behavior,
+  title={Behavior-based hierarchical fuzzy control for mobile robot navigation in dynamic environment},
+  author={Dongshu, Wang and Yusheng, Zhang and Wenjie, Si},
+  booktitle={2011 Chinese control and decision conference (CCDC)},
+  pages={2419--2424},
+  year={2011},
+  organization={IEEE}
+}
+
+@article{vasconez2023comparison,
+  title={Comparison of path planning methods for robot navigation in simulated agricultural environments},
+  author={V{\'a}sconez, Juan P and Basoalto, Fernando and Brice{\~n}o, Inesmar C and Pantoja, Jenny M and Larenas, Roberto A and Rios, Jhon H and Castro, Felipe A},
+  journal={Procedia Computer Science},
+  volume={220},
+  pages={898--903},
+  year={2023},
+  publisher={Elsevier}
+}
+
+@article{brooks2013robot,
+  title={A robot that walks: Emergent behaviors from a carefully evolved network},
+  author={Brooks, Rodney A},
+  year={2013}
+}
+
+@article{mo2013behavior,
+  title={Behavior-based fuzzy control for mobile robot navigation},
+  author={Mo, Hongwei and Tang, Qirong and Meng, Longlong},
+  journal={Mathematical problems in engineering},
+  volume={2013},
+  year={2013},
+  publisher={Hindawi}
+}
+
+@article{li2021behavior,
+  title={A behavior-based mobile robot navigation method with deep reinforcement learning},
+  author={Li, Juncheng and Ran, Maopeng and Wang, Han and Xie, Lihua},
+  journal={Unmanned Systems},
+  volume={9},
+  number={03},
+  pages={201--209},
+  year={2021},
+  publisher={World Scientific}
+}
+
+@article{seraji2002behavior,
+  title={Behavior-based robot navigation on challenging terrain: A fuzzy logic approach},
+  author={Seraji, Homayoun and Howard, Ayanna},
+  journal={IEEE transactions on robotics and automation},
+  volume={18},
+  number={3},
+  pages={308--321},
+  year={2002},
+  publisher={IEEE}
+}
+
+@article{fatmi2008fuzzy,
+  title={A fuzzy logic based navigation of a mobile robot},
+  author={Fatmi, Anis and Al Yahmadi, Amur and Khriji, Lazhar and Masmoudi, Nouri},
+  journal={World Academy of Science, Engineering and Technology},
+  volume={2},
+  year={2008},
+  publisher={Citeseer}
+}
+
+@article{vasconez2019design,
+  title={On the design of a human--robot interaction strategy for commercial vehicle driving based on human cognitive parameters},
+  author={Vasconez, Juan Pablo and Carvajal, Diego and Cheein, Fernando Auat},
+  journal={Advances in Mechanical Engineering},
+  volume={11},
+  number={7},
+  pages={1687814019862715},
+  year={2019},
+  publisher={SAGE Publications Sage UK: London, England}
+}
+
+@book{siegwart2011introduction,
+  title={Introduction to autonomous mobile robots},
+  author={Siegwart, Roland and Nourbakhsh, Illah Reza and Scaramuzza, Davide},
+  year={2011},
+  publisher={MIT press}
+}
+
+@inproceedings{novotny2022autonomous,
+  title={Autonomous Vehicle Calibration via Linear Optimization},
+  author={Novotny, Georg and Liu, Yuzhou and W{\"o}ber, Wilfried and Olaverri-Monreal, Cristina},
+  booktitle={2022 IEEE Intelligent Vehicles Symposium (IV)},
+  pages={527--532},
+  year={2022},
+  organization={IEEE}
+}
+
+@incollection{corke2023mobile,
+  title={Mobile robot vehicles},
+  author={Corke, Peter and Jachimczyk, Witold and Pillat, Remo},
+  booktitle={Robotics, Vision and Control: Fundamental Algorithms in MATLAB{\textregistered}},
+  pages={127--160},
+  year={2023},
+  publisher={Springer}
+}
+
+@article{vasconez2020fuzzy,
+  title={A fuzzy-based driver assistance system using human cognitive parameters and driving style information},
+  author={Vasconez, Juan Pablo and Viscaino, Michelle and Guevara, Leonardo and Cheein, Fernando Auat},
+  journal={Cognitive Systems Research},
+  volume={64},
+  pages={174--190},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@article{VASCONEZ201935,
+title = "Human-–robot interaction in agriculture: A survey and current challenges",
+journal = "Biosystems Engineering",
+volume = "179",
+pages = "35 - 48",
+year = "2019",
+issn = "1537-5110",
+doi = "https://doi.org/10.1016/j.biosystemseng.2018.12.005",
+url = "http://www.sciencedirect.com/science/article/pii/S1537511017309625",
+author = "Juan P. Vasconez and George A. Kantor and Fernando A. Auat Cheein",
+keywords = "Human–robot interaction, Agriculture robotics, Collaborative robotics, Precision agriculture",
+abstract = "Human–robot interaction (HRI) is an extensive and diverse research topic that has been gaining importance in last years. Different fields of study have used HRI approaches for solving complicated problems, where humans and robots interact in some way to obtain advantages from their collaboration. Many industrial areas benefit by applying HRI strategies in their applications, and agriculture is one of the most challenging of them. Currently, field crops can reach highly autonomous levels whereas speciality crops do not. In particular, crops such as fruits and vegetables are still harvested manually, and also some tasks such as pruning and thinning have long been considered to be too complex to automate completely. In addition, several countries face the problem of farm labour shortages. As a consequence, the production process is affected. In this context, we survey HRI approaches and ap-plications focused on improving the working conditions, agility, efficiency, safety, productivity and profitability of agricultural processes, in cases where manual labour cannot be replaced by but can be complemented with robots."
+}
+
+@inproceedings{choudhary2021evaluation,
+  title={Evaluation of mapping and path planning for non-holonomic mobile robot navigation in narrow pathway for agricultural application},
+  author={Choudhary, Anupam and Kobayashi, Yuichi and Arjonilla, Francisco J and Nagasaka, Satoshi and Koike, Megumu},
+  booktitle={2021 IEEE/SICE International Symposium on System Integration (SII)},
+  pages={17--22},
+  year={2021},
+  organization={IEEE}
+}
+
+@article{pak2022field,
+  title={Field Evaluation of Path-Planning Algorithms for Autonomous Mobile Robot in Smart Farms},
+  author={Pak, Jeonghyeon and Kim, Jeongeun and Park, Yonghyun and Son, Hyoung Il},
+  journal={IEEE Access},
+  year={2022},
+  publisher={IEEE}
+}
+
+@inproceedings{santos2020path,
+  title={Path planning for ground robots in agriculture: A short review},
+  author={Santos, Lu{\'\i}s C and Santos, Filipe N and Pires, EJ Solteiro and Valente, Ant{\'o}nio and Costa, Pedro and Magalh{\~a}es, Sandro},
+  booktitle={2020 IEEE International Conference on Autonomous Robot Systems and Competitions (ICARSC)},
+  pages={61--66},
+  year={2020},
+  organization={IEEE}
+}
+
+@inproceedings{khoshkangini2014efficient,
+  title={Efficient routing protocol via ant colony optimization (ACO) and breadth first search (BFS)},
+  author={Khoshkangini, Reza and Zaboli, Syroos and Conti, Mauro},
+  booktitle={Proceedings of the IEEE International Conference on Cyber, Physical and Social Computing (IEEE CPSCom 2014)},
+  year={2014}
+}
+
+@inproceedings{everitt2015analytical,
+  title={Analytical results on the BFS vs. DFS algorithm selection problem: Part II: Graph search},
+  author={Everitt, Tom and Hutter, Marcus},
+  booktitle={Australasian Joint Conference on Artificial Intelligence},
+  pages={166--178},
+  year={2015},
+  organization={Springer}
+}
+
+@inproceedings{asano2014depth,
+  title={Depth-first search using $$ O (n) $$ bits},
+  author={Asano, Tetsuo and Izumi, Taisuke and Kiyomi, Masashi and Konagaya, Matsuo and Ono, Hirotaka and Otachi, Yota and Schweitzer, Pascal and Tarui, Jun and Uehara, Ryuhei},
+  booktitle={International Symposium on Algorithms and Computation},
+  pages={553--564},
+  year={2014},
+  organization={Springer}
+}
+
+@article{gasparetto2015path,
+  title={Path planning and trajectory planning algorithms: A general overview},
+  author={Gasparetto, Alessandro and Boscariol, Paolo and Lanzutti, Albano and Vidoni, Renato},
+  journal={Motion and operation planning of robotic systems},
+  pages={3--27},
+  year={2015},
+  publisher={Springer}
+}
+
+@article{nguyen2016path,
+  title={Path planning and obstacle avoidance approaches for mobile robot},
+  author={Nguyen, Hoc Thai and Le, Hai Xuan},
+  journal={arXiv preprint arXiv:1609.01935},
+  year={2016}
+}
+
+@article{duckett2018agricultural,
+  title={Agricultural robotics: the future of robotic agriculture},
+  author={Duckett, Tom and Pearson, Simon and Blackmore, Simon and Grieve, Bruce and Chen, Wen-Hua and Cielniak, Grzegorz and Cleaversmith, Jason and Dai, Jian and Davis, Steve and Fox, Charles and others},
+  journal={arXiv preprint arXiv:1806.06762},
+  year={2018}
+}
+
+@article{demir2019industry,
+  title={Industry 5.0 and human-robot co-working},
+  author={Demir, Kadir Alpaslan and D{\"o}ven, G{\"o}zde and Sezen, B{\"u}lent},
+  journal={Procedia computer science},
+  volume={158},
+  pages={688--695},
+  year={2019},
+  publisher={Elsevier}
+}
+
+@article{benos2020safety,
+  title={Safety and ergonomics in human-robot interactive agricultural operations},
+  author={Benos, Lefteris and Bechar, Avital and Bochtis, Dionysis},
+  journal={Biosystems Engineering},
+  volume={200},
+  pages={55--72},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@article{heard2018survey,
+  title={A survey of workload assessment algorithms},
+  author={Heard, Jamison and Harriott, Caroline E and Adams, Julie A},
+  journal={IEEE Transactions on Human-Machine Systems},
+  volume={48},
+  number={5},
+  pages={434--451},
+  year={2018},
+  publisher={IEEE}
+}
+
+@article{heard2019diagnostic,
+  title={A diagnostic human workload assessment algorithm for collaborative and supervisory human--robot teams},
+  author={Heard, Jamison and Heald, Rachel and Harriott, Caroline E and Adams, Julie A},
+  journal={ACM Transactions on Human-Robot Interaction (THRI)},
+  volume={8},
+  number={2},
+  pages={1--30},
+  year={2019},
+  publisher={ACM New York, NY, USA}
+}
+
+@incollection{eggemeier2020workload,
+  title={Workload assessment in multi-task environments},
+  author={Eggemeier, F Thomas and Wilson, Glenn F and Kramer, Arthur F and Damos, Diane L},
+  booktitle={Multiple-task performance},
+  pages={207--216},
+  year={2020},
+  publisher={CRC Press}
+}
+
+@article{stavros2012object,
+  title={An object-oriented model for simulating agricultural in-field machinery activities},
+  author={Hameed, IA and Bochtis, DD and S{\o}rensen, CG and Vougioukas, S},
+  journal={Computers and electronics in agriculture},
+  volume={81},
+  pages={24--32},
+  year={2012},
+  publisher={Elsevier}
+}
+
+@article{vasconez2021SemanticAction,
+  title={A methodology for semantic action recognition based on pose and human-object interaction in avocado harvesting processes},
+  author={Vasconez, JP and Admoni, H and Cheein, F Auat},
+  journal={Computers and Electronics in Agriculture},
+  volume={184},
+  pages={106057},
+  year={2021},
+  publisher={Elsevier}
+}
+
+@article{vasconez2020CNN,
+  title={Comparison of convolutional neural networks in fruit detection and counting: A comprehensive evaluation},
+  author={Vasconez, Juan Pablo and Delpiano, J and Vougioukas, S and Cheein, F Auat},
+  journal={Computers and Electronics in Agriculture},
+  volume={173},
+  pages={105348},
+  year={2020},
+  publisher={Elsevier}
+
+}
+
+
+@inproceedings{boor1999gaussian,
+  title={The Gaussian sampling strategy for probabilistic roadmap planners},
+  author={Boor, Val{\'e}rie and Overmars, Mark H and Van Der Stappen, A Frank},
+  booktitle={Proceedings 1999 IEEE International Conference on Robotics and Automation (Cat. No. 99CH36288C)},
+  volume={2},
+  pages={1018--1023},
+  year={1999},
+  organization={IEEE}
+}
+
+@article{samuel2016review,
+  title={A review of some pure-pursuit based path tracking techniques for control of autonomous vehicle},
+  author={Samuel, Moveh and Hussein, Mohamed and Mohamad, Maziah Binti},
+  journal={International Journal of Computer Applications},
+  volume={135},
+  number={1},
+  pages={35--38},
+  year={2016},
+  publisher={Foundation of Computer Science}
+}
+
+@incollection{geraerts2004comparative,
+  title={A comparative study of probabilistic roadmap planners},
+  author={Geraerts, Roland and Overmars, Mark H},
+  booktitle={Algorithmic Foundations of Robzotics V},
+  pages={43--57},
+  year={2004},
+  publisher={Springer}
+}
+
+@article{Vasconez2020,
+author = {Vasconez, Juan Pablo and {Auat Cheein}, Fernando Alfredo},
+journal = {Precision Agriculture},
+title = {{Workload and production assessment in avocado harvesting processes using HRI strategies based on action recognition}},
+year = {2020}
+}
+
+@inproceedings{garcia2024human,
+  title={Human-Robot Interaction Based on Hand Gesture Detection Using YOLO Algorithm},
+  author={Garc{\'\i}a, Ivan and Moya, Viviana and Pilco, Andrea and Vilcapoma, Piero and Guevara, Leonardo and Guam{\'a}n-Rivera, Robert and Men{\'e}ndez, Oswaldo and V{\'a}sconez, Juan Pablo},
+  booktitle={International Conference on Advanced Research in Technologies, Information, Innovation and Sustainability},
+  pages={351--365},
+  year={2024},
+  organization={Springer}
+}
+
+@article{vasconez2020fuzzy,
+  title={A fuzzy-based driver assistance system using human cognitive parameters and driving style information},
+  author={Vasconez, Juan Pablo and Viscaino, Michelle and Guevara, Leonardo and Cheein, Fernando Auat},
+  journal={Cognitive Systems Research},
+  volume={64},
+  pages={174--190},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@article{vasconez2019design,
+  title={On the design of a human--robot interaction strategy for commercial vehicle driving based on human cognitive parameters},
+  author={Vasconez, Juan Pablo and Carvajal, Diego and Cheein, Fernando Auat},
+  journal={Advances in Mechanical Engineering},
+  volume={11},
+  number={7},
+  pages={1687814019862715},
+  year={2019},
+  publisher={SAGE Publications Sage UK: London, England}
+}
+
+@inproceedings{vasconez2019social,
+  title={Social robot navigation based on HRI non-verbal communication: A case study on avocado harvesting},
+  author={Vasconez, Juan Pablo and Guevara, Leonardo and Cheein, Fernando Auat},
+  booktitle={Proceedings of the 34th ACM/SIGAPP symposium on applied computing},
+  pages={957--960},
+  year={2019}
+}
+
+@article{vasconez2019human,
+  title={Human--robot interaction in agriculture: A survey and current challenges},
+  author={Vasconez, Juan P and Kantor, George A and Cheein, Fernando A Auat},
+  journal={Biosystems engineering},
+  volume={179},
+  pages={35--48},
+  year={2019},
+  publisher={Elsevier}
+}
+
+@inproceedings{polic2021structured,
+  title={Structured ecological cultivation with autonomous robots in indoor agriculture},
+  author={Polic, Marsela and Ivanovic, Antun and Maric, Bruno and Arbanas, Barbara and Tabak, Jelena and Orsag, Matko},
+  booktitle={2021 16th International Conference on Telecommunications (ConTEL)},
+  pages={189--195},
+  year={2021},
+  organization={IEEE}
+}
+@inproceedings{zhang2016synthesis,
+  title={Synthesis design of a robot manipulator for strawberry harvesting in ridge-culture},
+  author={Zhang, Kailiang and Zhang, Tiezhong and Zhang, Dan},
+  booktitle={2016 Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)},
+  pages={114--117},
+  year={2016},
+  organization={IEEE}
+}
+
+@inproceedings{dewi2021workspace,
+  title={Workspace and Collaboration System Design of Two Robot Manipulators},
+  author={Dewi, Tresna and Kusumanto, RD and others},
+  booktitle={2021 8th International Conference on Electrical Engineering, Computer Science and Informatics (EECSI)},
+  pages={134--138},
+  year={2021},
+  organization={IEEE}
+}
+
+
+@article{hayashi2010evaluation,
+  title={Evaluation of a strawberry-harvesting robot in a field test},
+  author={Hayashi, Shigehiko and Shigematsu, Kenta and Yamamoto, Satoshi and Kobayashi, Ken and Kohno, Yasushi and Kamata, Junzo and Kurita, Mitsutaka},
+  journal={Biosystems engineering},
+  volume={105},
+  number={2},
+  pages={160--171},
+  year={2010},
+  publisher={Elsevier}
+}
+
+@article{han2012strawberry,
+  title={Strawberry harvesting robot for bench-type cultivation},
+  author={Han, Kil-Su and Kim, Si-Chan and Lee, Young-Bum and Kim, Sang-Chul and Im, Dong-Hyuk and Choi, Hong-Ki and Hwang, Heon},
+  journal={Journal of Biosystems Engineering},
+  volume={37},
+  number={1},
+  pages={65--74},
+  year={2012},
+  publisher={Korean Society for Agricultural Machinery}
+}
+
+@article{hwang2022vision,
+  title={Vision-based learning from demonstration system for robot arms},
+  author={Hwang, Pin-Jui and Hsu, Chen-Chien and Chou, Po-Yung and Wang, Wei-Yen and Lin, Cheng-Hung},
+  journal={Sensors},
+  volume={22},
+  number={7},
+  pages={2678},
+  year={2022},
+  publisher={MDPI}
+}
+
+@article{du2024sensory,
+  title={Sensory manipulation as a countermeasure to robot teleoperation delays: system and evidence},
+  author={Du, Jing and Vann, William and Zhou, Tianyu and Ye, Yang and Zhu, Qi},
+  journal={Scientific Reports},
+  volume={14},
+  number={1},
+  pages={4333},
+  year={2024},
+  publisher={Nature Publishing Group UK London}
+}
+@inproceedings{cooper2023challenges,
+  title={Challenges of deploying assistive robots in real-life scenarios: an industrial perspective},
+  author={Cooper, Sara and Ros, Raquel and Lemaignan, S{\'e}verin},
+  booktitle={2023 32nd IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)},
+  pages={435--442},
+  year={2023},
+  organization={IEEE}
+}
+@article{si2021review,
+  title={A review on manipulation skill acquisition through teleoperation-based learning from demonstration},
+  author={Si, Weiyong and Wang, Ning and Yang, Chenguang},
+  journal={Cognitive Computation and Systems},
+  volume={3},
+  number={1},
+  pages={1--16},
+  year={2021},
+  publisher={Wiley Online Library}
+}
+@inproceedings{cooper2020ari,
+  title={ARI: The social assistive robot and companion},
+  author={Cooper, Sara and Di Fava, Alessandro and Vivas, Carlos and Marchionni, Luca and Ferro, Francesco},
+  booktitle={2020 29th IEEE International conference on robot and human interactive communication (RO-MAN)},
+  pages={745--751},
+  year={2020},
+  organization={IEEE}
+}
+
+@inproceedings{schrepp2014applying,
+  title={Applying the user experience questionnaire (UEQ) in different evaluation scenarios},
+  author={Schrepp, Martin and Hinderks, Andreas and Thomaschewski, J{\"o}rg},
+  booktitle={Design, User Experience, and Usability. Theories, Methods, and Tools for Designing the User Experience: Third International Conference, DUXU 2014, Held as Part of HCI International 2014, Heraklion, Crete, Greece, June 22-27, 2014, Proceedings, Part I 3},
+  pages={383--392},
+  year={2014},
+  organization={Springer}
+}
+
+@inproceedings{schankin2022psychometric,
+  title={Psychometric properties of the user experience questionnaire (UEQ)},
+  author={Schankin, Andrea and Budde, Matthias and Riedel, Till and Beigl, Michael},
+  booktitle={Proceedings of the 2022 Chi conference on human factors in computing systems},
+  pages={1--11},
+  year={2022}
+}
+
+@article{apraiz2023evaluation,
+  title={Evaluation of user experience in human--robot interaction: a systematic literature review},
+  author={Apraiz, Ainhoa and Lasa, Ganix and Mazmela, Maitane},
+  journal={International Journal of Social Robotics},
+  volume={15},
+  number={2},
+  pages={187--210},
+  year={2023},
+  publisher={Springer}
+}
+
+@article{lechner2023revisiting,
+  title={Revisiting the adversarial robustness-accuracy tradeoff in robot learning},
+  author={Lechner, Mathias and Amini, Alexander and Rus, Daniela and Henzinger, Thomas A},
+  journal={IEEE Robotics and Automation Letters},
+  volume={8},
+  number={3},
+  pages={1595--1602},
+  year={2023},
+  publisher={IEEE}
+}
+
+@article{prorok2021beyond,
+  title={Beyond robustness: A taxonomy of approaches towards resilient multi-robot systems},
+  author={Prorok, Amanda and Malencia, Matthew and Carlone, Luca and Sukhatme, Gaurav S and Sadler, Brian M and Kumar, Vijay},
+  journal={arXiv preprint arXiv:2109.12343},
+  year={2021}
+}
+
+@article{schrepp2017design,
+  title={Design and evaluation of a short version of the user experience questionnaire (UEQ-S)},
+  author={Schrepp, Martin and Hinderks, Andreas and others},
+  year={2017},
+  publisher={International Journal of Interactive Multimedia and Artificial Intelligence~…}
+}
+
+@article{brooke1996sus,
+  title={SUS-A quick and dirty usability scale},
+  author={Brooke, John and others},
+  journal={Usability evaluation in industry},
+  volume={189},
+  number={194},
+  pages={4--7},
+  year={1996},
+  publisher={London, England.}
+}
+
+@inproceedings{wachowiak2023survey,
+  author    = {Lennart Wachowiak and Oya Celiktutan and Andrew Coles and Gerard Canal},
+  title     = {A Survey of Evaluation Methods and Metrics for Explanations in Human–Robot Interaction (HRI)},
+  booktitle = {Proceedings of the Explainable Robotics Workshop at the IEEE International Conference on Robotics and Automation (ICRA)},
+  year      = {2023},
+  address   = {London, UK}
+}
+
+@article{onnasch2022effective,
+  author  = {M. Onnasch and C. Maier and M. Diefenbach},
+  title   = {Towards Effective Interface Designs for Collaborative HRI in Manufacturing: Metrics and Measures},
+  journal = {ACM Transactions on Human-Robot Interaction},
+  volume  = {11},
+  number  = {2},
+  pages   = {1--24},
+  year    = {2022},
+  month   = {Apr.}
+}
+
+@article{sheridan2016hri,
+  author  = {Thomas B. Sheridan},
+  title   = {Human--Robot Interaction: Status and Challenges},
+  journal = {Human Factors},
+  volume  = {58},
+  number  = {4},
+  pages   = {525--532},
+  year    = {2016},
+  month   = {June}
+}
+
+@article{moya2020delayed,
+  author  = {Viviana Moya and Emanuel Slawiñski and Vicente Mut},
+  title   = {Delayed Bilateral Teleoperation of the Speed and Turn Angle of a Bipedal Robot},
+  journal = {Robotica},
+  volume  = {39},
+  number  = {12},
+  pages   = {1--19},
+  year    = {2020}
+}
+
+@article{slawinski2019force,
+  author  = {Emanuel Slawiñski and Viviana Moya and Diego Santiago and Vicente Mut},
+  title   = {Force and Position--Velocity Coordination for Delayed Bilateral Teleoperation of a Mobile Robot},
+  journal = {Robotica},
+  volume  = {37},
+  number  = {11},
+  pages   = {1--17},
+  year    = {2019}
+}
+
+@article{moya2023stable,
+  author    = {Viviana Moya and Emanuel Slawiñski and Vicente Mut},
+  title     = {Stable Bilateral Teleoperation Control Method for Biped Robots with Time-Varying Delays},
+  journal   = {Journal of Robotics},
+  volume    = {2023},
+  pages     = {Article ID 6678652, 12 pages},
+  year      = {2023}
+}
+
+@inproceedings{buele2023fpv,
+  author    = {Felipe Buele and Viviana Moya and Alexander Tirira and Andrea Pilco and Qin Lei},
+  title     = {Training in ‘First Person View’ Systems for Racing Drones},
+  booktitle = {Proceedings of the 2023 5th International Conference on Artificial Intelligence and Computer Applications (ICAICA)},
+  address   = {Dalian, China},
+  year      = {2023},
+  month     = {Nov.},
+  pages     = {256--261}
+}
+
+@incollection{prati2022ux,
+  author    = {Elisa Prati and Simone Borsci and Margherita Peruzzini and Marcello Pellicciari},
+  title     = {A Systematic Literature Review of User Experience Evaluation Scales for Human-Robot Collaboration},
+  booktitle = {Transdisciplinarity and the Future of Engineering},
+  publisher = {IOS Press},
+  year      = {2022},
+  pages     = {13--23}
+}
+
+@article{onnasch2022interface,
+  author  = {M. Onnasch and C. Maier and M. Diefenbach},
+  title   = {Towards Effective Interface Designs for Collaborative HRI in Manufacturing: Metrics and Measures},
+  journal = {ACM Transactions on Human-Robot Interaction},
+  volume  = {11},
+  number  = {2},
+  pages   = {1--24},
+  year    = {2022},
+  month   = {April}
+}
+
+@article{moya2022intercontinental,
+  author  = {Viviana Moya and Emanuel Slawiñski and Vicente Mut and Bernardo Wagner},
+  title   = {Intercontinental Bilateral-by-Phases Teleoperation of a Humanoid Robot},
+  journal = {IEEE Latin America Transactions},
+  volume  = {20},
+  number  = {1},
+  pages   = {64--72},
+  year    = {2022},
+  month   = {January},
+  doi     = {10.1109/TLA.2022.1234567}
+}
+
+
+@INPROCEEDINGS{11291374,
+  author={Jayaprakash, Asha and Manuel, Manju and George, Michael},
+  booktitle={2025 International Conference on Power, Instrumentation, Control, and Computing (PICC)}, 
+  title={Performance Evaluation of YOLO v10, v11, and v12 Algorithms in Nutmeg Fruit Detection}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={Advancements in machine learning techniques have resulted in improvement in productivity in agriculture sector. This is due to the automation of agricultural processes like cultivation, planting, irrigation, fertilization, and harvesting. Only limited research has addressed nutmeg detection, as most existing studies focus on staple crops or high-value fruits. This paper investigates the performance evaluation of $\mathbf{v 1 0}$, v11, and v12 versions of YOLO for nutmeg fruit detection. Major challenge that affects the performance in nutmeg fruit detection is the occlusion made by the leaves and branches of nutmeg tree. A dedicated nutmeg dataset has been created for training and validation. YOLOv11 achieved the highest precision of 93.7 % whereas highest recall of 77.7 % is obtained in YOLOv10. The F1-scores obtained for YOLOv12, YOLOv11, and YOLOv10 are $83.3 \%, 82.6 \%$, and 81.5 % respectively. YOLOv10 and YOLOv12 each demand 6.5 GFLOPs, whereas YOLOv11 requires 6.3 GFLOPs. These insights provide valuable guidance for selecting the most appropriate YOLO model to optimize automation and productivity in agricultural practices. YOLO models are found to be very effective in achieving high accuracy and real-time performance in detecting nutmeg under challenging environments like varying lighting conditions and complex backgrounds.},
+  keywords={YOLO;Training;Productivity;Performance evaluation;Accuracy;Automation;Trees (botanical);Lighting;Real-time systems;Reliability;Deep learning;YOLO;nutmeg dataset;object detection;precision;accuracy},
+  doi={10.1109/PICC67314.2025.11291374},
+  ISSN={2996-3087},
+  month={Oct},}
+@INPROCEEDINGS{11016889,
+  author={Valdez, Daryl B.},
+  booktitle={2025 IEEE Open Conference of Electrical, Electronic and Information Sciences (eStream)}, 
+  title={Optimized Fruit Detection in Complex Environments Using YOLOv11n for Smart Agricultural Applications}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-5},
+  abstract={This study explores the application of the YOLOv11 object detection algorithm for precise and efficient fruit detection in complex image environments. The research focuses on leveraging YOLOv11’s advanced single-stage detection architecture and Transfer Learning to enable real-time fruit identification while maintaining high detection accuracy, particularly for edge computing scenarios where computational efficiency is essential. To evaluate the effectiveness of the proposed system, the model was trained on a specialized fruit dataset consisting of images taken from real-world agricultural settings. The dataset comprises eleven distinct fruit classes captured under diverse conditions, including varying lighting, occlusions, and different angles. Experimental results revealed that the model achieved a mean average precision (mAP) of 90%, demonstrating its ability to localize and classify fruits with a high degree of reliability. The findings of this study have significant implications for the agricultural sector, particularly in automation-driven applications such as fruit harvesting, post-harvest processing, quality assessment, and inventory management. By integrating YOLOv11-based detection systems in the process, farms and agribusinesses can improve efficiency, reduce labor costs, and enhance productivity.},
+  keywords={Training;YOLO;Smart agriculture;Solid modeling;Accuracy;Quantization (signal);Transfer learning;Real-time systems;Yield estimation;Reliability;Fruit Detection;Transfer Learning;YOLO;Deep Learning;Computer Vision},
+  doi={10.1109/eStream66938.2025.11016889},
+  ISSN={2690-8506},
+  month={April},}
+@INPROCEEDINGS{11336473,
+  author={Wang, Chuanyi and Yu, Yongzhuo and Yue, Weiwei and Chen, Yuanyuan},
+  booktitle={2025 6th International Conference on Machine Learning and Computer Application (ICMLCA)}, 
+  title={SCS-YOLO: A Lightweight Embedded DeepLearning Method for Tomato Fruit Maturity Detection Based on YOLOv11}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={158-162},
+  abstract={Traditional methods for assessing tomato fruit ripeness primarily rely on manual visual inspection, which is inefficient, highly subjective, and poorly adaptable to dynamic environmental conditions. To address these limitations, this study proposes a lightweight model named SCS-YOLO. Specifically, the YOLOv11 backbone network is redesigned by incorporating the ShuffleNetV2 module, which significantly reduces the number of parameters while enhancing feature extraction capabilities. Furthermore, a lightweight Cross-Scale Feature Fusion Module (CCFM) is introduced to facilitate effective fusion and recognition of multi-scale features. Lastly, the bounding box regression loss function is replaced with SIoU, which is more suitable for small object detection and contributes to improved accuracy. Experimental evaluations were conducted on a self-constructed dataset, comprising 13,649 images collected under two lighting conditions, two types of occlusion and three stages of ripeness. The results show that the improved SCS-YOLO model reduces computational complexity (GFLOPs) by 52.4% and parameter count by 64.0%. The model achieves a mean average precision (mAP) of 96.0%, with only a 0.6% drop compared to the baseline. In addition, the model size is reduced from 5.5MB to 2.2MB, representing a 60% reduction. These findings indicate that SCS-YOLO offers a compelling balance between accuracy and efficiency, making it particularly well suited for deployment on resource-constrained platforms such as edge computing devices.},
+  keywords={YOLO;Visualization;Accuracy;Computational modeling;Manuals;Robustness;Real-time systems;Yield estimation;Computational complexity;Monitoring;tomato maturity detection;lightweight network;object detection;YOLO;edge AI},
+  doi={10.1109/ICMLCA66850.2025.11336473},
+  ISSN={},
+  month={Oct},}
+@INPROCEEDINGS{11347840,
+  author={Jing, Hao and Fan, Ruilin and Hong, Longwu and Li, Zelun},
+  booktitle={2025 IEEE International Conference on Sensing, Diagnostics, Prognostics, and Control}, 
+  title={YOLO-ESS: Improved Citrus Recognition under Natural Orchard Conditions}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={338-341},
+  abstract={Citrus harvesting in natural orchards encounters significant challenges due to complex illumination, occlusion, and background interference. To overcome the limitations of current detection models in identifying small and occluded fruits, this study introduces YOLO-ESS, an enhanced lightweight detection framework specifically optimized for citrus recognition and localization. YOLO-ESS incorporates three innovative modules: (1) the C3k2-CGLU module, which enhances multi-scale feature extraction through a dual-branch convolution and a memory-gated mechanism; (2) the SCMB (Shuffle-Channel Upsample Block), which facilitates improved feature fusion and inter-channel communication; and (3) the SCBN Head, which stabilizes predictions by integrating shared convolutional kernels with independent batch normalization. Experimental results indicate that YOLO-ESS achieves an mAP@50 of 96.8%, an mAP@50:95 of 73.6%, and a processing speed of 243 FPS on the citrus dataset, surpassing existing YOLO and Faster R-CNN variants while maintaining low computational complexity. The model demonstrates robust performance under varying illumination and occlusion conditions, thereby providing a stable and efficient visual perception system for intelligent fruit-picking robots. This study illustrates that the YOLO-ESS framework presents a practical solution for real-time agricultural applications and establishes a foundation for future research in precision fruit harvesting and smart farming.},
+  keywords={YOLO;Smart agriculture;Computational modeling;Lighting;Feature extraction;Robot sensing systems;Real-time systems;Stability analysis;Sensors;Visual perception;Citrus detection;Deep learning;Object recognition;Lightweight neural network},
+  doi={10.1109/SDPC68151.2025.11347840},
+  ISSN={},
+  month={Nov},}
+@INPROCEEDINGS{11009669,
+  author={Qian, Jingxuan and Seong, Myeongsu},
+  booktitle={2025 7th International Conference on Software Engineering and Computer Science (CSECS)}, 
+  title={YOLO-ASFF: A Model for Detecting Tomatoes of Different Maturities Based on Improved YOLO v5s}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={In agricultural production, accurate detection of tomatoes of different maturities is crucial to control the picking time and improve grading efficiency. However, the orchard environment is complex, which brings many challenges to detecting tomatoes of different maturities, such as variable light conditions, lush branches and leaves, fruit occlusion, tomatoes with different sizes, etc. Traditional methods rely on manual experience, which is not only time-consuming but also has limited accuracy. To this end, the YOLO-ASFF model is proposed to improve the detection accuracy of tomatoes of different maturities in complex orchard environments in this work. On the one hand, the model uses the extended intersection over union (EIoU) to optimize the bounding box positioning to ensure that tomatoes of different sizes and maturities could be accurately framed. On the other hand, the adaptive spatial feature fusion (ASFF) module was integrated to enhance the fusion ability of multi-scale features, so that the model could capture feature information more comprehensively when detecting tomatoes with different maturities. The experimental results show that the YOLO-ASFF model performs better than other models, including Faster R-CNN, EfficientNet, YOLO v5s, and YOLO v11n, in detecting tomatoes of different maturities, with an accuracy of 0.885, a recall rate of 0.835, a mean average precision of 0.850, and an Fl-Score of 0.850. In short, YOLO-ASFF can provide an effective method for accurately identifying tomatoes with different maturities, which can help reduce labor costs and improve picking efficiency.},
+  keywords={YOLO;Hands;Adaptation models;Accuracy;Costs;Production;Manuals;Feature extraction;Testing;Software engineering;different maturities;tomato;detection;YOLO-ASFF},
+  doi={10.1109/CSECS64665.2025.11009669},
+  ISSN={},
+  month={March},}
+@INPROCEEDINGS{10581681,
+  author={Ling, Haiying and Tu, Zhirong and Li, Guo and Wang, Jijie},
+  booktitle={2024 5th International Seminar on Artificial Intelligence, Networking and Information Technology (AINIT)}, 
+  title={ED-YOLOv8s: An Enhanced Approach for Passion Fruit Maturity Detection Based on YOLOv8s}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={2320-2324},
+  abstract={Accurate assessment of the ripeness of passion fruits, which grow on trellises in orchards, is essential for efficient harvesting, grading, transportation, and storage processes, especially considering the potential occlusion and overlap among the fruits. This study introduces an enhanced maturity detection method, based on YOLOv8s. We first present the DyHead dynamic detection head, which significantly augments the expressive power of the target detection head without adding computational complexity. We then propose the EM_C-C2f lightweight module to optimize the backbone network of YOLOv8s. Experimental results from three custom datasets show considerable improvements achieved by the ED-YOLOv8s model across various evaluation metrics. Compared to other YOLO series object detection networks, ED-YOLOv8s demonstrates superior performance in terms of precision, recall, and mAP. Specifically, on the comprehensive passion fruit dataset, the model achieves a 2.6% increase in precision and a 1.3% increase in recall compared to the original YOLOv8s. Moreover, ED-YOLOv8s attains a mAP@50 score of 98.4%, reflecting a 1.3% improvement, and a mAP@50:95 score of 91.9%, marking a 0.6% improvement over the original YOLOv8s.},
+  keywords={YOLO;Seminars;Measurement;Accuracy;Computational modeling;Transportation;Feature extraction;maturity detection;multi-scale;passion fruit;lightweight;YOLOv8s},
+  doi={10.1109/AINIT61980.2024.10581681},
+  ISSN={},
+  month={March},}
+@INPROCEEDINGS{11365044,
+  author={Minh, Pham Quang and Tan, Lang Nhat and Tu, Ngo Hoang and Anh, Nguyen Thai},
+  booktitle={2025 RIVF International Conference on Computing and Communication Technologies (RIVF)}, 
+  title={Fruit Ripeness Detection: A Comparative Analysis of State-of-the-Art YOLO Models}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={699-704},
+  abstract={Accurate fruit ripeness detection is critical for reducing post-harvest losses and ensuring optimal quality control in the agricultural supply chain. This paper presents a comparative analysis of three state-of-the-art object detection architectures, YOLOv10, YOLOv11, and YOLOv12, applied to the task of multi-class fruit ripeness classification. A custom dataset of 22,128 images encompassing tomatoes, bananas, and mangoes was curated and relabeled into 11 distinct ripeness classes based on visual and physiological indicators linked to ethylene production. All models were trained under identical conditions using two input resolutions of $480 \times 480$ and $640 \times 640$ to ensure statistical fairness. Experimental results show that YOLOv12l consistently achieves the best accuracy, attaining an mAP50 of 94.39%, mAP50-95 of 82.17%, precision of 92.7%, and recall of 91.0%, albeit at the cost of higher latency. YOLOv10 and YOLOv11 exhibit superior inference speeds, making them more suitable for real-time and edge-based applications. The confusion matrix and qualitative visualizations confirm YOLOv12l's robustness under challenging conditions such as occlusion, color camouflage, and reflective surfaces. The study concludes with a discussion of practical deployment challenges and outlines open research directions toward scalable, real-world smart farming systems.},
+  keywords={YOLO;Smart agriculture;Visualization;Accuracy;Supply chains;Quality control;Production;Robustness;Real-time systems;Physiology;Computer vision;fruit ripeness detection;YOLO family;object detection;post-harvest loss;non-destructive analysis;deep learning},
+  doi={10.1109/RIVF68649.2025.11365044},
+  ISSN={2473-0130},
+  month={Dec},}
+@INPROCEEDINGS{10862633,
+  author={Uriti, Archana and Pothabathula, Naga Jyothi},
+  booktitle={2024 International Conference on Intelligent Computing and Sustainable Innovations in Technology (IC-SIT)}, 
+  title={Evaluating Object Detection Approaches for Fruit Detection in Precision Agriculture: A Comprehensive Review}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={Agricultural automation has become increasingly vital in addressing the growing demand for food and the need for efficient farming practices. Fruit harvesting is crucial in agriculture due to its labor intensity and the challenges of timely, accurate picking under occlusions and varying illumination. Various methods have been developed for accurate fruit detection, but traditional techniques often struggle with occlusions by branches or leaves, as well as challenges posed by climate and fruit maturity. This study reviews existing literature, compares various fruit detection approaches and discusses their strengths and weaknesses. Building on the work of various authors, this paper aims to offer a thorough understanding of the current state of fruit detection technologies in agricultural automation. Additionally, the survey addresses the objective of the proposed work, which is to identify the most promising techniques for improving fruit detection accuracy and efficiency.},
+  keywords={YOLO;Surveys;Technological innovation;Automation;Accuracy;Reviews;Redundancy;Lighting;Real-time systems;Reliability;Agricultural automation;fruit harvesting;Occlusion;Illumination variation;Maturity},
+  doi={10.1109/IC-SIT63503.2024.10862633},
+  ISSN={},
+  month={Nov},}
+@INPROCEEDINGS{10985647,
+  author={Goradia, Neil},
+  booktitle={2025 IEEE International Conference on Interdisciplinary Approaches in Technology and Management for Social Innovation (IATMSI)}, 
+  title={RGB-D Detection and Localization for Agricultural Robotics in Low-Resource Settings}, 
+  year={2025},
+  volume={3},
+  number={},
+  pages={1-6},
+  abstract={Agriculture in low-resource settings faces challenges such as limited access to electricity, low profits, variability in environmental conditions, and high costs. Machine learning (ML) offers solutions to these issues, particularly in tasks like automated fruit picking. This paper focuses on the detection and 3D localization of apples using YOLOv5n and YOLOv10n models, which are lightweight variants suitable for deployment in resource-constrained environments. We provide in-depth details about our fruit dataset and annotation protocols to elucidate the diversity and scalability of our approach. Further, we conduct a broader comparison with other state-of-the-art models to substantiate our claims of superior performance. Our experiments, conducted with an Intel RealSense camera, include detailed depth perception analysis under various conditions, revealing that YOLOv10n outperforms YOLOv5n in both detection accuracy and 3D localization precision. We also address potential deployment challenges such as hardware costs, environmental variability, and energy efficiency, and discuss limitations to guide future research. Our results suggest that YOLOv10n offers a highly effective solution for real-time, reliable fruit detection in low-resource agricultural settings. Our code is available here.},
+  keywords={Location awareness;YOLO;Costs;Three-dimensional displays;Annotations;Real-time systems;Hardware;Energy efficiency;Agriculture;Robots;Agricultural robotics;YOLO;low-resource settings;fruit detection;depth perception;real-time localization},
+  doi={10.1109/IATMSI64286.2025.10985647},
+  ISSN={},
+  month={March},}
+@INPROCEEDINGS{11331612,
+  author={Cao, Yihao and Lu, Xuming},
+  booktitle={2025 5th International Conference on Electronic Information Engineering and Computer Technology (EIECT)}, 
+  title={PLD-YOLO: A Lightweight Nectarine Recognition Model in Complex Environments}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={84-89},
+  abstract={To achieve automated harvesting in nectarine orchards and address the challenges of nectarine detection under complex environments—including fruit occlusion, leaf occlusion, variations in illumination, and changes in fruit size—this paper proposes a lightweight nectarine fruit recognition model based on an improved YOLOv8n, named PLD-YOLO (Peach Lightweight Detection based on You Only Look Once). First, by combining Partial Convolution (PConv) with the Convolutional Block Attention Module (CBAM), a Lightweight Feature Extraction (LFE) module is designed to improve the recognition accuracy of nectarines occluded by leaves and fruits, while meeting the deployment requirements of edge devices. Second, by integrating the advantages of Ghost Convolution (GhostConv) and Dynamic Convolution (DynamicConv), a Lightweight Dynamic Convolution (LDConv) module is developed to replace the Bottleneck in C2f, forming the C2f-LDConv module, which reduces model parameters and enhances nectarine localization accuracy. Finally, a Lightweight Shared Convolutional Detection Head (LSCD) is proposed to capture multi-scale feature information and further improve detection performance. Experimental results show that PLD-YOLO achieves excellent performance in nectarine detection under natural scenes, with a 0.8 % increase in recall, a 0.3 % increase in mAP50, a 56 % reduction in model parameters, and a 53 % reduction in computational cost. This model not only satisfies the requirements for lightweight deployment but also provides essential support for future application in intelligent harvesting equipment.},
+  keywords={YOLO;Location awareness;Accuracy;Convolution;Computational modeling;Redundancy;Lighting;Feature extraction;Real-time systems;Computational efficiency;YOLO;peach;object detection},
+  doi={10.1109/EIECT68017.2025.11331612},
+  ISSN={},
+  month={Oct},}
+@ARTICLE{10753036,
+  author={Ji, Baofeng and Zhao, Jingming and Tao, Fazhan and Zhang, Ji and Zhang, Gaoyuan and Wang, Nan and Zhang, Ping and Fan, Huitao},
+  journal={IEEE Transactions on AgriFood Electronics}, 
+  title={A Novel Nectarine Fruit Maturity Detection and Classification Counting Model Based on YOLOv8n}, 
+  year={2025},
+  volume={3},
+  number={1},
+  pages={144-155},
+  abstract={Fruit yield assessment is an important aspect of orchard management. In this context, target detection of fruit is of paramount importance. However, due to complex factors in real orchard environments, such as fruit occlusion, insufficient lighting, and overlapping fruits, traditional detection and counting methods often suffer from low detection accuracy and inadequate classification precision, failing to meet the requirements of practical applications. To address this issue, we focus on nectarine fruit and propose an improved YOLOv8n-based object detection algorithm model, YOLOv8n-global feature extraction enhancement (GFE). We integrate the effective squeeze-and-excitation attention mechanism into the YOLOv8n model. This integration allows our approach to adaptively adjust the weight of each channel, which enhances both detection efficiency and target recognition accuracy. Then, we introduce focal distance-intersection over union loss to address the misjudgment of hard samples. This further contributes to improving detection accuracy. In addition, we incorporate the gather-and-distribute mechanism from GOLD-YOLO, replacing the traditional feature pyramid network structure. This enhancement improves the information fusion capability in the neck of the model, leading to a higher mean average precision (mAP@0.5). In addition, the output of the improved model can be used as an input to DEEPSORT to classify and count nectarine fruit. This functionality can be used for estimating fruit maturity and yield in orchards. Experimental results demonstrate that the YOLOv8n-GFE model achieves a mAP@0.5 of 92.5%, which is an improvement of 3.2% over the original YOLOv8n model, meeting the required accuracy for recognizing nectarine fruit maturity in practical applications.},
+  keywords={YOLO;Lighting;Feature extraction;Attention mechanisms;Shape;Detection algorithms;Data models;Image classification;Attention mechanism;classify and count;GOLD-YOLO;nectarine fruit;target detection;YOLOv8n},
+  doi={10.1109/TAFE.2024.3488747},
+  ISSN={2771-9529},
+  month={March},}
+@INPROCEEDINGS{10839762,
+  author={Lu, Jiahuan and Lin, Xiangye and Li, Chenglin and Zeng, Shan and Luo, Xiwen and Li, Jiehao},
+  booktitle={2024 IEEE International Conference on Unmanned Systems (ICUS)}, 
+  title={Methods for Mango and Ripeness Detection Using Improved YOLOv8}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1569-1573},
+  abstract={Automated mango harvesting is a trending practice, yet recognizing mangoes and their ripeness remains a bottleneck due to uneven lighting, fruit overlap, and the similar colors of fruit and leaves. To address these challenges, this paper proposes a method for mango and ripeness detection based on an improved You Only Look Once version 8 (YOLOv8). This method incorporates attention mechanisms and lightweight enhancements to achieve accurate and rapid detection of mangoes and their ripeness under varying lighting conditions, different levels of occlusion, and backgrounds where the colors of fruits and leaves are similar. Validation on 2,742 samples demonstrates that the proposed method based on improved YOLOv8 achieves a mean Average Precision (mAP) of 96.6%, processing each sample in just 22.07 ms. Compared to YOLOv8, the proposed method improves mAP by 1.8% while reducing processing speed by 8.6%. This method provides a precise and rapid detection technology for the automated harvesting of mangoes and potentially other fruits.},
+  keywords={YOLO;Adaptation models;Attention mechanisms;Autonomous systems;Computational modeling;Lighting;Color;Real-time systems;Classification algorithms;Load modeling;fruit detection;ripeness detection;deep learning;attention mechanism;YOLOv8},
+  doi={10.1109/ICUS61736.2024.10839762},
+  ISSN={2771-7372},
+  month={Oct},}
+@ARTICLE{10505191,
+  author={Xiao, Xu and Jiang, Yiming and Wang, Yaonan},
+  journal={IEEE Instrumentation & Measurement Magazine}, 
+  title={A Method of Robot Picking Citrus Based on 3D Detection}, 
+  year={2024},
+  volume={27},
+  number={3},
+  pages={50-58},
+  abstract={It is important to monitor the maturity of citrus fruits during the growth period by using deep learning to implement visual detection technology to identify their state of ripeness in their natural environment. The problem is that the ripeness of citrus fruits is mainly judged manually, and there is a lack of fast and accurate automatic detection methods for citrus fruit ripeness. In this study, the optimal weight model was trained from 1688 images of citrus fruits collected in the natural environment based on the lightweight YOLOv4-Tiny model. The experimental results show that the model has 92.4% mAP for citrus fruit detection, and the detection accuracy of Faster R-CNN is slightly higher than that of the improved YOLOv4 Tiny compared with the current mainstream two-stage detection algorithm Faster R-CNN. Although the improved YOLOv4 Tiny has better detection speed, compared with the harvesting performance of the harvesting robot, the improved YOLOv4 Tiny is better. YOLOv5 and YOLOv4 are generally weaker than the improved YOLOv4-Tiny, and the model has more parameters and occupies more memory. Meanwhile, the model can achieve accurate recognition of fruits under different shooting distances, different shading situations and different lighting situations, and can quickly and effectively identify the ripeness of citrus fruits under complex backgrounds with strong robustness. The system can provide technical support for yield estimation of citrus fruit orchards and the location detection of picking machines and has reference value for recognition and ripeness detection of other fruits.},
+  keywords={YOLO;Performance evaluation;Visualization;Three-dimensional displays;Lighting;Robustness;Agricultural products;Crops;Deep learning;Detection algorithms},
+  doi={10.1109/MIM.2024.10505191},
+  ISSN={1941-0123},
+  month={May},}
+@ARTICLE{10559970,
+  author={Gai, Rongli and Liu, Yong and Xu, Guohui},
+  journal={IEEE Access}, 
+  title={TL-YOLOv8: A Blueberry Fruit Detection Algorithm Based on Improved YOLOv8 and Transfer Learning}, 
+  year={2024},
+  volume={12},
+  number={},
+  pages={86378-86390},
+  abstract={Blueberry fruit in the picking process are characterized by small fruit particles, similar color characteristics of immature fruits to leaf, and not obvious characteristics of fruits obscured by leaves, which lead to low real-time detection accuracy of blueberry fruits and fail to meet the detection standard of automatic picking. To improve the detection accuracy, we propose a blueberry identification algorithm named TL-YOLOv8 based on the YOLOv8 algorithm. By introducing an improved MPCA (Multiplexed Coordinated Attention) in the last layer of the backbone network, we enhance the feature extraction capability during the training process. By replacing the C2f module with an OREPA(Online Convolutional Re-parameterization) module, not only the training is accelerated, but also the characterization is enhanced. Meanwhile, in order to cope with the fruit occlusion problem more effectively, we introduce the MultiSEAM (Multi-scale Separation and Occlusion-Aware Module). As a means of optimizing the model parameters, we pre-trained the model using Transfer Learning to improve the generalization ability of the network. The method achieved 84.6% Precision, 91.3% recall and 94.1% mAP on the blueberry dataset, where mAP was improved by 3.4% over the original algorithm, and the experiments showed that it can be effective for blueberry fruit detection.},
+  keywords={Training;Feature extraction;Task analysis;Convolutional neural networks;Transfer learning;YOLO;Accuracy;Deep learning;Blueberry detection;deep learning;object detection;occlusion;transfer learning;YOLOv8},
+  doi={10.1109/ACCESS.2024.3416332},
+  ISSN={2169-3536},
+  month={},}
+@INPROCEEDINGS{10152740,
+  author={Li, Yuqi and Gong, Zirui and Zhou, Yihang and He, Yuting and Huang, Renjie},
+  booktitle={2023 26th International Conference on Computer Supported Cooperative Work in Design (CSCWD)}, 
+  title={Production Evaluation of Citrus Fruits based on the YOLOv5 compressed by Knowledge Distillation}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1938-1943},
+  abstract={Pre-harvest estimation of fruit production is crucial for fruit storage and price analysis in the planting of fruit trees. However, prior research consistently displays low accuracy because of problems with small objects, leaf occlusion, and fruit overlap, and they emphasize large networks that are unrealistic in the real world. In this study, we emphasize the use of smartphones to evaluate citrus fruit production. We suggest a simple method for detecting objections based on the YOLOv5 algorithm compressed by knowledge distillation. To extract the visual features, we first use mobilenetV2 as the foundation of YOLOv5. To learn the reliable detection features, we also incorporate an attention mechanism into YOLOv5. As such, we can obtain embedded Yolo served as a student model, which is learned via knowledge distillation. As such we can take the lightweight student model as the final detection model. Finally, we take the embedded Yolo to detect the citrus fruits and take a linear regression model to predict the number of counted fruits and the production is estimated. Experiments show that the proposed method can accurately count fruits and approximate the production.},
+  keywords={Knowledge engineering;Visualization;Federated learning;Linear regression;Estimation;Production;Predictive models;YOLOv5;knowledge distillation;citrus fruits;object detection;linear regression},
+  doi={10.1109/CSCWD57460.2023.10152740},
+  ISSN={2768-1904},
+  month={May},}
+@INPROCEEDINGS{10762508,
+  author={Chen, Yiran and Yao, Rui and Liu, Haoran and Liu, Bingqi and Liu, Mingzhe},
+  booktitle={2024 5th International Conference on Big Data & Artificial Intelligence & Software Engineering (ICBASE)}, 
+  title={Automatic Fruit Detection Based on Robotic Vision}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={761-765},
+  abstract={Automatic fruit detection has greatly reduced labor costs and crop damage rates, contributing to the progress of agricultural modernization. It involves real-time assessment of the surrounding environment and recognition of target fruit categories. However, fruit detection faces challenges due to the similarities in shape, color, and other features among different types of fruits, as well as the impact of environmental factors such as inadequate lighting, occlusion, and background variations on recognition accuracy. This project focuses on the simulation of the robotic fruit harvesting process, which includes environmental image acquisition, image processing, and robot control. The robot utilizes its integrated camera to capture real-time images of the surrounding environment. These images are then processed on a computer, employing color recognition based on traditional algorithms. The images are segmented based on the identified color regions and subjected to object detection using YOLO v5. By discerning the presence of the target objects, the results are transmitted to the robot, which responds accordingly. The real-time performance is enhanced by filtering and narrowing down the target regions, reducing the time required for object recognition.},
+  keywords={YOLO;Image recognition;Accuracy;Image color analysis;Target recognition;Lighting;Laser feedback;Real-time systems;Computational efficiency;Laser beams;Object Detection;Robot Control;Deep Learning},
+  doi={10.1109/ICBASE63199.2024.10762508},
+  ISSN={},
+  month={Sep.},}
+@INPROCEEDINGS{11158649,
+  author={Tandel, Karan and Vaidya, Rachit and Thakkar, Hiren Kumar},
+  booktitle={2025 International Conference on Advancements in Smart, Secure and Intelligent Computing (ASSIC)}, 
+  title={On the Design of Multiple Fruits Recognition Model Using Deep Learning in a Confined Environment}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-7},
+  abstract={The real world application of fruit detection in an confined environment comes with multiple challenges such as occlusion, lighting variation, and background noise. Deep Learning owing to its capability of obtaining robust features from the images has been of enormous usage in every domain of today's fast growing world. Thus the main purpose of this research paper is to come up with a model using pre-trained model like YOLOv8 to give a fully functional model of fruit detection and classification in a real world environment which will be able to handle the unnecessary background noises and will be focusing on generalizing across multiple fruit types. The application of such models can be used in areas like Automated Harvesting [1], Supply Chain Management, Quality Control and Food Waste Management as well [2].},
+  keywords={Deep learning;YOLO;Training;Systematics;Supply chain management;Lighting;Quality control;Robustness;Convolutional neural networks;Background noise;You Only Look Once (YOLO);Deep Learning;Convolutional Neural Network (CNN)},
+  doi={10.1109/ASSIC64892.2025.11158649},
+  ISSN={},
+  month={May},}
+@INPROCEEDINGS{10956721,
+  author={Kiran, J. Sasi and V, Dilli Ganesh and Singh, Navdeep and Abbas, Haider Mohammed and Saravanan, R. and K, Aanandha Saravanan},
+  booktitle={2025 International Conference on Automation and Computation (AUTOCOM)}, 
+  title={Automated Fruit Counting with YOLOv5 Model for Harvest Management in Orchards}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={235-240},
+  abstract={Proper counting of fruits on trees is vital for proper timing & scheduling of harvesting, labor force requirement and making agricultural sector more efficient. Manual methods are costly and time-consuming together with being inaccurate in most if not all aspects hence the need for automation. It also demonstrates how real-time fruit detection and counting can be performed using YOLOv5 with potential in handling orchards in a more efficient manner. YOLOv5 was trained on a dataset of fruits in different settings including clear sun lit conditions, in overcast conditions, and in conditions where fruits are entangled in large vegetation. The proposed model was able to release the highest detection accuracy with higher precision, recall, and F1 scores; 97.5%, 96.1%, respectively and 96.8% for the F1-score. It also attained a mean Average Precision (mAP@0.5) of 98.2%, and further validating its endurance in fruit detection regardless of scenarios. Due to the YOLOv5's real-time indexing that provides about 30 FPS on edge devices, that makes it ideal to be used on drones and mobile autonomous vehicles in large-scale orchards. A comparison with other object detection models like Faster R-CNN, SSD, and Mask R-CNN, proved that YOLOv5 performs better in accuracy as well as in time efficiency. However, there was a small decline in the detection accuracy in cases of partial fruit occlusion or dense foliage. In conclusion, this particular work demonstrates that indeed YOLOv5 can easily solve the problem of automated fruit counting and bring multiple enhancements to the orchard management and precision agriculture.},
+  keywords={YOLO;Performance evaluation;Accuracy;Automation;Image edge detection;Vegetation mapping;Vegetation;Real-time systems;Timing;Synthetic data;YOLOv5;automated fruit counting;orchard management;real-time detection},
+  doi={10.1109/AUTOCOM64127.2025.10956721},
+  ISSN={},
+  month={March},}
+@INPROCEEDINGS{10424305,
+  author={Cardellicchio, Angelo and Renò, Vito and Devanna, Rosa Pia and Marani, Roberto and Milella, Annalisa},
+  booktitle={2023 IEEE International Workshop on Metrology for Agriculture and Forestry (MetroAgriFor)}, 
+  title={Tomato detection in challenging scenarios using YOLO-based single stage detectors}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={54-59},
+  abstract={Fruit detection is a fundamental task for several agricultural applications, including robotic harvesting, yield estimation, and precision farming in general. However, uneven field conditions, such as branch and leaf occlusions, lighting variations, and shading, make this task particularly challenging. This paper proposes a deep learning approach to automatically segment tomato berries, using transfer learning from two state-of-the-art deep neural networks, namely YOLOv5 and YOLOv8, previously trained on images acquired under controlled conditions. The results obtained for images captured under various field conditions by a consumer-grade camera demonstrate that the models achieve relatively high classifying performance despite the low quality of the input images and the challenges arising from reduced object size, similarity between objects, and their color, fruit cluster occlusions, and highly variable illumination conditions.},
+  keywords={YOLO;Transfer learning;Lighting;Detectors;Data models;Yield estimation;Task analysis},
+  doi={10.1109/MetroAgriFor58484.2023.10424305},
+  ISSN={},
+  month={Nov},}
+@INPROCEEDINGS{11103361,
+  author={Li, Wenqin and Sui, Tingting and Zhang, Zhang and Wu, Huiying and Chang, Liang},
+  booktitle={2025 6th International Conference on Computer Engineering and Application (ICCEA)}, 
+  title={LEBR-YOLO: Accurate Fruit and Vegetable Detection Method for Space Station Cargo Bay}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={01-07},
+  abstract={In order to address the issue of detection accuracy, which is compromised by hand occlusion when astronauts retrieve items from the space station cargo bay, a modified algorithm has been developed. This algorithm, termed “YOLO11,” is designed to enhance the detection of fruits and vegetables in the cargo bay environment. LEBR-YOLO. The method enhances the initial convolution to a lightweight structure, thereby reducing the computational effort while expanding the receptive field. Additionally, a two-layer attention mechanism is incorporated to enhance the ability to extract features. The introduction of an enhanced lightweight shared deformable detection module has been demonstrated to enhance the detection capability in the presence of occlusion. Experimental results demonstrate that the proposed method attains 94.3 % accuracy, 88.5 % recall, and 93.3% mAP50 on the proprietary fruit and vegetable dataset, while preserving low model complexity to satisfy the requirements of the Lightship cargo spacecraft in orbit. The proposed method has been shown to be effective in the detection of fruit and vegetable items in the space station, enhancing detection accuracy and reducing false detections and omissions.},
+  keywords={Space vehicles;Accuracy;Attention mechanisms;Convolution;Biological system modeling;Feature extraction;Routing;Robustness;Resource management;Space stations;Cargo hold fruit and vegetable detection;YOLO11;feature extraction;shared convolution},
+  doi={10.1109/ICCEA65460.2025.11103361},
+  ISSN={2159-1288},
+  month={April},}
+@INPROCEEDINGS{10774304,
+  author={Yang, Xiaoyao and Zhao, Wenyang and Li, Yanqiang},
+  booktitle={2024 IEEE 22nd International Conference on Industrial Informatics (INDIN)}, 
+  title={A Multi-Feature Fusion Detection Network Based on an Orchard Complex Environment}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={In current smart picking devices, accurate target recognition is a prerequisite for improving picking efficiency and has great potential in the smart picking industry. However, the complex orchard environment leads to problems such as occlusion and light influence on the fruits, which causes some difficulties in feature extraction for detection models. This paper proposes an improved network, YOLO-RD, based on YOLOv5 and RepNC-SPELAN structure and Dynamic Head, which aims to improve the accuracy of fruit recognition in complex environments. The effect of the shape and angle of the bounding box itself is also taken into account and the Shape-iou loss function is used to further improve the accuracy of the regression. Additionally, it employs a dynamic detection head to unify the scale, spatial and task perceptions, and dynamically selects and adjusts different object detection heads to adapt to different tasks and scenes. The network is capable of performing real-time detection of fruits in complex orchard environments, thereby providing a robust foundation for the advancement of the smart picking industry.},
+  keywords={Feature extraction;Head;Shape;Accuracy;YOLO;Neck;Solid modeling;Computational modeling;Complexity theory;Biological system modeling;YOLOv5;YOLO-RD;Target recognition},
+  doi={10.1109/INDIN58382.2024.10774304},
+  ISSN={2378-363X},
+  month={Aug},}
+@INPROCEEDINGS{11100674,
+  author={Rosada, Rifki and Hussein, Zidane Muhammad and Novamizanti, Ledya},
+  booktitle={2025 IEEE International Conference on Industry 4.0, Artificial Intelligence, and Communications Technology (IAICT)}, 
+  title={Evaluating YOLO Variants for Real-Time Multi-Object Detection of Strawberry Quality and Ripeness}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={483-490},
+  abstract={Automated fruit grading plays a pivotal role in modern agriculture by enabling timely harvesting and maintaining quality standards, especially for high-value crops such as strawberries. This paper presents an end-to-end approach for the real-time detection and classification of strawberry ripeness using state-of-the-art YOLO-based models: YOLOv7, YOLOv8, and YOLOv11. A comprehensive dataset of 3,055 strawberry images is compiled from three distinct sources. Each image is meticulously annotated into five classes—Unripe (UNR), Fully Ripe Grade A (AFR), Fully Ripe Grade B (BFR), Half Ripe Grade A (AHR), and Half Ripe Grade B (BHR)—with additional complexity introduced by images containing multiple strawberries per frame. Data preprocessing and augmentation are performed using Roboflow, and model training is executed on Google Colab with a uniform protocol to ensure a fair comparison among the YOLO variants. Experimental results reveal a steady performance improvement from YOLOv7 to YOLOv11, with YOLOv11 achieving the highest detection accuracy (precision: 0.874, recall: 0.855, mAP@50: 0.942, and mAP@50–95: 0.820). The superior performance of YOLOv11 is attributed to its incorporation of dynamic attention modules and self-adaptive layer-wise fusion, which significantly enhance the detection of subtle ripeness variations and mitigate occlusion challenges. These findings underscore the potential of advanced YOLO architectures for deployment in real-time agricultural applications and automated harvesting systems.},
+  keywords={YOLO;Training;Adaptation models;Sensitivity;Quantization (signal);Quality control;Real-time systems;Data models;Robustness;Standards;Strawberry;real-time detection;computer vision;YOLO;object detection;deep learning},
+  doi={10.1109/IAICT65714.2025.11100674},
+  ISSN={2834-8249},
+  month={July},}
+@INPROCEEDINGS{10348779,
+  author={Melnychenko, Oleksandr and Savenko, Oleg and Radiuk, Pavlo},
+  booktitle={2023 IEEE 12th International Conference on Intelligent Data Acquisition and Advanced Computing Systems: Technology and Applications (IDAACS)}, 
+  title={Apple Detection with Occlusions Using Modified YOLOv5-v1}, 
+  year={2023},
+  volume={1},
+  number={},
+  pages={107-112},
+  abstract={In our research, we created a novel YOLOv5-v1 architecture to identify apples in images with occlusions. We specifically engineered new layers for the BottleneckCSP-v4 module, which replaces the original BottleneckCSP module within the backbone structure of the YOLOv5 network. Integrating the SENet module into our improved trunk network helps to discern features of medium and large-sized fruits more accurately under varying conditions. We also adjusted the initial size of the binding block within the source network to avoid incorrect identification of small objects within the image's background. Based on the test dataset, our experimental results show that our advanced network model can effectively identify fruits captured through an unmanned aerial vehicle camera. The classification metrics - recall, precision, mAP, and F1-score - obtained scores of 92.13%, 84.59%, 87.94%, and 89.02% respectively.},
+  keywords={YOLO;Measurement;Image recognition;Data acquisition;Cameras;Autonomous aerial vehicles;Data models;image processing;object detection;apple yield;YOLOv5;deep learning;visual occlusions},
+  doi={10.1109/IDAACS58523.2023.10348779},
+  ISSN={2770-4254},
+  month={Sep.},}
+@INPROCEEDINGS{10691401,
+  author={Qin, Lijuan and Wang, Xiaohan and Zhu, Yubin and Wang, Ting},
+  booktitle={2024 2nd International Conference on Signal Processing and Intelligent Computing (SPIC)}, 
+  title={Research on Fruit Picking Positioning Based on Binocular Vision}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={750-754},
+  abstract={Based on YOLOv5 object detection algorithm, fruit images are extracted from complex backgrounds in response to occlusion of branches and leaves, fruit overlap, and light effects caused by environment. Method of adding center coordinate value of image based on prediction box of fruit image determines centroid coordinate of target image. Then, by optimizing the focus camera and using Zhang Youzheng's calibration method, the image is calibrated using Matlab calibration box. Obtained image is stereo corrected using local stereo matching algorithm to obtain three-dimensional coordinates of centroid of target fruit, which are then converted into physical coordinates for positioning, After actual measurement, a positioning result with an error of ± 20mm was obtained, confirming its applicability for practical positioning operations.},
+  keywords={YOLO;Visualization;Signal processing algorithms;Visual systems;Signal processing;Cameras;Prediction algorithms;Calibration;Standards;Matlab;apple picking;stereo matching algorithm;location},
+  doi={10.1109/SPIC62469.2024.10691401},
+  ISSN={},
+  month={Sep.},}
+@INPROCEEDINGS{11141306,
+  author={Khazmi, Khalil and Lachiri, Zied},
+  booktitle={2025 International Conference on Emerging Technologies and Computing (IC_ETC)}, 
+  title={A Deep Dive Assessment into Recent YOLO Models Efficiency and Robustness for Agricultural Dense Scene Analysis: A Wheat Head Study Case}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={Applications of artificial intelligence (AI) in agriculture are becoming more and more omnipresent. When applied to detecting problems in dense scene analysis in agricultural challenges, they offer answers to issues that previous metaheuristics were unable to address with a degree of accuracy that permits the industrialization of the suggested solutions. Therefore, counting wheat heads in field conditions with spike and spikelet occlusions and overlaps is one of the most difficult looked into and explored challenges in computer vision for agriculture in the post-pandemic period of awareness regarding staple crop security. In order to enable farmers, breeders, and agronomists to monitor the emergence and growth of wheat heads over time and space, as well as to extrapolate yield estimations, the ultimate goal is to provide a reliable and essential informational input among many other essentials. This paper proposes implementing YOLOv10, YOLOv11 and YOLOv12 models to GHWD, a global wheat head dataset compiled from various continents to ensure phenotype diversity, in order to address mentioned issues using new deep learning advancements. We then test the robustness of the obtained results on a self-compiled Tunisian wheat dataset. Finally, we compare and discuss the results.},
+  keywords={YOLO;Deep learning;Computer vision;Image analysis;Phenotypes;Agriculture;Robustness;Yield estimation;Security;Artificial intelligence;wheat head;deep learning;YOLO;agriculture;dense scene;yield estimation;computer vision},
+  doi={10.1109/IC_ETC65981.2025.11141306},
+  ISSN={},
+  month={June},}
+@INPROCEEDINGS{10912853,
+  author={Wu, Jiaming and Ge, Yuxuan and Wu, Jianxiong and Cao, Jin and Feng, Junhao},
+  booktitle={2024 6th International Conference on Frontier Technologies of Information and Computer (ICFTIC)}, 
+  title={Design and Implementation of Intelligent Orchard Robot}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1555-1560},
+  abstract={This paper addresses the labor shortages and high costs in traditional agriculture by designing an intelligent orchard picking robot. The robot leverages the ROS operating system, NVIDIA Jetson Nano, and a tracked chassis to navigate complex terrains. Key technologies include SLAM for real-time mapping, A* for path planning, and YOLOv5 for fruit detection. Experiments conducted in a simulated orchard environment demonstrate the robot's effectiveness in autonomous navigation and accurate fruit recognition, achieving 95% recognition accuracy in clear conditions and 75% under occlusion. The results showcase the robot's potential to significantly enhance productivity and reduce labor demands in orchard harvesting.},
+  keywords={YOLO;Smart agriculture;Productivity;Simultaneous localization and mapping;Accuracy;Navigation;Operating systems;Real-time systems;Path planning;Robots;Smart Agriculture;Orchard Picking;SLAM;A*;YOLOv5},
+  doi={10.1109/ICFTIC64248.2024.10912853},
+  ISSN={},
+  month={Dec},}
+@INPROCEEDINGS{10865495,
+  author={Du, Xueyi and Huang, Wenhui and Min, Huasong},
+  booktitle={2024 China Automation Congress (CAC)}, 
+  title={SDSLP-YOLO: An End-to-End Model for Simultaneously Detecting Strawberry and Locating Picking Point}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={6098-6103},
+  abstract={Accurately identifying strawberries and locating picking points are prerequisites for harvesting robots. To address the issues of multiple detections, missed detections, and false detections, as well as inaccurate picking point localization caused by large differences in fruit shape, complex backgrounds, and occlusions during the picking process, this paper proposes a method based on the YOLOv8-pose model. First, a dual-path feature extraction backbone network (LGFBNet) that combines convolution and Transformer is proposed. This module enhances the richness and expressiveness of features by coupling global and local features, effectively solving the issue of multiple detections caused by large differences in fruit shape. Secondly, CBAM is introduced into the neck of the network, allowing the network to focus more on the distinguishing features between the strawberries and the background, effectively addressing the missed and false detections caused by complex backgrounds. Finally, the NWD-CIoU weighted loss function is introduced, where the scale-balancing property of NWD compensates for the sensitivity of CIoU to positional shifts, reducing the additional missed detection rate caused by severe occlusions. Experimental results show that the proposed method achieves an average precision (mAP-obj) of 88.3% for strawberry detection and an average precision (mAP-kp) of 74.2% for keypoint detection, which are 1.7% and 3% higher than YOLOv8-pose, respectively. In summary, this method has significant theoretical and practical implications for tasks such as strawberry recognition and picking point localization in complex environments.},
+  keywords={Location awareness;Performance evaluation;Sensitivity;Shape;Pipelines;Feature extraction;Transformers;Neck;Spatial resolution;Robots;strawberry identification;picking point positioning;yolov8-pose;key point detection},
+  doi={10.1109/CAC63892.2024.10865495},
+  ISSN={2688-0938},
+  month={Nov},}
+@INPROCEEDINGS{10865515,
+  author={Nan, Qian and Huang, Wenhui and Min, Huasong},
+  booktitle={2024 China Automation Congress (CAC)}, 
+  title={A Fruit Detection Model in Complex Environments Based on Attention Mechanism and Feature Fusion}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={2548-2553},
+  abstract={In complex orchard environments, harvesting robots face significant challenges in identifying fruits accurately due to fruits of various sizes, varying degrees of sunlight intensity, and occlusion. To resolve this issue, we propose a fruit detection model in this paper, which is called AMMFF-YOLO and based on the YOLOv8s architecture. Firstly, a small target detection layer is introduced to enhance the model's ability to identify small-sized fruits. Secondly, a light-adaptive module is proposed, which increases spatial dimension information without reducing the channel dimension, enriching the model's perception ability under different sunlight intensities. This module is named C2f-CS, which stands for C2f module based on channel and spatial (CS) attention mechanisms. Furthermore, a context information enhancement module (CIEM) is proposed, which employs dilated convolutions and skip connections to fuse feature information from multiple scales, enlarges the receptive field, and improves the model's ability to recognize target fruits and backgrounds under occlusion. Lastly, the Inner-MPDIoU Loss is used as a bounding box regression loss function to improve the mod-el's localization ability and detection accuracy. In the detection experiments of strawberries, apples, and citrus in complex orchard environments, the detection accuracy of the proposed model is higher than the detection accuracy of other state-of-art models 0.4 % ~ 8.8 %. The experimental results validate the effectiveness of AMMFF-YOLO in fruit detection under complex orchard environments.},
+  keywords={Accuracy;Attention mechanisms;Fuses;Target recognition;Lighting;Object detection;Feature extraction;Robustness;Spatial resolution;Robots;object detection;YOLOv8s;feature fusion;attention mechanism;deep learning},
+  doi={10.1109/CAC63892.2024.10865515},
+  ISSN={2688-0938},
+  month={Nov},}
+@INPROCEEDINGS{11019965,
+  author={Li, Hailong and Yan, Humin},
+  booktitle={2025 8th International Conference on Advanced Algorithms and Control Engineering (ICAACE)}, 
+  title={Apple Detection in Complex Scenes Based on Improved YOLOv8}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={923-926},
+  abstract={In order to enable the picking robot to quickly and accurately detect apple fruits of different sizes under complex environments in the orchard (e.g., scenarios with different lighting conditions, fruit leaf occlusion, and dense small targets at long distances), this paper proposes an improved YOLOv8-based algorithm. Firstly, the EMA attention module is integrated into the YOLOv8 network architecture, aiming to enhance the model's focus on the target fruit region, and at the same time, reduce the interference of non-critical features such as background and branch and leaf occlusion, so as to effectively improve the accuracy of fruit detection in the case of occlusion. Secondly, the fusion weighted bidirectional feature pyramid (BiFPN), through weighted feature fusion, enables the network to better learn the features of small targets and reduce the leakage detection rate of small targets. The experimental results prove that the improved algorithm outperforms the original model in most of the metrics, providing a reference for apple detection in complex scenes.},
+  keywords={YOLO;Measurement;Accuracy;Target recognition;Lighting;Interference;Network architecture;Feature extraction;Indexes;Robots;component;apple detection;YOLO;EMA;BiFPN},
+  doi={10.1109/ICAACE65325.2025.11019965},
+  ISSN={},
+  month={March},}
+@INPROCEEDINGS{10425812,
+  author={Kamble, Sneha and Bartakke, Prashant},
+  booktitle={2023 Global Conference on Information Technologies and Communications (GCITC)}, 
+  title={Smart Refrigerator Management System Using Deep Learning}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={In today’s modern era smart home appliances with new features and technologies plays a vital role to make human life easier. One of the essential and common home appliances is a Refrigerator which helps to preserve Food and Vegetables. There are many Smart Refrigerators available in the Market with integrated cameras WI-FI and Embedded Technologies. By incorporating artificial intelligence and deep learning to enhance the refrigerator’s functioning, smart refrigerators aid in the management of food. Deep Learning Technology is being used to detect the fruits inside the Refrigerator. This is necessary to detect the fruits present inside the refrigerator and keep the track of count present inside it productively and precisely. The goal of this work is to optimize and deploy the trained model in order to capture and categorize images inside the refrigerator in real time. To make fruit classification and recognition more accurate, we created an customised dataset to train and test the model with YOLOv7 deep learning algorithm. Proposed work is also extended to classify the bad and good quality of fruits. The entire system has been implemented using hardware based on NVIDIA Jetson Nano. The suggested system employs a wide-angle camera to capture images towards object recognition and inventory control. It provides an augmented pictures by considering different positions, perspectives, and lighting conditions along with manually created labels. This system also improves the occlusion problem of fruits present inside the inventory. Evaluation of this work reveals that the accuracy is obtained up to 98% with 35 FPS against the YOLOv3 which is attaining an avarage accuracy of 92.45%.},
+  keywords={Deep learning;YOLO;Home appliances;Smart homes;Cameras;Real-time systems;Wireless fidelity;Smart Refrigerator;Fruit Detection;Deep learning;YOLOv7;Jetson Nano},
+  doi={10.1109/GCITC60406.2023.10425812},
+  ISSN={},
+  month={Dec},}
+@ARTICLE{11370178,
+  author={Pereira, Elainne Ladislau F. and Silva, Romário Da Costa and Moura, Flávio Rafael Trindade and Francês, Carlos Renato Lisboa and Cardoso, Diego Lisboa},
+  journal={IEEE Access}, 
+  title={Pineapples Health Detection Using Deep Learning Models}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-1},
+  abstract={Early detection of diseases in agricultural crops remains a significant challenge, especially for small producers who still rely on manual visual inspections—time-consuming, subjective processes with low reproducibility. In pineapple (Ananas comosus) cultivation, phytosanitary monitoring is essential to prevent losses associated with diseases such as fusarium wilt, wet rot, and wilt, as well as infestations by pertussis and nutritional deficiencies. This study presents an innovative automated monitoring approach for detecting visual anomalies in pineapple fruits, based on computer vision techniques applied primarily to images obtained under real field conditions, considering variations in lighting, occlusions, leaf overlap, different fruit orientations, and background interference. Furthermore, a comparative analysis was conducted between different versions of the You Only Look Once model (YOLOv5, YOLOv8, and YOLOv9) to identify the most suitable solution for different production profiles—from small family farms with limited computational resources to large farms with advanced technological infrastructure. The evaluation considered the metrics of Precision, Recall, Average Precision (mAP), and inference time, as well as operational feasibility in low-infrastructure contexts. The results demonstrate consistent performance among the tested models, with YOLOv8 standing out as the most suitable alternative for practical applications in the field and in embedded devices, establishing itself as a robust, accessible, and efficient solution for automated phytosanitary monitoring of pineapple crops.},
+  keywords={Crops;YOLO;Monitoring;Computational modeling;Diseases;Farming;Visualization;Lighting;Precision agriculture;Deep learning;Precision agriculture;Fruit disease detection;Crop monitoring;Computer vision},
+  doi={10.1109/ACCESS.2026.3660135},
+  ISSN={2169-3536},
+  month={},}
+@INPROCEEDINGS{11233648,
+  author={Louis, Fourré and Ooi, Boon-Yaik and Savita, K. Sugathan},
+  booktitle={2025 IEEE 11th International Conference on Smart Instrumentation, Measurement and Applications (ICSIMA)}, 
+  title={Automated Muskmelon Counting in Real Farm Environment using YOLOv11n}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={115-119},
+  abstract={Fruit detection and counting in real farm environments remain challenging due to occlusion, variable lighting, and cluttered backgrounds. This study presents a robust computer vision pipeline for accurately detecting, tracking, and counting melons using the You Only Look Once version 11 nano object detection model. To evaluate and enhance performance, multiple dataset versions with different types of annotation (large annotation, front-row strict annotation, and front-row/rear-row annotation distinction) were utilized alongside various image processing pipelines (Roboflow workflows, detection, tracking, and line-counting tracking). Among these, the 4th method, with a line-counting strategy, significantly improved counting accuracy. Our best result was achieved with the front row strict annotation and line counting tracking combination which yielded a counting error rate of just 2.74%. The system was tested on footage captured by an automated guide vehicle in a greenhouse, demonstrating its practical applicability in real-world, non-laboratory agricultural environments. Overall, this work contributes an efficient and accurate melon counting pipeline, laying the foundation for future work such as fruit maturity prediction and disease detection.},
+  keywords={YOLO;Training;Computer vision;Accuracy;Annotations;Error analysis;Pipelines;Crops;Servers;Videos;Computer Vision;YOLO;Crops recognition;Object Tracking},
+  doi={10.1109/ICSIMA66552.2025.11233648},
+  ISSN={2640-6535},
+  month={Sep.},}
+@INPROCEEDINGS{10525540,
+  author={Li, Lin and Duan, Wutian and Chen, Chaobo},
+  booktitle={2023 9th International Conference on Mechanical and Electronics Engineering (ICMEE)}, 
+  title={An Improved YOLOv5 Algorithm for Apple Object Recognition and Localization}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={489-493},
+  abstract={In order to address the low apple recognition rate and inaccurate positioning in complex orchard environments, a method to improve the accuracy of the detection algorithm was studied, and an improved YOLOv5-based apple object detection method was proposed. By obtaining the internal parameter matrices of the left and right cameras of a binocular camera, matching the pixel points of the left and right images, and using disparity mapping, the two-dimensional coordinates of the apples were transformed into three-dimensional coordinates, thereby obtaining the three-dimensional coordinates of the apples. Additionally, considering the issues of overlapping and occlusion of apples in complex orchards, the feature fusion network in the original YOLOv5 algorithm was improved to enhance recognition efficiency and accuracy. Experimental results demonstrate that this improved algorithm effectively achieves apple recognition and positioning in complex environments.},
+  keywords={YOLO;Location awareness;Three-dimensional displays;Target recognition;Supervised learning;Cameras;Feature extraction;target recognition;Yolov5;positioning},
+  doi={10.1109/ICMEE59781.2023.10525540},
+  ISSN={},
+  month={Nov},}
+@INPROCEEDINGS{11281824,
+  author={Scott, Bradley and Schofield, Sam and Green, Richard},
+  booktitle={2025 40th International Conference on Image and Vision Computing New Zealand (IVCNZ)}, 
+  title={Keypoint Estimation for Real-Time Pinus Radiata Cutpoint Detection}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={In this paper, we propose a real-time capable method for detecting and tracking Pinus Radiata branch cutpoints in a forestry environment using a UAV platform. Our method applies the YOLOv11 pose estimation network to detect 2D cutpoint positions. Depth estimates around each cutpoint are improved through DBSCAN clustering, frame differencing, and filtering to remove fine-structure noise. A paired Kanade-LucasTomasi tracker was used for frame-to-frame tracking and reacquisition of cutpoints after occlusion. The method achieved a Mean Average Precision of 0.881 on video sequences captured in a Pinus Radiata plantation, with a depth error of less than 22mm at a distance of up to 1400 mm for unoccluded targets and 68mm for occluded targets. An average pipeline processing time of 5.4ms was achieved on an Nvidia Jetson Orin AGX 32GB. These results and frame processing times indicate that the proposed method would be suitable for enabling autonomous, real-time pruning of Pinus Radiata.},
+  keywords={YOLO;Target tracking;Accuracy;Three-dimensional displays;Filtering;Pose estimation;Video sequences;Plantations;Forestry;Real-time systems;Aerial manipulation;Forestry;Object detection;Pose estimation},
+  doi={10.1109/IVCNZ67716.2025.11281824},
+  ISSN={2151-2205},
+  month={Nov},}
+@INPROCEEDINGS{10149849,
+  author={Pichhika, Hari Chandana and Subudhi, Priyambada},
+  booktitle={2023 11th International Symposium on Electronic Systems Devices and Computing (ESDC)}, 
+  title={Detection of Multi-varieties of On-tree Mangoes using MangoYOLO5}, 
+  year={2023},
+  volume={1},
+  number={},
+  pages={1-6},
+  abstract={Automated harvesting and detection of fruits are crucial for agronomic applications like estimation and mapping of yield. Earlier, fruit detection methods were mostly dependent on hand-crafted features and were prone to changes in the actual orchard environment. However, recently deep learning-based methods especially one-stage object detection techniques like YOLO has achieved a higher detection accuracy to detect different fruits including mango in on-tree orchard images. In our previous work, we proposed a lightweight YOLOv5 model named "MangoYOLO5" for the detection of mangoes, and we have achieved an accuracy of 94.4% on one variety. Now, we have created a dataset of seven varieties of on-tree mangoes, with four varieties being publicly available, and the other three varieties from a local mango orchard using a UAV. We have tried detecting these seven varieties using the MangoYOLO5 model and achieved an average accuracy of 92%. It shows that the mango detection performance is 3.4% better than the YOLOv5s, taking into several characteristics like occlusion, distance, and lighting conditions. Additionally, compared to the original YOLOv5s, the achieved lighter model requires 55.55% less training time, which can significantly affect on real-time implementations.},
+  keywords={Training;Learning systems;Computational modeling;Lighting;Estimation;Object detection;Feature extraction;Deep Learning;Mango detection;YOLOv5s;MangoYOLO5},
+  doi={10.1109/ESDC56251.2023.10149849},
+  ISSN={},
+  month={May},}
+@INPROCEEDINGS{11366749,
+  author={Tsukada, Hayato and Kubota, Akira},
+  booktitle={2025 International Symposium on Multimedia (ISM)}, 
+  title={Lightweight High-Accuracy Tomato Detection and Classification by Efficientnet-Enhanced YOLOv8}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={75-75},
+  abstract={This study focuses on real-time, high-accuracy tomato detection. In recent years, image recognition technology has been increasingly applied to smart agriculture to support precision cultivation and reduce labor burdens. As labor shortages intensify, accurately estimating harvest timing and fruit quality has become critically important. Deep learning-based object detection models, particularly the YOLO (You Only Look Once) series, have attracted significant attention for real-time and high-accuracy applications. However, these models still face difficulties in detecting tomatoes in complex environments, as fruits resemble each other and the surrounding foliage. Detecting small or occluded tomatoes is especially challenging, since conventional methods often fail to capture sufficient features from limited regions. To overcome these challenges, we incorporate MBConv and Fused-MBConv modules from EfficientNetV2 into the backbone network of YOLOv8. By carefully adjusting the number of layers and the expansion rate at each stage, the proposed method aims to achieve a good balance between computational efficiency and detection confidence. Additionally, we design a new structure within the detection head that better captures the spatial features of small objects. Experiments on a re-annotated tomato dataset show that the proposed method improves the mean Average Precision (mAP) at IoU = 0.5 by 4.4% compared to standard YOLOv8, while maintaining real-time inference speed and reducing parameter count. The improved model also reduces false detections and missed tomatoes caused by occlusion, resulting in more reliable performance. These results demonstrate that combining EfficientNetV2 modules with structural enhancements offers a promising direction for developing lightweight, high-accuracy detection systems tailored for practical smart agriculture applications.},
+  keywords={Real-time systems;YOLO;Smart agriculture;Feature extraction;Timing;Standards;Reliability;Indexes;Image recognition;Head;YOLOv8;EfficientNetV2;Object Detection;Small Object Detection;Tomato Detection;Deep Learning},
+  doi={10.1109/ISM66958.2025.00024},
+  ISSN={},
+  month={Dec},}
+@INPROCEEDINGS{11307767,
+  author={He, Rui and Liu, Xiaolin and Zhai, Leqing},
+  booktitle={2025 IEEE 8th International Conference on Information Systems and Computer Aided Education (ICISCAE)}, 
+  title={Research on Precise Apple Harvesting Algorithm Based on YOLOv5s}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={968-973},
+  abstract={Accurate identification, localization, and ripeness assessment of apples in orchards are essential for yield and quality optimization. An enhanced YOLOv5s target detection model is proposed for precise apple picking management. Through the incorporation of channel and spatial attention mechanisms, the model's feature extraction capability is optimized, thereby enhancing detection accuracy in complex backgrounds. Experiments conducted with apple image datasets featuring leaf occlusion, branch occlusion, and fruit overlap demonstrated that the improved YOLOv5s model effectively detects, localizes, and assesses apple ripeness. Results indicate high accuracy and efficiency, particularly in complex or ambiguous scenarios. This investigation supports agricultural robotic picking tasks and corroborates the efficacy of the attention mechanism in target detection.},
+  keywords={YOLO;Accuracy;Attention mechanisms;Computational modeling;Neural networks;Network architecture;Robustness;Real-time systems;Optimization;Robots;Precise Apple Harvesting;YOLOv5s;Attention Mechanism;Neural Network},
+  doi={10.1109/ICISCAE66104.2025.11307767},
+  ISSN={2770-663X},
+  month={Sep.},}
+@INPROCEEDINGS{11348292,
+  author={Zhou, Fanglei and Raza, Ali and Imad, Muhammad and Ali, Raja Hashim},
+  booktitle={2025 27th International Multitopic Conference (INMIC)}, 
+  title={Deep Learning-Based Tomato Detection from Images for Automated Farming}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={Object detection is a critical area of computer vision. It has several applications where it supports many applications in agriculture, food processing, and automation. An important application is the accurate detection of tomatoes, which is essential for improving efficiency as well as in reducing reliance on manual labor in agricultural workflows. While deep learning models have advanced general object detection, there remains limited research focused on tomato identification using modern frameworks. Moreover, researchers have explored enhanced YOLO versions that integrate attention modules to improve fruit detection under occlusion and varying illumination. This study aims to address this gap by developing a detection pipeline based on the YOLOv8 Nano architecture. The dataset was collected from publicly available sources and converted from Pascal VOC annotations to YOLO format to ensure compatibility with the model. The YOLOv8 Nano model was trained for five epochs with a batch size of sixteen and an input resolution of six hundred forty pixels, utilizing GPU acceleration for improved performance. Evaluation results showed a mean average precision of approximately eightynine and high detection confidence across the validation images. These findings confirm that lightweight deep learning models can achieve strong detection capabilities in specialized agricultural tasks. The study contributes a practical approach to automating tomato detection workflows and offers a foundation for further research in efficient agricultural applications.},
+  keywords={Deep learning;YOLO;Computer vision;Image resolution;Pipelines;Lighting;Graphics processing units;Manuals;Agriculture;Object recognition;YOLOv8;object detection;tomato detection;deep learning;agriculture;computer vision},
+  doi={10.1109/INMIC65900.2025.11348292},
+  ISSN={2835-8864},
+  month={Dec},}
+@ARTICLE{11359681,
+  author={Zilong, Liu and Hongbo, Dai},
+  journal={IEEE Access}, 
+  title={A Lightweight Apple Detection Method in Real Orchard Environments Based on Improved YOLOv8s}, 
+  year={2026},
+  volume={14},
+  number={},
+  pages={14302-14314},
+  abstract={As a globally popular fruit, apples are highly favored for their rich nutritional components such as dietary fiber, vitamins, and antioxidants. However, during the apple cultivation process, the orchard environment presents complex scenarios including foliage occlusion, fruit overlapping, and illumination changes, which pose severe challenges to fruit recognition and localization in automated picking. Meanwhile, picking robots have high requirements for real - time performance, so the detection model needs to balance light - weight design and high efficiency. To address these issues, this paper proposes an improved algorithm with multi - dimensional optimization. At the feature processing level, by integrating the Convolutional Block Attention Module (CBAM) with the C2f module, a C2f - CBAM structure is constructed to enhance the model’s ability to focus on the target and suppress background interference; the C2PSA module is introduced to effectively reduce the information redundancy of deep - level features and improve the spatial positioning accuracy. At the feature fusion level, the Adaptive Spatial Feature Fusion mechanism (ASFF) is adopted to resolve the information conflicts among multi - scale feature maps, and the GSConv is combined to significantly reduce the computational complexity while maintaining the accuracy. Moreover, at the loss function level, the WIOU loss function is introduced to optimize the anchor box regression process. Compared with CIOU, its dynamic non - monotonic optimization strategy enables the model to exhibit better stability and robustness in complex scenarios such as occlusion. Experimental results show that the improved algorithm effectively improves the detection accuracy and recall rate in occlusion scenarios. While maintaining a relatively small number of model parameters, the mAP index reaches 89.7%, significantly outperforming the original YOLOv8s model and other comparison models.},
+  keywords={Accuracy;Feature extraction;Computational modeling;YOLO;Adaptation models;Target recognition;Robustness;Focusing;Neck;Interference;Apple detection;ASFF;CBAM;GSConv;YOLOv8},
+  doi={10.1109/ACCESS.2026.3656532},
+  ISSN={2169-3536},
+  month={},}
+@ARTICLE{10906562,
+  author={Chen, Bangbang and Tan, Keke and Li, Kun and Ma, Baojian and Liu, Xiangdong},
+  journal={IEEE Access}, 
+  title={Research on Detection and Counting Method of Green Walnut Based on YOLOv8n-RBP}, 
+  year={2025},
+  volume={13},
+  number={},
+  pages={39275-39288},
+  abstract={In natural environments, green walnuts often experience occlusion by branches and leaves, fruit overlap, and varying lighting conditions. To address the issues of low detection accuracy, missed detections, and false positives in the YOLO model, this study proposes an improved YOLOv8n-based detection and counting model for green walnuts, named YOLOv8n-RBP. First, a receptive field-concentrated attention module (RFCBAM) is integrated into the backbone network to enhance feature extraction capabilities. Second, a BiFPN-GLSA module is introduced to replace the Path Aggregation Network (PANet) in the neck, improving the fusion of feature layers from the backbone and Neck networks and enhancing the model’s ability to capture both global and local spatial features. Lastly, to address the weak generalization and slow convergence issues of the CIoU loss function in detection tasks, the PIoUv2 loss function is employed to accelerate bounding box regression and improve detection performance. Experimental results demonstrate that the YOLOv8n-RBP model excels across multiple evaluation metrics. Specifically, the model achieves a mean average precision (mAP@0.5) of 82.2% and a recall rate of 72.4%, with a model size of only 4.65 MB, 2.2 million parameters, and 8.3 GFLOPs. Compared to the original YOLOv8n model, the recall rate and mAP@0.5 improve by 2.7% and 2.5%, respectively, while the number of parameters, FLOPs, and model size decrease by 26.7%, 0.6%, and 22.0%, respectively. Further deployment on the NVIDIA Jetson Xavier NX demonstrates the model’s robust performance under natural conditions, indicating its suitability for orchard operations.},
+  keywords={Feature extraction;Accuracy;Green products;YOLO;Training;Real-time systems;Neck;Computational modeling;Data models;Data augmentation;Natural environment;green walnut;detection;algorithm improvement;equipment deployment},
+  doi={10.1109/ACCESS.2025.3546313},
+  ISSN={2169-3536},
+  month={},}
+@ARTICLE{10707268,
+  author={Dai, Jin-Sui and He, Zhi-Qin},
+  journal={IEEE Access}, 
+  title={Real-Time Recognition and Localization of Kiwifruit Based on Improved YOLOv5s Algorithm}, 
+  year={2024},
+  volume={12},
+  number={},
+  pages={156261-156272},
+  abstract={To address the recognition and localization challenges posed by occlusion and overlap due to dense fruit growth as well as differences in ripeness, size, morphology, and color in smart Kiwifruit harvesting. This study proposes a real-time Kiwifruit recognition and localization method based on an enhanced YOLOv5s algorithm combined with binocular vision technology. First, data enhancement is implemented in the training strategy to ensure the model’s efficient learning and generalization ability in complex environments; then the Coordinate Attention mechanism is introduced to highlight the key features of the image and improve detail detection; Secondly, the Bidirectional Feature Pyramid Network structure is used to optimize the feature fusion and strengthen the information exchange between different layers through bidirectional connectivity; then, the loss function is optimized to improve the bounding box localization accuracy; and finally, the combined with the binocular vision stereo matching algorithm Semi-Global Block Matching to obtain the spatial location information of Kiwifruit. The experimental results show that the improved YOLOV5s improve the detection accuracy by 6.1%, recall by 5%, and average precision mean by 7.3% compared with its predecessor model. The average recognition of a single image takes only 0.125 seconds. The error of the target’s actual world coordinates and the localization coordinates is within 0.5 cm, mainly concentrated within 0.3 cm, showing the method’s reliability and stability to meet the demand for intelligent Kiwifruit picking.},
+  keywords={YOLO;Accuracy;Feature extraction;Location awareness;Data models;Real-time systems;Computational modeling;Training;Robots;Robot kinematics;YOLOv5s model;coordinate attention;bidirectional feature pyramid network;binocular vision;kiwifruit},
+  doi={10.1109/ACCESS.2024.3476351},
+  ISSN={2169-3536},
+  month={},}
+@INPROCEEDINGS{11150042,
+  author={Fang, Lifa and Gao, Guohua and Li, Jiahao and Zhang, Zihua},
+  booktitle={2025 40th Youth Academic Annual Conference of Chinese Association of Automation (YAC)}, 
+  title={Lightweight and Efficient Real-Time Tomato Detection Based on Improved YOLOv11 Network}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1971-1976},
+  abstract={Faced with the challenge of detecting tomatoes in unstructured environments with dense foliage, overlapping fruits, and varying lighting conditions, this study proposes a high-efficiency, lightweight detection algorithm based on YOLOv11 for real-time detection on low-computation platforms. By adopting MobileNetv4 (small version) as the backbone, the model significantly reduces computational costs while maintaining effective feature extraction. Additionally, the Weighted Bi-directional Feature Pyramid Network (BiFPN) is introduced as the neck to enhance feature fusion, improving detection performance in occlusion, and overlapping scenarios. Experimental results demonstrate that the improved model achieves 96.4% mean Average Precision (mAP), 5.3G FLOPs, 2.1M parameters, and an inference time of 6.5ms, striking a balance between accuracy and efficiency. This research lays the foundation for automated tomato detection, contributing to applications in yield estimation, precision agriculture, and intelligent harvesting systems.},
+  keywords={Precision agriculture;Computational modeling;Lighting;Bidirectional control;Feature extraction;Real-time systems;Neck;Computational efficiency;Yield estimation;Detection algorithms;Tomato;Automatic detection;YOLO;MobileNet;BiFPN},
+  doi={10.1109/YAC66630.2025.11150042},
+  ISSN={2837-8601},
+  month={May},}
+@ARTICLE{11136153,
+  author={Zhang, Rihong and Chen, Dezhao and Gao, Hang and Wang, Yi and Li, Xiaomin and Xue, Zhong},
+  journal={IEEE Access}, 
+  title={Integration of Instance Segmentation and Three-Dimensional Point Cloud Analysis for Pineapple Pose Estimation}, 
+  year={2025},
+  volume={13},
+  number={},
+  pages={155865-155882},
+  abstract={Fruit pose estimation technology is a critical component for enabling intelligent agricultural harvesting, holding significant application value for improving picking efficiency and reducing labor costs. To address the issues of high complexity in existing instance segmentation models and insufficient real-time performance in 3D pose estimation, this paper proposes a lightweight instance segmentation model, FLUG-YOLO, and an efficient method for pineapple pose estimation. Based on the YOLOv8-seg architecture, computational redundancy is reduced by replacing the backbone network with FasterNet. The feature representation capability is enhanced by embedding the Large-Separable-Kernel Attention (LSKA) mechanism within the feature pyramid. The neck convolutional layers are reconstructed using GhostConv, and a novel C2f_UIB structure is designed by incorporating the Universal Inverted Bottleneck (UIB) module. These modifications significantly reduce the number of parameters while improving multi-scale feature fusion performance. Furthermore, by integrating 3D point cloud analysis, a Principal Component Analysis (PCA)-based method for rapid pose estimation is proposed. This method calculates the pineapple’s roll and pitch angles by determining the principal axes of the point cloud. Experimental results demonstrate that FLUG-YOLO achieves an Average Precision (AP) of 96.1% (a 2.2% improvement over the baseline model) and an F1-score of 92.6% (a 3.1% improvement) on a custom pineapple dataset, with a model size of only 3.2 MB (a 49.2% reduction). For pose estimation, the average errors in unoccluded scenarios were 3.29° (roll) and 3.52° (pitch), increasing to 6.19° (roll) and 7.88° (pitch) under mild occlusion. The average pose estimation processing time was 301 ms. This approach achieves a synergistic optimization of accuracy, lightweight design, and speed, providing valuable technical support for intelligent pineapple harvesting.},
+  keywords={Instance segmentation;Pose estimation;Feature extraction;Computational modeling;Point cloud compression;Three-dimensional displays;Solid modeling;Robots;Pipelines;Neck;Instance segmentation;3D point cloud;pose estimation;lightweight;YOLOv8-seg},
+  doi={10.1109/ACCESS.2025.3602076},
+  ISSN={2169-3536},
+  month={},}
+
+

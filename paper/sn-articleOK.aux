@@ -1,0 +1,78 @@
+\relax 
+\citation{duckett2018agricultural,VASCONEZ201935,vasconez2022workload}
+\providecommand \oddpage@label [2]{}
+\@writefile{toc}{\contentsline {title}{ Occlusion-Aware Fruit Instance Segmentation for Agricultural Robotics: A Comparative Study of YOLO11, YOLO26, and Mask2Former }{1}{}\protected@file@percent }
+\@writefile{toc}{\authcount {6}}
+\@writefile{toc}{\contentsline {author}{ Iván García \and Javier Prado \and Viviana Moya \and William Chamorro \and Fernando A. Chicaiza \and Juan Pablo Vásconez }{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{}\protected@file@percent }
+\newlabel{Sec::Introduction}{{1}{1}{}{section.1}{}}
+\citation{10424305,10348779,11016889,11347840}
+\citation{10972542,10491166,11407412,11100168}
+\citation{10424305,10348779,10559970}
+\citation{han2012strawberry}
+\citation{11347840,10839762}
+\citation{10956721,11016889,11365044}
+\citation{11100674,yolo26_architecture_2026,yolo26_evolution_2026}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Fruit Perception Under Occlusion}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}YOLO-Based and Transformer-Based Segmentation Models}{2}{}\protected@file@percent }
+\citation{cheng2021mask2former}
+\citation{10491166,10972542,11100168}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Research Gap}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Materials and Methods}{3}{}\protected@file@percent }
+\newlabel{sec:Methods}{{3}{3}{}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}System Overview}{3}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Data acquisition setup using a robotic manipulator equipped with an RGB camera. The captured images are used as input for the instance segmentation models to detect and segment fruit instances in orchard environments.}}{4}{}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:architecture}{{1}{4}{}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Data Acquisition Setup}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Instance Segmentation Architectures}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Training Configuration}{5}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Dataset statistics and class distribution for training and validation splits.}}{6}{}\protected@file@percent }
+\newlabel{tab:dataset_split}{{1}{6}{}{table.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Dataset and Annotation Protocol}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Evaluation Metrics}{6}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Evaluation and computational complexity metrics used in this work.}}{7}{}\protected@file@percent }
+\newlabel{tab:metrics}{{2}{7}{}{table.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experimental Results}{7}{}\protected@file@percent }
+\newlabel{Sec::Results}{{4}{7}{}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Quantitative Results}{7}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Quantitative performance comparison of YOLO-based and transformer-based instance segmentation models.}}{8}{}\protected@file@percent }
+\newlabel{tab:benchmark_performance}{{3}{8}{}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Visibility and Occlusion Analysis}{8}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Computational efficiency comparison of YOLO-based and transformer-based models.}}{9}{}\protected@file@percent }
+\newlabel{tab:benchmark_efficiency}{{4}{9}{}{table.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Qualitative Comparison}{9}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Training evolution of detection and segmentation metrics for all evaluated models, including YOLO11, YOLO26, and Mask2Former. The figure reports (a) bounding-box mAP50--95, (b) bounding-box recall, (c) mask mAP50--95, and (d) mask recall across training epochs. Mask2Former achieves the highest overall segmentation accuracy and exhibits smoother convergence behavior, particularly in mask-related metrics. YOLO11m remains competitive while providing lower computational complexity and real-time inference capability.}}{10}{}\protected@file@percent }
+\newlabel{fig:mask2former_comparison}{{2}{10}{}{figure.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces  Segmentation performance evolution under different visibility levels for YOLO11m-seg, YOLO26x-seg, and Mask2Former. Validation images were grouped according to object visibility percentages (25\%, 50\%, 75\%, and 100\%). Mask2Former demonstrates higher robustness under severe occlusions, while YOLO11m-seg consistently outperforms YOLO26x-seg across most visibility conditions. }}{11}{}\protected@file@percent }
+\newlabel{fig:visibility_analysis}{{3}{11}{}{figure.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{11}{}\protected@file@percent }
+\newlabel{Sec::Discussion}{{5}{11}{}{section.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Qualitative comparison of YOLO11m-seg, YOLO26x-seg, and Mask2Former under different fruit categories and occlusion conditions using identical RGB inputs. Mask2Former generally produces more coherent masks and improved instance separation in highly occluded regions, whereas YOLO11m-seg provides a favorable balance between segmentation quality and computational efficiency.}}{12}{}\protected@file@percent }
+\newlabel{fig:qualitative_comparison_all_models}{{4}{12}{}{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{13}{}\protected@file@percent }
+\newlabel{Sec::Conclusions}{{6}{13}{}{section.6}{}}
+\bibstyle{splncs04}
+\bibdata{Articulo/Ref.bib}
+\bibcite{10972542}{1}
+\bibcite{10424305}{2}
+\bibcite{cheng2021mask2former}{3}
+\bibcite{duckett2018agricultural}{4}
+\bibcite{10491166}{5}
+\bibcite{10559970}{6}
+\bibcite{han2012strawberry}{7}
+\bibcite{yolo26_architecture_2026}{8}
+\bibcite{11100168}{9}
+\bibcite{11347840}{10}
+\bibcite{10956721}{11}
+\bibcite{10839762}{12}
+\bibcite{10348779}{13}
+\bibcite{11365044}{14}
+\bibcite{11100674}{15}
+\bibcite{yolo26_evolution_2026}{16}
+\bibcite{11407412}{17}
+\bibcite{11016889}{18}
+\bibcite{vasconez2022workload}{19}
+\bibcite{VASCONEZ201935}{20}
+\gdef \@abspage@last{15}
