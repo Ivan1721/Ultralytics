@@ -1,4 +1,4 @@
-path: C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\1.Universidad\PhdDISA\Tesis\vision\Ultralytics\Manzana\yolo_reduced
+path: ../dataset/yolo
 train: images/train
 val: images/val/75%
 nc: 6
