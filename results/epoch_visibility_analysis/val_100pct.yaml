@@ -1,4 +1,4 @@
-path: ../dataset/yolo
+path: ../../../dataset/yolo
 train: images/train
 val: images/val/100%
 nc: 6

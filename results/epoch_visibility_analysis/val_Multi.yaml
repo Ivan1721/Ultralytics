@@ -1,6 +1,6 @@
-path: ../dataset/yolo
+path: ../../../dataset/yolo
 train: images/train
-val: images/val/25%
+val: images/val/Multi
 nc: 6
 names:
   0: apple_green
