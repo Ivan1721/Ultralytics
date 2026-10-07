@@ -306,12 +306,18 @@ an input image resolution of $640 \times 640$ pixels.
 Data augmentation techniques including horizontal flipping, scaling, and color
 jittering were applied during training to improve generalization. For
 Mask2Former, multi-scale augmentation following the standard training protocol
-was additionally employed.
+was additionally employed. This additional augmentation is part of
+Mask2Former's standard MMDetection training recipe and was not replicated for
+the YOLO-based models; it therefore constitutes an asymmetry in the training
+protocol that should be considered when interpreting the absolute accuracy gap
+between Mask2Former and the YOLO-seg models, rather than attributing it solely
+to architectural differences.
 
-The experiments were executed on a workstation equipped with an NVIDIA GPU,
-allowing efficient training and evaluation of all architectures. Pretrained
-weights from the COCO dataset were used for initialization to accelerate
-convergence during fine-tuning on the orchard dataset.
+The experiments were executed on a workstation equipped with an NVIDIA GeForce
+RTX 4060 Ti GPU (8\,GB VRAM), allowing efficient training and evaluation of all
+architectures. Pretrained weights from the COCO dataset were used for
+initialization to accelerate convergence during fine-tuning on the orchard
+dataset.
 
 For the transformer-based model, Mask2Former with a ResNet-50 backbone was
 adopted as the reference configuration.
@@ -332,7 +338,10 @@ All images were manually annotated at the instance level, generating pixel-wise
 segmentation masks for each visible fruit. The annotations were performed using
 a polygon-based labeling protocol to ensure accurate object boundaries.
 
-To evaluate model generalization, the dataset was divided into training and validation subsets. Table~\ref{tab:dataset_split} summarizes the
+To evaluate model generalization, the dataset was divided into training and
+validation subsets only; no independent held-out test set was used (this is
+discussed as a limitation of the study in Section~\ref{Sec::Discussion}).
+Table~\ref{tab:dataset_split} summarizes the
 number of images used for each dataset partition.
 
 \begin{table}[t]
@@ -537,9 +546,13 @@ Table~\ref{tab:benchmark_efficiency} complements this analysis by reporting
 computational complexity and GPU inference latency. Although Mask2Former
 achieves the best overall segmentation performance, it requires substantially
 higher computational resources, with 44.00M parameters and 103.00B FLOPs.
-In contrast, YOLO11m achieves competitive segmentation accuracy with lower
-computational complexity and a GPU latency of 14.53\,ms, making it a strong
-practical alternative for real-time agricultural robotic systems.
+In contrast, YOLO11m retains 85.2\% of Mask2Former's mask mAP50--95
+(51.97\% vs.\ 61.01\%) while using only 50.8\% of its parameters (22.36M vs.\
+44.00M) and 55.1\% of its FLOPs (56.77B vs.\ 103.00B), at a lower measured GPU
+latency (14.53\,ms vs.\ 16.70\,ms). We use this accuracy-retained-per-unit-of-compute
+criterion to characterize YOLO11m as offering the best accuracy-efficiency
+trade-off among the evaluated models, rather than as a general, unquantified
+claim.
 
 Overall, the results indicate that transformer-based architectures provide
 superior segmentation robustness and mask quality, whereas YOLO11 models offer
@@ -564,6 +577,35 @@ orchard conditions.
 
 \subsection{Visibility and Occlusion Analysis}
 To analyze robustness under different occlusion conditions, additional experiments were performed by partitioning the validation set according to fruit visibility levels (25\%, 50\%, 75\%, and 100\%).
+
+Visibility levels were assigned manually during annotation rather than
+computed from a geometric occlusion ratio: each validation image was
+inspected individually, and the proportion of the fruit's surface left
+unoccluded by surrounding vegetation (branches and leaves) was visually
+estimated and assigned to the closest of four categories. An image was
+labeled 25\% when foliage covered substantially more than half of the fruit,
+50\% when occlusion and visible surface were approximately balanced, 75\%
+when the visible surface clearly exceeded the occluded portion, and 100\%
+when the fruit was fully or almost fully visible. Table~\ref{tab:visibility_counts}
+reports the resulting number of validation images per level; an additional 27
+validation images containing fruits spanning more than one visibility level
+within the same frame were kept aside as a separate ``Multi'' group and are
+not included in this single-level analysis.
+
+\begin{table}[t]
+\centering
+\caption{Number of validation images per fruit visibility level.}
+\label{tab:visibility_counts}
+\setlength{\tabcolsep}{8pt}
+\small
+\begin{tabular}{lcccc}
+\hline
+\textbf{Visibility level} & 25\% & 50\% & 75\% & 100\% \\
+\hline
+Images & 142 & 94 & 133 & 95 \\
+\hline
+\end{tabular}
+\end{table}
 
 Figure~\ref{fig:visibility_analysis} presents the segmentation performance evolution for YOLO11m-seg, YOLO26x-seg, and Mask2Former across different visibility conditions. The results indicate that segmentation accuracy consistently improves as object visibility increases, which is expected due to the larger amount of observable visual information available to the models.
 
@@ -706,7 +748,25 @@ Despite the qualitative and quantitative advantages of transformer-based segment
 
 Overall, the presented results highlight a practical trade-off between segmentation quality and computational efficiency for agricultural robotic perception. Transformer-based models provide improved contour consistency and stronger resilience under occlusion, whereas lightweight CNN-based approaches offer more favorable characteristics for real-time deployment and resource-constrained robotic applications.
 
-One limitation of this study is that the evaluation was performed using a single orchard dataset and a fixed image resolution. Additional experiments across different crop types, environmental conditions, sensor configurations, and embedded hardware platforms would further strengthen the generalization analysis of the evaluated architectures.
+The latency figures reported in Table~\ref{tab:benchmark_efficiency} correspond
+to isolated model inference on a single workstation GPU, not to a complete
+robotic perception-to-actuation pipeline, which additionally involves sensor
+acquisition, pre/post-processing, grasp planning, and actuation overhead.
+Likewise, the models were not profiled on embedded or edge hardware. The
+real-time and embedded-deployment suitability claimed for the YOLO-based
+models in this work should accordingly be read as being based on model-level
+inference efficiency rather than on an end-to-end or on-device validation,
+which we identify as necessary future work.
+
+One limitation of this study is that the evaluation was performed using a
+single orchard dataset and a fixed image resolution, with training and
+validation subsets only and no independent held-out test set -- model
+selection and the reported metrics therefore both come from the same
+validation split, and reported performance should be interpreted with this in
+mind until confirmed on unseen data. Additional experiments across different
+crop types, environmental conditions, sensor configurations, and embedded
+hardware platforms, together with an independent test set, would further
+strengthen the generalization analysis of the evaluated architectures.
 
 
 \section{Conclusions}
