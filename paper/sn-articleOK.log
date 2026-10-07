@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.27)  7 OCT 2026 08:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.27)  7 OCT 2026 08:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -764,12 +764,12 @@ File: Articulo/apple_green_yolo26.png Graphic file (type png)
 Package pdftex.def Info: Articulo/apple_green_yolo26.png  used on input line 69
 2.
 (pdftex.def)             Requested size: 81.57423pt x 61.18056pt.
-<Articulo/apple_green_mask2former.jpeg, id=197, 642.4pt x 481.8pt>
+<Articulo/apple_green_mask2former.jpeg, id=197, 462.528pt x 346.896pt>
 File: Articulo/apple_green_mask2former.jpeg Graphic file (type jpg)
 <use Articulo/apple_green_mask2former.jpeg>
 Package pdftex.def Info: Articulo/apple_green_mask2former.jpeg  used on input l
 ine 693.
-(pdftex.def)             Requested size: 81.57423pt x 61.18056pt.
+(pdftex.def)             Requested size: 81.57423pt x 61.1788pt.
 <Articulo/apple_red_train.png, id=198, 642.4pt x 481.8pt>
 File: Articulo/apple_red_train.png Graphic file (type png)
 <use Articulo/apple_red_train.png>
@@ -787,12 +787,12 @@ File: Articulo/apple_red_yolo26.png Graphic file (type png)
 Package pdftex.def Info: Articulo/apple_red_yolo26.png  used on input line 698.
 
 (pdftex.def)             Requested size: 81.57423pt x 61.18056pt.
-<Articulo/apple_red_mask2former.jpeg, id=201, 642.4pt x 481.8pt>
+<Articulo/apple_red_mask2former.jpeg, id=201, 462.528pt x 346.896pt>
 File: Articulo/apple_red_mask2former.jpeg Graphic file (type jpg)
 <use Articulo/apple_red_mask2former.jpeg>
 Package pdftex.def Info: Articulo/apple_red_mask2former.jpeg  used on input lin
 e 699.
-(pdftex.def)             Requested size: 81.57423pt x 61.18056pt.
+(pdftex.def)             Requested size: 81.57423pt x 61.1788pt.
 <Articulo/avocado_train.png, id=202, 642.4pt x 481.8pt>
 File: Articulo/avocado_train.png Graphic file (type png)
 <use Articulo/avocado_train.png>
@@ -808,12 +808,12 @@ File: Articulo/avocado_yolo26.png Graphic file (type png)
 <use Articulo/avocado_yolo26.png>
 Package pdftex.def Info: Articulo/avocado_yolo26.png  used on input line 704.
 (pdftex.def)             Requested size: 81.57423pt x 61.18056pt.
-<Articulo/avocado_mask2former.jpeg, id=205, 642.4pt x 481.8pt>
+<Articulo/avocado_mask2former.jpeg, id=205, 462.528pt x 346.896pt>
 File: Articulo/avocado_mask2former.jpeg Graphic file (type jpg)
 <use Articulo/avocado_mask2former.jpeg>
 Package pdftex.def Info: Articulo/avocado_mask2former.jpeg  used on input line 
 705.
-(pdftex.def)             Requested size: 81.57423pt x 61.18056pt.
+(pdftex.def)             Requested size: 81.57423pt x 61.1788pt.
 <Articulo/peach_train.png, id=206, 642.4pt x 481.8pt>
 File: Articulo/peach_train.png Graphic file (type png)
 <use Articulo/peach_train.png>
@@ -829,12 +829,12 @@ File: Articulo/peach_yolo26.png Graphic file (type png)
 <use Articulo/peach_yolo26.png>
 Package pdftex.def Info: Articulo/peach_yolo26.png  used on input line 710.
 (pdftex.def)             Requested size: 81.57423pt x 61.18056pt.
-<Articulo/peach_mask2former.jpeg, id=209, 642.4pt x 481.8pt>
+<Articulo/peach_mask2former.jpeg, id=209, 462.528pt x 346.896pt>
 File: Articulo/peach_mask2former.jpeg Graphic file (type jpg)
 <use Articulo/peach_mask2former.jpeg>
 Package pdftex.def Info: Articulo/peach_mask2former.jpeg  used on input line 71
 1.
-(pdftex.def)             Requested size: 81.57423pt x 61.18056pt.
+(pdftex.def)             Requested size: 81.57423pt x 61.1788pt.
 <Articulo/orange_train.png, id=210, 642.4pt x 481.8pt>
 File: Articulo/orange_train.png Graphic file (type png)
 <use Articulo/orange_train.png>
@@ -850,12 +850,12 @@ File: Articulo/orange_yolo26.png Graphic file (type png)
 <use Articulo/orange_yolo26.png>
 Package pdftex.def Info: Articulo/orange_yolo26.png  used on input line 716.
 (pdftex.def)             Requested size: 81.57423pt x 61.18056pt.
-<Articulo/orange_mask2former.jpeg, id=213, 642.4pt x 481.8pt>
+<Articulo/orange_mask2former.jpeg, id=213, 462.528pt x 346.896pt>
 File: Articulo/orange_mask2former.jpeg Graphic file (type jpg)
 <use Articulo/orange_mask2former.jpeg>
 Package pdftex.def Info: Articulo/orange_mask2former.jpeg  used on input line 7
 17.
-(pdftex.def)             Requested size: 81.57423pt x 61.18056pt.
+(pdftex.def)             Requested size: 81.57423pt x 61.1788pt.
 <Articulo/pear_train.png, id=214, 642.4pt x 481.8pt>
 File: Articulo/pear_train.png Graphic file (type png)
 <use Articulo/pear_train.png>
@@ -871,12 +871,12 @@ File: Articulo/pear_yolo26.png Graphic file (type png)
 <use Articulo/pear_yolo26.png>
 Package pdftex.def Info: Articulo/pear_yolo26.png  used on input line 722.
 (pdftex.def)             Requested size: 81.57423pt x 61.18056pt.
-<Articulo/pear_mask2former.jpeg, id=217, 642.4pt x 481.8pt>
+<Articulo/pear_mask2former.jpeg, id=217, 462.528pt x 346.896pt>
 File: Articulo/pear_mask2former.jpeg Graphic file (type jpg)
 <use Articulo/pear_mask2former.jpeg>
 Package pdftex.def Info: Articulo/pear_mask2former.jpeg  used on input line 723
 .
-(pdftex.def)             Requested size: 81.57423pt x 61.18056pt.
+(pdftex.def)             Requested size: 81.57423pt x 61.1788pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 728--728
 []\T1/cmr/m/n/10 Fig.4: |Qual-i-ta-tive com-par-i-son of YOLO11m-seg, YOLO26x-s
@@ -1062,7 +1062,7 @@ TeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/garci/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/garci/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/garci/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on sn-articleOK.pdf (17 pages, 13152666 bytes).
+Output written on sn-articleOK.pdf (17 pages, 12805526 bytes).
 PDF statistics:
  675 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
