@@ -248,6 +248,7 @@ used here.}
 \end{figure}
 
 \subsection{Data Acquisition Setup}
+\label{sec:acquisition}
 
 Data were acquired using an RGB camera mounted on a robotic manipulator
 operating in a controlled environment. Real specimens of each fruit species
@@ -363,7 +364,7 @@ adopted as the reference configuration.
 
 The dataset consists of RGB images of real fruit specimens acquired in a
 controlled environment, using an RGB camera mounted on a robotic manipulator
-(Section~\ref{sec:Methods}, System Overview). Images contain multiple fruit
+(Section~\ref{sec:acquisition}). Images contain multiple fruit
 classes including apples, peaches, avocados, pears, and oranges, arranged among
 foliage to produce varying levels of occlusion; occlusion from neighboring
 fruits is comparatively rare (Table~\ref{tab:dataset_split}).
@@ -676,9 +677,10 @@ specifically for images with higher fruit visibility.
     for YOLO11m-seg, YOLO26x-seg, and Mask2Former.
     Validation images were grouped according to object visibility
     percentages (25\%, 50\%, 75\%, and 100\%).
-    Mask2Former demonstrates higher robustness under severe occlusions,
-    while YOLO11m-seg consistently outperforms YOLO26x-seg across most
-    visibility conditions.
+    Mask2Former demonstrates higher robustness under severe occlusions.
+    YOLO11m-seg and YOLO26x-seg are closely matched at 25\% and 50\%
+    visibility, while YOLO26x-seg reaches higher mask mAP50--95 than
+    YOLO11m-seg at 75\% and 100\% visibility over most of training.
     }
     \label{fig:visibility_analysis}
 \end{figure}
