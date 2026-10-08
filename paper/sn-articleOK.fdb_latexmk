@@ -1,35 +1,35 @@
 # Fdb version 4
-["bibtex sn-articleOK"] 1791494796.50657 "sn-articleOK.aux" "sn-articleOK.bbl" "sn-articleOK" 1791497357.74154 0
+["bibtex sn-articleOK"] 1791494796.50657 "sn-articleOK.aux" "sn-articleOK.bbl" "sn-articleOK" 1791498454.18767 0
   "./Articulo/Ref.bib" 1791420310.54666 126677 30d050b7b93e40230278776d0b9c1675 ""
   "./splncs04.bst" 1791318274 32146 ee21ae2a29028dc8ad842a97200982c7 ""
-  "sn-articleOK.aux" 1791497356.75478 7737 67b96702014ac012cd081d90cf52ecfa "pdflatex"
+  "sn-articleOK.aux" 1791498453.29354 7737 67b96702014ac012cd081d90cf52ecfa "pdflatex"
   (generated)
   "sn-articleOK.bbl"
   "sn-articleOK.blg"
   (rewritten before read)
-["pdflatex"] 1791497356.01976 "Articulo/sn-articleOK.tex" "sn-articleOK.pdf" "sn-articleOK" 1791497357.74215 0
+["pdflatex"] 1791498452.54905 "Articulo/sn-articleOK.tex" "sn-articleOK.pdf" "sn-articleOK" 1791498454.18834 0
   "Articulo/Arquitectura poster.pdf" 1791371409.69224 604131 d547ce30e29bb7f8312a0c5753a19f73 ""
-  "Articulo/apple_green_mask2former.png" 1791497344.34171 601780 b322174ed39cfefe239b659824a6b633 ""
+  "Articulo/apple_green_mask2former.png" 1791498443.76221 601780 b322174ed39cfefe239b659824a6b633 ""
   "Articulo/apple_green_train.png" 1791318264 601022 756f9acdd1120ddb573e5382a7805555 ""
   "Articulo/apple_green_yolo11.png" 1791318264 601617 ecfe8ce54d12122dd60bde45217e5636 ""
   "Articulo/apple_green_yolo26.png" 1791318264 601528 286b7254780a31e84cab510217c4f148 ""
-  "Articulo/apple_red_mask2former.png" 1791497344.49911 585336 ef6eb4acd332c7a08f2921dc046cdde9 ""
+  "Articulo/apple_red_mask2former.png" 1791498443.91753 585336 ef6eb4acd332c7a08f2921dc046cdde9 ""
   "Articulo/apple_red_train.png" 1791318264 584561 c5510b55a67d0df4a2f8036e52a46754 ""
   "Articulo/apple_red_yolo11.png" 1791318264 585358 8cfc5f2ca0617005d74f96a7470c7201 ""
   "Articulo/apple_red_yolo26.png" 1791318264 585316 fc676807344c9f2e664550f70080e5ac ""
-  "Articulo/avocado_mask2former.png" 1791497344.991 723174 9203ed356b6e5ce514c217163e3ca01b ""
+  "Articulo/avocado_mask2former.png" 1791498444.36167 722707 60b9d9011358b0613806c8c4f360cd14 ""
   "Articulo/avocado_train.png" 1791318264 723764 5108c587a94c3c1f3330acd6187b4aff ""
   "Articulo/avocado_yolo11.png" 1791318264 722914 6c70c20c83da1361e8c0ae9fa3619e3d ""
   "Articulo/avocado_yolo26.png" 1791318264 722653 7d06d73b0bdcf7763647e86f4e4144cc ""
-  "Articulo/orange_mask2former.png" 1791497345.15176 610753 ebf27d372baef2bc927ac7222b67c2e4 ""
+  "Articulo/orange_mask2former.png" 1791498444.53331 610753 ebf27d372baef2bc927ac7222b67c2e4 ""
   "Articulo/orange_train.png" 1791318264 610846 05973b42393e7556240e73fbc41dcccd ""
   "Articulo/orange_yolo11.png" 1791318264 610756 f133286a5885f989eafed1635c09a934 ""
   "Articulo/orange_yolo26.png" 1791318264 610652 3a738d101eafef06c140c9390120457e ""
-  "Articulo/peach_mask2former.png" 1791497344.6585 559716 c13ae8ee9ab508b37d94d945bfa7ab6c ""
+  "Articulo/peach_mask2former.png" 1791498444.07136 559716 c13ae8ee9ab508b37d94d945bfa7ab6c ""
   "Articulo/peach_train.png" 1791318264 559621 cc18f32b5e1c79a975fde6d94f91097f ""
   "Articulo/peach_yolo11.png" 1791318264 559501 084285d3916d1dfbb08b3c5074a7ead0 ""
   "Articulo/peach_yolo26.png" 1791318262 559265 0aa00cad4adbc441c8dc004e119e6e23 ""
-  "Articulo/pear_mask2former.png" 1791497344.80804 732690 e04c6cff62d32c5af5a60d1ee3ddc4a3 ""
+  "Articulo/pear_mask2former.png" 1791498444.21228 730280 5647d8f61b6cc0b12fae641aa0b97389 ""
   "Articulo/pear_train.png" 1791318262 734571 307639417713b345aa5c5c885d6b695c ""
   "Articulo/pear_yolo11.png" 1791318262 729961 050c288d3211a138e807a9c24d8b1483 ""
   "Articulo/pear_yolo26.png" 1791318262 730070 fc9e505c51a63dbb0925711cee4e69bd ""
@@ -133,7 +133,7 @@
   "Occlusion/all_models_curves_highlight_best.pdf" 1791318262 55367 c5a2c99633b7f56cee32b7aaf44a9047 ""
   "Occlusion/epoch_visibility_map_with_mask2former.pdf" 1791375539.98205 23659 1dbf2a16abe54531cac946be3864348e ""
   "llncs.cls" 1791318274 42312 5c930e3a884976fbd3796e3ab18cc1af ""
-  "sn-articleOK.aux" 1791497356.75478 7737 67b96702014ac012cd081d90cf52ecfa "pdflatex"
+  "sn-articleOK.aux" 1791498453.29354 7737 67b96702014ac012cd081d90cf52ecfa "pdflatex"
   "sn-articleOK.bbl" 1791494796.68726 6803 cb660970e5d53b6898cd9d5d09ca89dc "bibtex sn-articleOK"
   (generated)
   "sn-articleOK.aux"
