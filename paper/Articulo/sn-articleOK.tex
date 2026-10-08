@@ -131,8 +131,10 @@ Recent CNN-based architectures, particularly YOLO-based models, have demonstrate
 strong real-time performance for agricultural perception tasks
 \cite{10424305,10348779,11016889,11347840}. At the same time, transformer-based
 architectures such as Mask2Former have shown improved contextual reasoning and
-robustness in complex segmentation scenarios
-\cite{10972542,10491166,11407412,11100168}.
+robustness in complex, cluttered segmentation scenarios outside agriculture
+-- including fine-grained fish analysis, change detection, and stacked-object
+counting -- suggesting that these benefits generalize beyond any single
+domain \cite{10972542,10491166,11407412,11100168}.
 
 Despite these advances, comparative analyses between modern YOLO-based and
 transformer-based instance segmentation models in orchard environments remain
@@ -196,9 +198,9 @@ In parallel, transformer-based architectures have emerged as a powerful
 alternative for dense scene understanding and universal image segmentation.
 Mask2Former further advanced transformer-based segmentation through masked
 attention mechanisms for universal image segmentation tasks
-\cite{cheng2021mask2former}. Recent studies have shown that transformer-based
-segmentation models achieve strong performance in cluttered scenes involving
-overlapping and visually similar objects
+\cite{cheng2021mask2former}. Recent studies outside agriculture have shown that
+transformer-based segmentation models achieve strong performance in cluttered
+scenes involving overlapping and visually similar objects
 \cite{10491166,10972542,11100168}. By combining convolutional feature
 extraction with transformer attention mechanisms, Mask2Former improves
 contextual reasoning and mask refinement, making it particularly suitable for
@@ -234,9 +236,13 @@ The proposed pipeline is designed to support robust visual perception in agricul
 \begin{figure}
 	\centering
 	\includegraphics[width=12cm]{Articulo/Arquitectura poster.pdf} %width=3cm, height=4cm
-	\caption{Data acquisition setup using a robotic manipulator equipped with an RGB camera.
-The captured images are used as input for the instance segmentation models to detect
-and segment fruit instances in orchard environments.}
+	\caption{Overview of the proposed pipeline: data acquisition setup using a
+robotic manipulator equipped with RGB and depth sensors, the resulting dataset
+format, and a high-level overview of the YOLO11, YOLO26, and Mask2Former
+architectures used for instance segmentation. Only the RGB images were used
+for the segmentation task reported in this work; depth and IMU data were
+collected for other purposes within the broader robotic framework and are not
+used here.}
 	\label{fig:architecture}
 \end{figure}
 
@@ -244,7 +250,7 @@ and segment fruit instances in orchard environments.}
 
 Data were acquired using an RGB camera mounted on a robotic manipulator operating in a real orchard environment. The robotic platform allowed the camera to capture fruit images from multiple viewpoints while maintaining a consistent observation distance.
 
-This setup enabled the collection of images under realistic harvesting conditions, including natural lighting variations, foliage occlusions, and overlapping fruit instances. The acquisition pipeline is illustrated in Fig.~\ref{fig:architecture}, where the robotic manipulator is used as a mobile sensing platform for collecting visual data used in training and evaluating the instance segmentation models.
+This setup enabled the collection of images under realistic harvesting conditions, including natural lighting variations and, predominantly, occlusion by foliage (branches and leaves); occlusion from neighboring fruit instances occurs less frequently in this dataset, which averages 1.13--1.19 fruit instances per image (Table~\ref{tab:dataset_split}). The acquisition pipeline is illustrated in Fig.~\ref{fig:architecture}, where the robotic manipulator is used as a mobile sensing platform for collecting visual data used in training and evaluating the instance segmentation models.
 
 \subsection{Instance Segmentation Architectures}
 
@@ -294,14 +300,26 @@ robotic manipulation performance.
 
 \subsection{Training Configuration}
 
-All models were trained under equivalent experimental conditions to ensure a
-fair comparison. YOLO11-seg and YOLO26-seg were trained using the Ultralytics
-YOLO framework, whereas Mask2Former was implemented using the OpenMMLab
-MMDetection framework.
+All models were trained using the default settings of their respective
+frameworks, matched where the frameworks' options allowed (optimizer,
+learning rate, batch size, input resolution); full equivalence was not
+possible since YOLO-seg and Mask2Former expose different training options,
+as detailed below. YOLO11-seg and YOLO26-seg were trained using the Ultralytics
+YOLO framework \cite{ultralytics_yolo}, whereas Mask2Former was implemented
+using the OpenMMLab MMDetection framework \cite{mmdetection2019}.
 
 Training was performed using the AdamW optimizer with an initial learning rate
-of 0.001. All models were trained for 100 epochs using a batch size of 16 and
-an input image resolution of $640 \times 640$ pixels.
+of 0.001 and a batch size of 8, with an input image resolution of
+$640 \times 640$ pixels. YOLO11-seg and YOLO26-seg were trained for 100
+epochs; Mask2Former was trained for 50 epochs, as further training did not
+improve validation performance, and the checkpoint with the best validation
+mask AP was used for evaluation. GPU latency (Table~\ref{tab:benchmark_efficiency})
+was measured at batch size 1, $640\times640$ input resolution, and default
+(FP32) precision for all models; the YOLO-based and Mask2Former latencies were
+obtained from each framework's own benchmarking utility (Ultralytics and
+MMDetection, respectively), which do not necessarily time the same set of
+pre/post-processing steps, and should accordingly be treated as indicative
+rather than strictly apples-to-apples.
 
 Data augmentation techniques including horizontal flipping, scaling, and color
 jittering were applied during training to improve generalization. For
@@ -315,7 +333,7 @@ to architectural differences.
 
 The experiments were executed on a workstation equipped with an NVIDIA GeForce
 RTX 4060 Ti GPU (8\,GB VRAM), allowing efficient training and evaluation of all
-architectures. Pretrained weights from the COCO dataset were used for
+architectures. Pretrained weights from the COCO dataset \cite{lin2014coco} were used for
 initialization to accelerate convergence during fine-tuning on the orchard
 dataset.
 
@@ -387,7 +405,7 @@ Table~\ref{tab:metrics}.
 \caption{Evaluation and computational complexity metrics used in this work.}
 \label{tab:metrics}
 
-\renewcommand{\arraystretch}{1.35}
+\renewcommand{\arraystretch}{1.8}
 \setlength{\tabcolsep}{4pt}
 
 \small
@@ -398,10 +416,10 @@ Table~\ref{tab:metrics}.
 \hline
 
 Precision &
-$\displaystyle \frac{TP}{TP + FP}$ \\[0.4mm]
+$\displaystyle \frac{\mathrm{TP}}{\mathrm{TP} + \mathrm{FP}}$ \\[0.4mm]
 
 Recall &
-$\displaystyle \frac{TP}{TP + FN}$ \\[0.4mm]
+$\displaystyle \frac{\mathrm{TP}}{\mathrm{TP} + \mathrm{FN}}$ \\[0.4mm]
 
 F-score &
 $\displaystyle \frac{2 \cdot Precision \cdot Recall}
@@ -438,7 +456,14 @@ Inference latency measured on GPU \\
 
 All metrics were computed separately for bounding boxes (B) and instance masks
 (M), enabling a detailed evaluation of both detection accuracy and segmentation
-quality under different visibility conditions.
+quality under different visibility conditions. Precision, Recall, and F-score
+were computed using each framework's own default confidence-score and
+IoU operating point (0.5 IoU, Ultralytics' and MMDetection's respective
+default confidence thresholds); as these defaults are not necessarily
+identical between the two frameworks, absolute Precision/Recall/F-score
+differences between Mask2Former and the YOLO-seg models should be interpreted
+with this in mind, whereas mAP, being threshold-integrated, is directly
+comparable.
 
 \section{Experimental Results}
 \label{Sec::Results}
@@ -531,10 +556,16 @@ Mask2Former & R50 & 16.70 & 44.00 & 103.00 \\
 
 Table~\ref{tab:benchmark_performance} presents a quantitative comparison of
 detection and instance segmentation performance across all evaluated
-architectures. Among the YOLO-based models, YOLO11 variants consistently
-achieve superior or more stable performance compared to YOLO26 counterparts.
-In particular, YOLO11m attains the highest YOLO-based segmentation accuracy,
-reaching \textbf{51.97\%} mask mAP50--95.
+architectures. Among the YOLO-based models, YOLO11 variants achieve superior
+or more stable performance than their size-matched YOLO26 counterparts for
+the n, s, and m sizes, whereas YOLO26x (51.00\% mask mAP50--95) outperforms
+both YOLO11l (47.93\%) and YOLO11x (48.21\%); the comparison between the two
+families is therefore size-dependent rather than uniform. In particular,
+YOLO11m attains the highest YOLO-based segmentation accuracy, reaching
+\textbf{51.97\%} mask mAP50--95. YOLO26l is a clear outlier within its own
+family (41.23\% mask mAP50--95 and 53.26\% box recall, both well below every
+other YOLO26 size), consistent with a training run that did not converge as
+well as the others rather than a genuine architectural effect of model size.
 
 When compared with the transformer-based baseline, Mask2Former achieves the
 highest overall segmentation performance, reaching \textbf{61.01\%} mask
@@ -559,7 +590,7 @@ superior segmentation robustness and mask quality, whereas YOLO11 models offer
 a more favorable balance between segmentation accuracy, inference speed, and
 computational efficiency for embedded robotic deployment.
 
-Figure~\ref{fig:mask2former_comparison} compares the training evolution of YOLO11m-seg, YOLO26x-seg, and Mask2Former in terms of bounding-box and mask performance metrics. The results show that Mask2Former achieves the highest overall segmentation accuracy, reaching a mask mAP50--95 of approximately \textbf{61.0\%}, surpassing both YOLO11m-seg and YOLO26x-seg.
+Figure~\ref{fig:mask2former_comparison} compares the training evolution of all evaluated YOLO11-seg and YOLO26-seg variants together with Mask2Former, in terms of bounding-box and mask performance metrics; YOLO11m-seg and YOLO26x-seg are highlighted with bold lines as the best-performing variant of each YOLO family. The results show that Mask2Former achieves the highest overall segmentation accuracy, reaching a mask mAP50--95 of approximately \textbf{61.0\%}, surpassing both YOLO11m-seg and YOLO26x-seg.
 Additionally, Mask2Former exhibits smoother convergence behavior and
 maintains consistently higher recall values throughout training,
 suggesting improved robustness under cluttered and partially occluded
@@ -611,7 +642,15 @@ Figure~\ref{fig:visibility_analysis} presents the segmentation performance evolu
 
 Among the evaluated approaches, Mask2Former demonstrates the highest robustness across all visibility levels, particularly under severe occlusions (25\% and 50\% visibility). The transformer-based architecture maintains more stable performance degradation compared to YOLO-based models, suggesting improved contextual reasoning and global feature aggregation.
 
-YOLO11m-seg also shows strong robustness under partial visibility conditions and consistently outperforms YOLO26x-seg in most scenarios. This behavior further supports the quantitative and qualitative observations reported previously, reinforcing the suitability of YOLO11m-seg for agricultural robotic perception tasks involving heavy occlusions and overlapping fruits.
+YOLO11m-seg and YOLO26x-seg track each other closely under 25\% and 50\%
+visibility, with no consistent winner between them at these severe-occlusion
+levels. At 75\% and especially 100\% visibility, YOLO26x-seg reaches a higher
+mask mAP50--95 than YOLO11m-seg over most of training, indicating that
+YOLO11m-seg's advantage reported in Table~\ref{tab:benchmark_performance} does
+not uniformly hold once the validation set is broken down by visibility
+level. This further supports the quantitative observations reported above,
+while also showing that YOLO26x-seg is the more robust YOLO-based choice
+specifically for images with higher fruit visibility.
 
 \begin{figure}[!t]
     \centering
@@ -634,7 +673,11 @@ Figure~\ref{fig:qualitative_comparison_all_models} presents a qualitative
 comparison between YOLO11m-seg, YOLO26x-seg, and Mask2Former using identical
 RGB inputs across multiple fruit categories and occlusion conditions. This
 analysis complements the quantitative evaluation by visually examining mask
-structure, contour consistency, and robustness under partial occlusion.
+structure, contour consistency, and robustness under partial occlusion. The
+per-detection confidence scores overlaid on these predictions are produced by
+each framework's own classification head and are not calibrated against one
+another; they should be read only as each model's own relative confidence
+across its own detections, not compared numerically across architectures.
 
 All evaluated models are capable of detecting the main fruit instances present
 in the scene. However, noticeable qualitative differences emerge in the shape,
@@ -742,7 +785,7 @@ CNN-based approaches prioritize efficient localized feature extraction and multi
 
 The visibility-aware evaluation suggests that transformer-based contextual reasoning improves the separation between partially visible fruits and surrounding vegetation in complex orchard scenes. In particular, Mask2Former exhibited more stable degradation behavior under reduced visibility conditions, indicating improved resilience in heavily occluded scenarios where fragmented observations and overlapping instances are common.
 
-These observations further support the improved contour consistency and occlusion resilience of transformer-based segmentation. These differences were especially noticeable in cluttered scenes involving overlapping fruits, irregular object shapes, and strong background interference. In contrast, YOLO-based models occasionally produced fragmented or less consistent boundaries under severe occlusion, despite maintaining competitive inference speed and significantly lower computational cost.
+These observations further support the improved contour consistency and occlusion resilience of transformer-based segmentation. These differences were especially noticeable in cluttered scenes involving foliage occlusion, irregular object shapes, and strong background interference. In contrast, YOLO-based models occasionally produced fragmented or less consistent boundaries under severe occlusion, despite maintaining competitive inference speed and significantly lower computational cost.
 
 Despite the qualitative and quantitative advantages of transformer-based segmentation, these architectures also introduce substantially higher model complexity and memory requirements. Such computational demands may still represent a limitation for deployment on lightweight robotic platforms or edge devices operating under strict real-time constraints. In this context, YOLO11-based models remain highly attractive for embedded agricultural robotic systems requiring efficient onboard inference while maintaining competitive segmentation performance.
 
