@@ -92,8 +92,9 @@ This work presents a comparative evaluation of CNN-based and transformer-based
 instance segmentation models for multi-fruit perception in agricultural robotics.
 
 The study compares YOLO11-seg, YOLO26-seg, and Mask2Former under a unified
-training and evaluation protocol using a real orchard dataset with multiple
-visibility conditions. The analysis considers both segmentation accuracy and
+training and evaluation protocol using a dataset of real fruit specimens
+captured in a controlled environment that emulates orchard-like foliage
+occlusion, spanning multiple visibility conditions. The analysis considers both segmentation accuracy and
 computational efficiency using metrics such as precision, recall, mAP,
 parameter count, FLOPs, and inference time.
 
@@ -141,8 +142,8 @@ transformer-based instance segmentation models in orchard environments remain
 limited, especially under varying visibility conditions and occlusion levels.
 
 To address this gap, this work presents a comparative evaluation of YOLO11-seg,
-YOLO26-seg, and Mask2Former for multi-fruit instance segmentation in orchard
-environments. The evaluation considers both segmentation accuracy and
+YOLO26-seg, and Mask2Former for multi-fruit instance segmentation under
+orchard-like foliage occlusion. The evaluation considers both segmentation accuracy and
 computational efficiency under different visibility conditions.
 
 % The main contributions of this work are summarized as follows:
@@ -248,9 +249,23 @@ used here.}
 
 \subsection{Data Acquisition Setup}
 
-Data were acquired using an RGB camera mounted on a robotic manipulator operating in a real orchard environment. The robotic platform allowed the camera to capture fruit images from multiple viewpoints while maintaining a consistent observation distance.
+Data were acquired using an RGB camera mounted on a robotic manipulator
+operating in a controlled environment. Real specimens of each fruit species
+were arranged among branches and foliage to emulate the partial occlusion
+conditions found in orchards, rather than being collected during harvesting
+in a working orchard; this controlled setting allowed the six fruit species
+considered in this work (which do not co-occur in a single real orchard) to
+be captured under comparable, repeatable conditions. The robotic platform
+allowed the camera to capture fruit images from multiple viewpoints while
+maintaining a consistent observation distance.
 
-This setup enabled the collection of images under realistic harvesting conditions, including natural lighting variations and, predominantly, occlusion by foliage (branches and leaves); occlusion from neighboring fruit instances occurs less frequently in this dataset, which averages 1.13--1.19 fruit instances per image (Table~\ref{tab:dataset_split}). The acquisition pipeline is illustrated in Fig.~\ref{fig:architecture}, where the robotic manipulator is used as a mobile sensing platform for collecting visual data used in training and evaluating the instance segmentation models.
+This setup enabled the collection of images with, predominantly, occlusion by
+foliage (branches and leaves); occlusion from neighboring fruit instances
+occurs less frequently in this dataset, which averages 1.13--1.19 fruit
+instances per image (Table~\ref{tab:dataset_split}). The acquisition pipeline
+is illustrated in Fig.~\ref{fig:architecture}, where the robotic manipulator
+is used as a mobile sensing platform for collecting visual data used in
+training and evaluating the instance segmentation models.
 
 \subsection{Instance Segmentation Architectures}
 
@@ -334,7 +349,7 @@ to architectural differences.
 The experiments were executed on a workstation equipped with an NVIDIA GeForce
 RTX 4060 Ti GPU (8\,GB VRAM), allowing efficient training and evaluation of all
 architectures. Pretrained weights from the COCO dataset \cite{lin2014coco} were used for
-initialization to accelerate convergence during fine-tuning on the orchard
+initialization to accelerate convergence during fine-tuning on the fruit
 dataset.
 
 For the transformer-based model, Mask2Former with a ResNet-50 backbone was
@@ -346,11 +361,12 @@ adopted as the reference configuration.
 
 \subsection{Dataset and Annotation Protocol}
 
-The dataset consists of RGB images acquired in real orchard environments using
-an RGB camera mounted on a robotic manipulator. Images contain multiple fruit
-classes including apples, peaches, avocados, pears, and oranges captured under
-natural illumination and varying levels of occlusion caused by foliage and
-neighboring fruits.
+The dataset consists of RGB images of real fruit specimens acquired in a
+controlled environment, using an RGB camera mounted on a robotic manipulator
+(Section~\ref{sec:Methods}, System Overview). Images contain multiple fruit
+classes including apples, peaches, avocados, pears, and oranges, arranged among
+foliage to produce varying levels of occlusion; occlusion from neighboring
+fruits is comparatively rare (Table~\ref{tab:dataset_split}).
 
 All images were manually annotated at the instance level, generating pixel-wise
 segmentation masks for each visible fruit. The annotations were performed using
@@ -802,20 +818,27 @@ inference efficiency rather than on an end-to-end or on-device validation,
 which we identify as necessary future work.
 
 One limitation of this study is that the evaluation was performed using a
-single orchard dataset and a fixed image resolution, with training and
+single dataset collected in a controlled environment rather than a working
+orchard, and at a fixed image resolution, with training and
 validation subsets only and no independent held-out test set -- model
 selection and the reported metrics therefore both come from the same
 validation split, and reported performance should be interpreted with this in
-mind until confirmed on unseen data. Additional experiments across different
-crop types, environmental conditions, sensor configurations, and embedded
-hardware platforms, together with an independent test set, would further
-strengthen the generalization analysis of the evaluated architectures.
+mind until confirmed on unseen data. The controlled acquisition setting, while
+enabling repeatable multi-species data collection and a systematic visibility
+breakdown, does not capture every source of variability present in a working
+orchard (e.g.\ uncontrolled weather, seasonal foliage density, or fruit
+attached to the plant rather than arranged for capture), and performance on
+images captured directly in an operating orchard remains to be validated.
+Additional experiments across different crop types, environmental conditions,
+sensor configurations, and embedded hardware platforms, together with an
+independent test set and in-field data, would further strengthen the
+generalization analysis of the evaluated architectures.
 
 
 \section{Conclusions}
 \label{Sec::Conclusions}
 
-This paper presented a comparative evaluation of YOLO11-seg, YOLO26-seg, and Mask2Former for multi-fruit instance segmentation in challenging orchard environments.
+This paper presented a comparative evaluation of YOLO11-seg, YOLO26-seg, and Mask2Former for multi-fruit instance segmentation under challenging, orchard-like foliage occlusion.
 
 Experimental results showed that Mask2Former achieved the highest segmentation accuracy and improved robustness under severe occlusion, whereas YOLO11m provided the best balance between segmentation performance and inference efficiency for real-time robotic applications.
 
