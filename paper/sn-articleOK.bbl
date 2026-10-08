@@ -17,9 +17,18 @@ Cardellicchio, A., Renò, V., Devanna, R.P., Marani, R., Milella, A.: Tomato
   Forestry (MetroAgriFor). pp. 54--59 (Nov 2023).
   \doi{10.1109/MetroAgriFor58484.2023.10424305}
 
+\bibitem{mmdetection2019}
+Chen, K., Wang, J., Pang, J., Cao, Y., Xiong, Y., Li, X., Sun, S., Feng, W.,
+  Liu, Z., Xu, J., Zhang, Z., Cheng, D., Zhu, C., Cheng, T., Zhao, Q., Li, B.,
+  Lu, X., Zhu, R., Wu, Y., Dai, J., Wang, J., Shi, J., Ouyang, W., Loy, C.C.,
+  Lin, D.: {MMD}etection: Open mmlab detection toolbox and benchmark. arXiv
+  preprint arXiv:1906.07155  (2019)
+
 \bibitem{cheng2021mask2former}
-Cheng, B., Schwing, A., Kirillov, A.: Masked-attention mask transformer for
-  universal image segmentation. arXiv preprint arXiv:2112.01527  (2021)
+Cheng, B., Misra, I., Schwing, A.G., Kirillov, A., Girdhar, R.:
+  Masked-attention mask transformer for universal image segmentation. In:
+  Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition (CVPR). pp. 1280--1289 (2022). \doi{10.1109/CVPR52688.2022.00135}
 
 \bibitem{duckett2018agricultural}
 Duckett, T., Pearson, S., Blackmore, S., Grieve, B., Chen, W.H., Cielniak, G.,
@@ -58,11 +67,21 @@ Jing, H., Fan, R., Hong, L., Li, Z.: Yolo-ess: Improved citrus recognition
   Sensing, Diagnostics, Prognostics, and Control. pp. 338--341 (Nov 2025).
   \doi{10.1109/SDPC68151.2025.11347840}
 
+\bibitem{ultralytics_yolo}
+Jocher, G., Qiu, J.: Ultralytics {YOLO}.
+  \url{https://github.com/ultralytics/ultralytics} (2023), version 8
+
 \bibitem{10956721}
 Kiran, J.S., V, D.G., Singh, N., Abbas, H.M., Saravanan, R., K, A.S.: Automated
   fruit counting with yolov5 model for harvest management in orchards. In: 2025
   International Conference on Automation and Computation (AUTOCOM). pp.
   235--240 (March 2025). \doi{10.1109/AUTOCOM64127.2025.10956721}
+
+\bibitem{lin2014coco}
+Lin, T.Y., Maire, M., Belongie, S., Hays, J., Perona, P., Ramanan, D.,
+  Doll{\'a}r, P., Zitnick, C.L.: Microsoft {COCO}: Common objects in context.
+  In: European Conference on Computer Vision (ECCV). pp. 740--755 (2014).
+  \doi{10.1007/978-3-319-10602-1_48}
 
 \bibitem{10839762}
 Lu, J., Lin, X., Li, C., Zeng, S., Luo, X., Li, J.: Methods for mango and
@@ -92,7 +111,7 @@ Rosada, R., Hussein, Z.M., Novamizanti, L.: Evaluating yolo variants for
 
 \bibitem{yolo26_evolution_2026}
 Sapkota, R., Karkee, M.: Ultralytics yolo evolution: An overview of yolo26,
-  yolo11, yolov8, and yolov5. arXiv preprint arXiv:2510.09653  (2026)
+  yolo11, yolov8, and yolov5. arXiv preprint arXiv:2510.09653  (2025)
 
 \bibitem{11407412}
 Shu, Z., Wang, J., Xu, X., Wang, H., Li, Y.: Dynamic refinement-based video
@@ -107,15 +126,13 @@ Valdez, D.B.: Optimized fruit detection in complex environments using yolov11n
   2025). \doi{10.1109/eStream66938.2025.11016889}
 
 \bibitem{vasconez2022workload}
-V{\'a}sconez, J.P., Cheein, F.A.A.: Workload and production assessment in the
-  avocado harvesting process using human-robot collaborative strategies.
+V{\'a}sconez, J.P., {Auat Cheein}, F.A.: Workload and production assessment in
+  the avocado harvesting process using human-robot collaborative strategies.
   Biosystems Engineering  \textbf{223},  56--77 (2022)
 
 \bibitem{VASCONEZ201935}
-Vasconez, J.P., Kantor, G.A., Cheein, F.A.A.: Human-–robot interaction in
+Vasconez, J.P., Kantor, G.A., {Auat Cheein}, F.A.: Human--robot interaction in
   agriculture: A survey and current challenges. Biosystems Engineering
-  \textbf{179},  35 -- 48 (2019).
-  \doi{https://doi.org/10.1016/j.biosystemseng.2018.12.005},
-  \url{http://www.sciencedirect.com/science/article/pii/S1537511017309625}
+  \textbf{179},  35 -- 48 (2019). \doi{10.1016/j.biosystemseng.2018.12.005}
 
 \end{thebibliography}

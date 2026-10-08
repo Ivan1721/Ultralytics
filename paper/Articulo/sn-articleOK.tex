@@ -327,9 +327,11 @@ using the OpenMMLab MMDetection framework \cite{mmdetection2019}.
 Training was performed using the AdamW optimizer with an initial learning rate
 of 0.001 and a batch size of 8, with an input image resolution of
 $640 \times 640$ pixels. YOLO11-seg and YOLO26-seg were trained for 100
-epochs; Mask2Former was trained for 50 epochs, as further training did not
-improve validation performance, and the checkpoint with the best validation
-mask AP was used for evaluation. GPU latency (Table~\ref{tab:benchmark_efficiency})
+epochs, and the final-epoch checkpoint was used for evaluation in all cases
+to keep the reporting protocol identical across model sizes; Mask2Former was
+trained for 50 epochs, as further training did not improve validation
+performance, and the checkpoint with the best validation mask AP was used
+for evaluation. GPU latency (Table~\ref{tab:benchmark_efficiency})
 was measured at batch size 1, $640\times640$ input resolution, and default
 (FP32) precision for all models; the YOLO-based and Mask2Former latencies were
 obtained from each framework's own benchmarking utility (Ultralytics and
@@ -581,8 +583,13 @@ families is therefore size-dependent rather than uniform. In particular,
 YOLO11m attains the highest YOLO-based segmentation accuracy, reaching
 \textbf{51.97\%} mask mAP50--95. YOLO26l is a clear outlier within its own
 family (41.23\% mask mAP50--95 and 53.26\% box recall, both well below every
-other YOLO26 size), consistent with a training run that did not converge as
-well as the others rather than a genuine architectural effect of model size.
+other YOLO26 size); its training curve shows this is not a failure to
+converge but the opposite problem, late-stage overfitting: validation mask
+mAP50--95 already reached 50.0\% by epoch 15 and then declined steadily to
+41.23\% by epoch 100, the final-epoch checkpoint used for evaluation. The
+other YOLO26 sizes did not exhibit this degradation over the same 100
+epochs, so the anomaly reflects this specific run's optimization trajectory
+rather than a genuine architectural effect of model size.
 
 When compared with the transformer-based baseline, Mask2Former achieves the
 highest overall segmentation performance, reaching \textbf{61.01\%} mask
