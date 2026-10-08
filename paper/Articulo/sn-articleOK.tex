@@ -232,7 +232,7 @@ This section describes the proposed perception pipeline, the instance segmentati
 
 \subsection{System Overview}
 
-The proposed pipeline is designed to support robust visual perception in agricultural environments characterized by clutter and partial visibility, as illustrated in Fig.~\ref{fig:architecture}. Given an RGB image acquired from an onboard camera, the system performs instance-level segmentation of fruit instances, producing pixel-wise masks and associated confidence scores. The pipeline is intended for integration within a broader robotic framework, enabling downstream tasks such as grasp planning and manipulation.
+The proposed pipeline is designed to support robust visual perception in agricultural environments characterized by clutter and partial visibility, as illustrated in Fig.~\ref{fig:architecture}. Given an RGB image acquired from an onboard camera, the system performs instance segmentation of fruit objects, producing pixel-wise masks and associated confidence scores. The pipeline is intended for integration within a broader robotic framework, enabling downstream tasks such as grasp planning and manipulation.
 
 \begin{figure}
 	\centering
@@ -438,8 +438,8 @@ Recall &
 $\displaystyle \frac{\mathrm{TP}}{\mathrm{TP} + \mathrm{FN}}$ \\[0.4mm]
 
 F-score &
-$\displaystyle \frac{2 \cdot Precision \cdot Recall}
-{Precision + Recall}$ \\[0.6mm]
+$\displaystyle \frac{2 \cdot \mathrm{Precision} \cdot \mathrm{Recall}}
+{\mathrm{Precision} + \mathrm{Recall}}$ \\[0.6mm]
 
 IoU &
 $\displaystyle \frac{|A \cap B|}{|A \cup B|}$ \\[0.6mm]
@@ -717,7 +717,7 @@ refined segmentation results among all evaluated models. In particular,
 Mask2Former generates smoother and more geometrically consistent masks with
 improved adherence to fruit contours and fewer polygonal artifacts. This
 behavior is especially evident in highly occluded examples such as avocado,
-pear, and apple\_red, where the predicted masks remain continuous despite
+pear, and red apple, where the predicted masks remain continuous despite
 significant background clutter and partial visibility.
 
 Additionally, Mask2Former consistently produced stable predictions across all evaluated fruit categories, even under partial occlusion and cluttered background conditions.
