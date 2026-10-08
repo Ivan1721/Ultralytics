@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex sn-articleOK"] 1791373293.40997 "sn-articleOK.aux" "sn-articleOK.bbl" "sn-articleOK" 1791373499.74405 0
-  "./Articulo/Ref.bib" 1791318274 125450 fa7861a7b66144666c0efb0aa06119c5 ""
+["bibtex sn-articleOK"] 1791417830.47019 "sn-articleOK.aux" "sn-articleOK.bbl" "sn-articleOK" 1791417832.16246 0
+  "./Articulo/Ref.bib" 1791417799.97019 126679 df76907cca1a93b751000eb81df7add7 ""
   "./splncs04.bst" 1791318274 32146 ee21ae2a29028dc8ad842a97200982c7 ""
-  "sn-articleOK.aux" 1791373498.94196 7168 a7b74d73841ad41dd807967a11161f18 "pdflatex"
+  "sn-articleOK.aux" 1791417831.38536 7576 68c5c60a717639bdc4c3613185fd055a "pdflatex"
   (generated)
   "sn-articleOK.bbl"
   "sn-articleOK.blg"
   (rewritten before read)
-["pdflatex"] 1791373498.24489 "Articulo/sn-articleOK.tex" "sn-articleOK.pdf" "sn-articleOK" 1791373499.74465 0
+["pdflatex"] 1791417830.70601 "Articulo/sn-articleOK.tex" "sn-articleOK.pdf" "sn-articleOK" 1791417832.16311 0
   "Articulo/Arquitectura poster.pdf" 1791371409.69224 604131 d547ce30e29bb7f8312a0c5753a19f73 ""
   "Articulo/apple_green_mask2former.jpeg" 1791373484.09112 70372 ed8088f58d1c28d3f4e5c35c138aa9f4 ""
   "Articulo/apple_green_train.png" 1791318264 601022 756f9acdd1120ddb573e5382a7805555 ""
@@ -33,7 +33,7 @@
   "Articulo/pear_train.png" 1791318262 734571 307639417713b345aa5c5c885d6b695c ""
   "Articulo/pear_yolo11.png" 1791318262 729961 050c288d3211a138e807a9c24d8b1483 ""
   "Articulo/pear_yolo26.png" 1791318262 730070 fc9e505c51a63dbb0925711cee4e69bd ""
-  "Articulo/sn-articleOK.tex" 1791373272.88905 40759 a3486b697a29380b9ea0ee90f282bd95 ""
+  "Articulo/sn-articleOK.tex" 1791417820.89532 44064 f14412bd28e4d6242aebbaaf0529f0f0 ""
   "C:/Users/garci/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1791316813.89229 170621 fb9acb36d53ab10c3a41747f6110c777 ""
   "C:/Users/garci/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0900.pk" 1791310622.91587 22504 5046c70ddcedb4f6d812962065bd06b9 ""
   "C:/Users/garci/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1791310618.19452 25420 956a134bd35895c1b5f9256c97ee468d ""
@@ -131,10 +131,10 @@
   "C:/Users/garci/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/garci/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "Occlusion/all_models_curves_highlight_best.pdf" 1791318262 55367 c5a2c99633b7f56cee32b7aaf44a9047 ""
-  "Occlusion/epoch_visibility_map_with_mask2former.pdf" 1791318262 23920 9edf014c311f5cc744042a971352ec4e ""
+  "Occlusion/epoch_visibility_map_with_mask2former.pdf" 1791375539.98205 23659 1dbf2a16abe54531cac946be3864348e ""
   "llncs.cls" 1791318274 42312 5c930e3a884976fbd3796e3ab18cc1af ""
-  "sn-articleOK.aux" 1791373498.94196 7168 a7b74d73841ad41dd807967a11161f18 "pdflatex"
-  "sn-articleOK.bbl" 1791373293.59391 5936 22c205cd4c05b1f9fca4f4e4e2c12ae2 "bibtex sn-articleOK"
+  "sn-articleOK.aux" 1791417831.38536 7576 68c5c60a717639bdc4c3613185fd055a "pdflatex"
+  "sn-articleOK.bbl" 1791417830.65541 6805 c5ac860cb6891d1cebb7dbef57dd3dc0 "bibtex sn-articleOK"
   (generated)
   "sn-articleOK.aux"
   "sn-articleOK.log"
