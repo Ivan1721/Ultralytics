@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex sn-articleOK"] 1791420316.92338 "sn-articleOK.aux" "sn-articleOK.bbl" "sn-articleOK" 1791420318.67094 0
+["bibtex sn-articleOK"] 1791421635.582 "sn-articleOK.aux" "sn-articleOK.bbl" "sn-articleOK" 1791421637.39479 0
   "./Articulo/Ref.bib" 1791420310.54666 126677 30d050b7b93e40230278776d0b9c1675 ""
   "./splncs04.bst" 1791318274 32146 ee21ae2a29028dc8ad842a97200982c7 ""
-  "sn-articleOK.aux" 1791420317.87369 7576 5189b74c30af123e613e91430a6fee19 "pdflatex"
+  "sn-articleOK.aux" 1791421636.55842 7737 94436e91a182770916fa08d7f2012a44 "pdflatex"
   (generated)
   "sn-articleOK.bbl"
   "sn-articleOK.blg"
   (rewritten before read)
-["pdflatex"] 1791420317.18714 "Articulo/sn-articleOK.tex" "sn-articleOK.pdf" "sn-articleOK" 1791420318.67153 0
+["pdflatex"] 1791421635.83731 "Articulo/sn-articleOK.tex" "sn-articleOK.pdf" "sn-articleOK" 1791421637.39543 0
   "Articulo/Arquitectura poster.pdf" 1791371409.69224 604131 d547ce30e29bb7f8312a0c5753a19f73 ""
   "Articulo/apple_green_mask2former.jpeg" 1791373484.09112 70372 ed8088f58d1c28d3f4e5c35c138aa9f4 ""
   "Articulo/apple_green_train.png" 1791318264 601022 756f9acdd1120ddb573e5382a7805555 ""
@@ -33,7 +33,7 @@
   "Articulo/pear_train.png" 1791318262 734571 307639417713b345aa5c5c885d6b695c ""
   "Articulo/pear_yolo11.png" 1791318262 729961 050c288d3211a138e807a9c24d8b1483 ""
   "Articulo/pear_yolo26.png" 1791318262 730070 fc9e505c51a63dbb0925711cee4e69bd ""
-  "Articulo/sn-articleOK.tex" 1791420292.35074 45141 0706382f80f80a933c4d7b6a6cc4d35a ""
+  "Articulo/sn-articleOK.tex" 1791421616.07509 45260 dc7ee4869d7056e832c54c771fba80a7 ""
   "C:/Users/garci/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1791316813.89229 170621 fb9acb36d53ab10c3a41747f6110c777 ""
   "C:/Users/garci/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0900.pk" 1791310622.91587 22504 5046c70ddcedb4f6d812962065bd06b9 ""
   "C:/Users/garci/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1791310618.19452 25420 956a134bd35895c1b5f9256c97ee468d ""
@@ -133,8 +133,8 @@
   "Occlusion/all_models_curves_highlight_best.pdf" 1791318262 55367 c5a2c99633b7f56cee32b7aaf44a9047 ""
   "Occlusion/epoch_visibility_map_with_mask2former.pdf" 1791375539.98205 23659 1dbf2a16abe54531cac946be3864348e ""
   "llncs.cls" 1791318274 42312 5c930e3a884976fbd3796e3ab18cc1af ""
-  "sn-articleOK.aux" 1791420317.87369 7576 5189b74c30af123e613e91430a6fee19 "pdflatex"
-  "sn-articleOK.bbl" 1791420317.11301 6803 cb660970e5d53b6898cd9d5d09ca89dc "bibtex sn-articleOK"
+  "sn-articleOK.aux" 1791421636.55842 7737 94436e91a182770916fa08d7f2012a44 "pdflatex"
+  "sn-articleOK.bbl" 1791421635.78782 6803 cb660970e5d53b6898cd9d5d09ca89dc "bibtex sn-articleOK"
   (generated)
   "sn-articleOK.aux"
   "sn-articleOK.log"
