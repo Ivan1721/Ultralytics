@@ -13,6 +13,7 @@ INPUT C:\Users\garci\AppData\Local\Programs\MiKTeX\tex\latex\tools\multicol.sty
 INPUT C:\Users\garci\AppData\Local\Programs\MiKTeX\tex\latex\tools\multicol.sty
 INPUT C:\Users\garci\AppData\Local\Programs\MiKTeX\tex\latex\aliascnt\aliascnt.sty
 INPUT C:\Users\garci\AppData\Local\Programs\MiKTeX\tex\latex\aliascnt\aliascnt.sty
+OUTPUT DescriptionTexts.txt
 INPUT C:\Users\garci\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
 INPUT C:\Users\garci\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
 INPUT C:\Users\garci\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1000.tfm
