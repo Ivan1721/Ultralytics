@@ -1,4 +1,4 @@
-names:
+﻿names:
   0: apple_green
   1: apple_red
   2: peach
@@ -6,6 +6,6 @@ names:
   4: pear
   5: orange
 nc: 6
-path: C:/Users/garci/repos/dataset/yolo
+path: C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/Bases de Datos/dataset/yolo
 train: images/train
 val: images/val/100%

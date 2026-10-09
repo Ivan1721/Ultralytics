@@ -10,18 +10,15 @@ This is a research repository, not the Ultralytics library itself. It trains and
 
 This repo is a plain local git repo at `C:\Users\garci\repos\Ultralytics`, backed by `github.com/Ivan1721/Ultralytics` — it is **not** inside Google Drive or OneDrive (it used to live in Drive; it was moved out because Drive's background sync corrupting `.git` mid-operation is a real, observed failure mode). A stale backup of the pre-move state may still exist at `G:\Mi unidad\repos\Ultralytics`; don't use it, it isn't kept in sync.
 
-`Ultralytics/` is one of three sibling directories under `C:\Users\garci\repos\`:
+`Ultralytics/` sits alongside `mmdetection\` under `C:\Users\garci\repos\`:
 
 ```
 C:\Users\garci\repos\
 ├── Ultralytics\      (this repo — YOLO11/26 pipeline + paper)
-├── mmdetection\       (fork of open-mmlab/mmdetection — Mask2Former/DETR/Mask-RCNN side)
-└── dataset\
-    ├── yolo\          (the YOLO-format dataset — data.yaml, images/, labels/)
-    └── coco\          (the COCO-format dataset used by the mmdetection configs)
+└── mmdetection\       (fork of open-mmlab/mmdetection — Mask2Former/DETR/Mask-RCNN side)
 ```
 
-`dataset/` is shared, repo-agnostic data referenced by **both** `Ultralytics` and `mmdetection` via relative paths (e.g. `../../dataset/yolo` from a notebook in `notebooks/`, or an `os.path.dirname(__file__)`-relative computation from an mmdet config) — it is not tracked by either repo's git and has no `.gitignore` entry to match because it simply isn't inside either repo's working tree. If you move any of these three directories, every relative path that crosses between them breaks; re-derive the correct number of `../` hops from the new depth rather than guessing, and verify with `Path(...).is_dir()`/`.is_file()` before trusting it.
+The shared dataset used to live as a third sibling (`C:\Users\garci\repos\dataset\{yolo,coco}`) and was referenced by relative paths. As of 2026-10, it was centralized (along with other heavy project data) at `C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\Bases de Datos\dataset\{yolo,coco}` to stop duplicating it across the `C:` and `G:` repo copies, and every reference to it (notebooks, `results/*.yaml`, mmdetection `data_root` configs) was switched from a relative path to this plain absolute path — so moving `Ultralytics/` or `mmdetection/` no longer breaks the dataset reference. Moving `Bases de Datos/` itself, however, would require updating all of those absolute paths again by hand; there is no central lookup for them.
 
 ## Data & experiment pipeline
 
@@ -40,7 +37,7 @@ The three notebooks in `notebooks/` are successive iterations of the same pipeli
 - `InstanceSeg_Code.ipynb` — current/most complete version (train → val → sample predictions → comparison plots → benchmark tables incl. TensorRT and F1 → per-class metrics → per-visibility validation).
 - `Instance_segV2.ipynb`, `Instance_segV1.ipynb` — earlier versions, kept for history; prefer `InstanceSeg_Code.ipynb` for new work unless comparing against a specific past run.
 
-All three notebooks assume they are opened/run with their own directory (`notebooks/`) as the working directory, and reach everything else via `../` (this repo's own root-level folders) or `../../dataset/...` (the sibling dataset directory).
+All three notebooks assume they are opened/run with their own directory (`notebooks/`) as the working directory, and reach everything else via `../` (this repo's own root-level folders) or the absolute `C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/Bases de Datos/dataset/...` path (the centralized dataset).
 
 ## Environment
 
@@ -62,7 +59,7 @@ Run from the repo root (`C:\Users\garci\repos\Ultralytics`), not from inside `sc
 ```powershell
 # export_gtruth_for_python.m runs inside MATLAB, not from the shell
 python scripts/filter_gtruth_flat_no_empty.py --in_mat groundtruth_exports/gTruth_py_flat.mat --out_mat groundtruth_exports/gTruth_py_flat_filtered.mat
-python scripts/gtruth_flat_to_yolo.py --mat groundtruth_exports/gTruth_py_flat_filtered.mat --labels_out ../dataset/yolo/labels --yaml_out ../dataset/yolo/data.yaml --dataset_root ../dataset/yolo
+python scripts/gtruth_flat_to_yolo.py --mat groundtruth_exports/gTruth_py_flat_filtered.mat --labels_out "C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\Bases de Datos\dataset\yolo\labels" --yaml_out "C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\Bases de Datos\dataset\yolo\data.yaml" --dataset_root "C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\Bases de Datos\dataset\yolo"
 python scripts/filter_remap_external_yolo.py --external_root <path_to_external_dataset> --out_root <merged_dataset_root> --tag external --drop_empty
 ```
 
@@ -82,7 +79,7 @@ The LaTeX source for the paper:
 - `groundtruth_exports/` — the raw/filtered `.mat` exports from MATLAB (`gTruth_py_Tiburoncin.mat`, `gTruth_py_flat.mat`, `gTruth_py_flat_filtered.mat`); inputs to `scripts/gtruth_flat_to_yolo.py`.
 - `results/` — everything generated for the paper: `epoch_visibility_analysis/`, `validation_by_visibility/`, `figures_quant/`, `figures_training_compare/`, and the top-level `metrics_mosaic*` files.
 - `paper/` — the manuscript (see above).
-- **Gitignored** (bulk data / local artifacts, see `.gitignore`): `Manzana/` (raw captures + telemetry — the YOLO-format dataset itself now lives outside this repo at `../dataset/yolo`), `runs/` (all Ultralytics train/val outputs), `ImageLabelingProject/`, `FruitLabelingProject_v2/`, `Imagenes_Output/`, `imagenes_comparacion/`, `referencias/` (third-party papers/PDFs), and the `.pt` weight files at the repo root.
+- **Gitignored** (bulk data / local artifacts, see `.gitignore`): `Manzana/` (raw captures + telemetry — the YOLO-format dataset itself now lives outside this repo at `C:\Users\garci\OneDrive - UNIVERSIDAD ANDRES BELLO\Desktop\Bases de Datos\dataset\yolo`), `runs/` (all Ultralytics train/val outputs), `ImageLabelingProject/`, `FruitLabelingProject_v2/`, `Imagenes_Output/`, `imagenes_comparacion/`, `referencias/` (third-party papers/PDFs), and the `.pt` weight files at the repo root.
 - **Run naming** under `runs/segment/Manzana/`: `V{11|26}{n|s|m|l|x}_640` for training runs and the same name + `_val` for the corresponding validation run (e.g. `V26m_640`, `V26m_640_val`), matching `imgsz=640` and the YOLO major version/size letter used. `_comparisons/` and `_iou_curves/` hold cross-run comparison artifacts.
 - `Manzana/csv/` holds raw robot/capture telemetry (`depth_metrics.csv`, `end_pose.csv`, `joint_states.csv`, `data_capture_status.csv`) associated with the image captures, not model metrics.
 
