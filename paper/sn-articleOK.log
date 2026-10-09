@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.27)  9 OCT 2026 12:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.27)  9 OCT 2026 16:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -935,6 +935,12 @@ Overfull \hbox (9.95593pt too wide) in paragraph at lines 850--851
  chal-leng-ing, orchard-
  []
 
+
+Overfull \hbox (8.88455pt too wide) in paragraph at lines 859--860
+\T1/cmr/m/n/10 of Chile) un-der Fonde-cyt Ini-ciación 2024 Grant 11240105, ANID
+ AC3E CIA250006,
+ []
+
 (sn-articleOK.bbl
 Underfull \hbox (badness 5787) in paragraph at lines 7--12
 \T1/cmr/m/n/9 Ped-er-sen, M.: Aut-ofish: Dataset and bench-mark for fine-graine
@@ -1037,7 +1043,7 @@ Underfull \hbox (badness 1859) in paragraph at lines 93--98
 Sep 2023).
  []
 
-
+[17]
 Underfull \hbox (badness 1769) in paragraph at lines 106--111
 []\T1/cmr/m/n/9 Rosada, R., Hus-sein, Z.M., No-vamizanti, L.: Eval-u-at-ing yol
 o vari-ants for
@@ -1055,7 +1061,7 @@ Underfull \hbox (badness 5519) in paragraph at lines 106--111
 fi-cial In-tel-li-
  []
 
-[17]) [18] (sn-articleOK.aux)
+) [18] (sn-articleOK.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
@@ -1091,9 +1097,9 @@ TeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/garci/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/garci/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/garci/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on sn-articleOK.pdf (18 pages, 16166759 bytes).
+Output written on sn-articleOK.pdf (18 pages, 16168781 bytes).
 PDF statistics:
- 678 PDF objects out of 1000 (max. 8388607)
+ 683 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
