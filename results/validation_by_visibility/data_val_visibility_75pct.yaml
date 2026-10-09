@@ -1,4 +1,4 @@
-﻿path: C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/Bases de Datos/dataset/yolo
+path: C:/Users/garci/OneDrive - UNIVERSIDAD ANDRES BELLO/Desktop/Bases de Datos/dataset/yolo
 train: images/train
 val: images/val/75%
 nc: 6
